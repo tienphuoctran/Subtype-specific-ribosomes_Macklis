@@ -1,0 +1,676 @@
+From	Entry	Reviewed	Entry Name	Protein names	Organism	Length	Gene Names (primary)
+A2A8L1	A2A8L1	reviewed	CHD5_MOUSE	Chromodomain-helicase-DNA-binding protein 5 (CHD-5) (EC 3.6.4.12) (ATP-dependent helicase CHD5)	Mus musculus (Mouse)	1946	Chd5
+A2AJI0	A2AJI0	reviewed	MA7D1_MOUSE	MAP7 domain-containing protein 1	Mus musculus (Mouse)	846	Map7d1
+A2AN08	A2AN08	reviewed	UBR4_MOUSE	E3 ubiquitin-protein ligase UBR4 (EC 2.3.2.27) (N-recognin-4)	Mus musculus (Mouse)	5180	Ubr4
+A2ASS6	A2ASS6	reviewed	TITIN_MOUSE	Titin (EC 2.7.11.1) (Connectin)	Mus musculus (Mouse)	35213	Ttn
+B2RQC6	B2RQC6	reviewed	PYR1_MOUSE	Multifunctional protein CAD (Carbamoyl phosphate synthetase 2-aspartate transcarbamylase-dihydroorotase) [Includes: Glutamine-dependent carbamoyl-phosphate synthase (EC 6.3.5.5); Glutamine amidotransferase (GATase) (GLNase) (EC 3.5.1.2); Ammonium-dependent carbamoyl phosphate synthase (CPS) (CPSase) (EC 6.3.4.16); Aspartate carbamoyltransferase (EC 2.1.3.2); Dihydroorotase (EC 3.5.2.3)]	Mus musculus (Mouse)	2225	Cad
+B2RR83	B2RR83	reviewed	YTDC2_MOUSE	3'-5' RNA helicase YTHDC2 (EC 3.6.4.13) (Keen to exit meiosis leaving testes under-populated protein) (Ketu) (YTH domain-containing protein C2) (mYTHDC2)	Mus musculus (Mouse)	1445	Ythdc2
+B2RRE7	B2RRE7	reviewed	OTUD4_MOUSE	OTU domain-containing protein 4 (EC 3.4.19.12)	Mus musculus (Mouse)	1107	Otud4
+B9EJ86	B9EJ86	reviewed	OSBL8_MOUSE	Oxysterol-binding protein-related protein 8 (ORP-8) (OSBP-related protein 8)	Mus musculus (Mouse)	889	Osbpl8
+C0HKE4	C0HKE4	reviewed	H2A1E_MOUSE	Histone H2A type 1-E	Mus musculus (Mouse)	130	H2ac8
+E1U8D0	E1U8D0	reviewed	MTCL2_MOUSE	Microtubule cross-linking factor 2 (SOGA family member 1) (Suppressor of glucose by autophagy) (Suppressor of glucose, autophagy-associated protein 1) [Cleaved into: N-terminal form; C-terminal 80 kDa form (80-kDa SOGA fragment)]	Mus musculus (Mouse)	1654	Mtcl2
+E9Q5C9	E9Q5C9	reviewed	NOLC1_MOUSE	Nucleolar and coiled-body phosphoprotein 1 (140 kDa nucleolar phosphoprotein) (Nopp140)	Mus musculus (Mouse)	702	Nolc1
+E9Q8I9	E9Q8I9	reviewed	FRY_MOUSE	Protein furry homolog	Mus musculus (Mouse)	3020	Fry
+F8VPU2	F8VPU2	reviewed	FARP1_MOUSE	FERM, ARHGEF and pleckstrin domain-containing protein 1 (FERM, RhoGEF and pleckstrin domain-containing protein 1)	Mus musculus (Mouse)	1048	Farp1
+G5E870	G5E870	reviewed	TRIPC_MOUSE	E3 ubiquitin-protein ligase TRIP12 (EC 2.3.2.26) (HECT-type E3 ubiquitin transferase TRIP12) (Thyroid receptor-interacting protein 12) (TR-interacting protein 12) (TRIP-12)	Mus musculus (Mouse)	2025	Trip12
+O08553	O08553	reviewed	DPYL2_MOUSE	Dihydropyrimidinase-related protein 2 (DRP-2) (Unc-33-like phosphoprotein 2) (ULIP-2)	Mus musculus (Mouse)	572	Dpysl2
+O08579	O08579	reviewed	EMD_MOUSE	Emerin	Mus musculus (Mouse)	259	Emd
+O08586	O08586	reviewed	PTEN_MOUSE	Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase and dual-specificity protein phosphatase PTEN (EC 3.1.3.16) (EC 3.1.3.48) (EC 3.1.3.67) (Inositol polyphosphate 3-phosphatase) (EC 3.1.3.-) (Mutated in multiple advanced cancers 1) (Phosphatase and tensin homolog)	Mus musculus (Mouse)	403	Pten
+O08784	O08784	reviewed	TCOF_MOUSE	Treacle protein (Treacher Collins syndrome protein homolog)	Mus musculus (Mouse)	1320	Tcof1
+O08810	O08810	reviewed	U5S1_MOUSE	116 kDa U5 small nuclear ribonucleoprotein component (Elongation factor Tu GTP-binding domain-containing protein 2) (U5 snRNP-specific protein, 116 kDa) (U5-116 kDa)	Mus musculus (Mouse)	971	Eftud2
+O08967	O08967	reviewed	CYH3_MOUSE	Cytohesin-3 (ARF nucleotide-binding site opener 3) (Protein ARNO3) (General receptor of phosphoinositides 1) (Grp1) (PH, SEC7 and coiled-coil domain-containing protein 3) (CLM3) (SEC7 homolog C) (mSec7-3)	Mus musculus (Mouse)	399	Cyth3
+O09012	O09012	reviewed	PEX5_MOUSE	Peroxisomal targeting signal 1 receptor (PTS1 receptor) (PTS1R) (PTS1-BP) (PXR1P) (Peroxin-5) (Peroxisomal C-terminal targeting signal import receptor) (Peroxisome receptor 1)	Mus musculus (Mouse)	639	Pex5
+O09106	O09106	reviewed	HDAC1_MOUSE	Histone deacetylase 1 (HD1) (EC 3.5.1.98) (Protein deacetylase HDAC1) (EC 3.5.1.-) (Protein deacylase HDAC1) (EC 3.5.1.-)	Mus musculus (Mouse)	482	Hdac1
+O09131	O09131	reviewed	GSTO1_MOUSE	Glutathione S-transferase omega-1 (GSTO-1) (EC 2.5.1.18) (Glutathione S-transferase omega 1-1) (GSTO 1-1) (Glutathione-dependent dehydroascorbate reductase) (EC 1.8.5.1) (Monomethylarsonic acid reductase) (MMA(V) reductase) (EC 1.20.4.2) (S-(Phenacyl)glutathione reductase) (SPG-R) (p28)	Mus musculus (Mouse)	240	Gsto1
+O09167	O09167	reviewed	RL21_MOUSE	Large ribosomal subunit protein eL21 (60S ribosomal protein L21)	Mus musculus (Mouse)	160	Rpl21
+O35127	O35127	reviewed	C10_MOUSE	Protein C10	Mus musculus (Mouse)	126	Grcc10
+O35250	O35250	reviewed	EXOC7_MOUSE	Exocyst complex component 7 (Exocyst complex component Exo70)	Mus musculus (Mouse)	697	Exoc7
+O35286	O35286	reviewed	DHX15_MOUSE	ATP-dependent RNA helicase DHX15 (EC 3.6.4.13) (DEAH box protein 15)	Mus musculus (Mouse)	795	Dhx15
+O35326	O35326	reviewed	SRSF5_MOUSE	Serine/arginine-rich splicing factor 5 (Delayed-early protein HRS) (Pre-mRNA-splicing factor SRP40) (Splicing factor, arginine/serine-rich 5)	Mus musculus (Mouse)	269	Srsf5
+O35382	O35382	reviewed	EXOC4_MOUSE	Exocyst complex component 4 (Exocyst complex component Sec8)	Mus musculus (Mouse)	975	Exoc4
+O35709	O35709	reviewed	ENC1_MOUSE	Ectoderm-neural cortex protein 1 (ENC-1)	Mus musculus (Mouse)	589	Enc1
+O35737	O35737	reviewed	HNRH1_MOUSE	Heterogeneous nuclear ribonucleoprotein H (hnRNP H) [Cleaved into: Heterogeneous nuclear ribonucleoprotein H, N-terminally processed]	Mus musculus (Mouse)	449	Hnrnph1
+O35927	O35927	reviewed	CTND2_MOUSE	Catenin delta-2 (Neural plakophilin-related ARM-repeat protein) (NPRAP) (Neurojungin)	Mus musculus (Mouse)	1247	Ctnnd2
+O54774	O54774	reviewed	AP3D1_MOUSE	AP-3 complex subunit delta-1 (AP-3 complex subunit delta) (Adaptor-related protein complex 3 subunit delta-1) (Delta-adaptin) (mBLVR1)	Mus musculus (Mouse)	1199	Ap3d1
+O54781	O54781	reviewed	SRPK2_MOUSE	SRSF protein kinase 2 (EC 2.7.11.1) (SFRS protein kinase 2) (Serine/arginine-rich protein-specific kinase 2) (SR-protein-specific kinase 2) [Cleaved into: SRSF protein kinase 2 N-terminal; SRSF protein kinase 2 C-terminal]	Mus musculus (Mouse)	681	Srpk2
+O54865	O54865	reviewed	GCYB1_MOUSE	Guanylate cyclase soluble subunit beta-1 (GCS-beta-1) (EC 4.6.1.2) (Guanylate cyclase soluble subunit beta-3) (GCS-beta-3) (Soluble guanylate cyclase small subunit)	Mus musculus (Mouse)	620	Gucy1b1
+O55029	O55029	reviewed	COPB2_MOUSE	Coatomer subunit beta' (Beta'-coat protein) (Beta'-COP) (p102)	Mus musculus (Mouse)	905	Copb2
+O55135	O55135	reviewed	IF6_MOUSE	Eukaryotic translation initiation factor 6 (eIF-6) (B4 integrin interactor) (CAB) (p27(BBP))	Mus musculus (Mouse)	245	Eif6
+O55142	O55142	reviewed	RL35A_MOUSE	Large ribosomal subunit protein eL33 (60S ribosomal protein L35a)	Mus musculus (Mouse)	110	Rpl35a
+O70305	O70305	reviewed	ATX2_MOUSE	Ataxin-2 (Spinocerebellar ataxia type 2 protein homolog)	Mus musculus (Mouse)	1285	Atxn2
+O70311	O70311	reviewed	NMT2_MOUSE	Glycylpeptide N-tetradecanoyltransferase 2 (EC 2.3.1.97) (Myristoyl-CoA:protein N-myristoyltransferase 2) (NMT 2) (Peptide N-myristoyltransferase 2) (Type II N-myristoyltransferase)	Mus musculus (Mouse)	529	Nmt2
+O70551	O70551	reviewed	SRPK1_MOUSE	SRSF protein kinase 1 (EC 2.7.11.1) (SFRS protein kinase 1) (Serine/arginine-rich protein-specific kinase 1) (SR-protein-specific kinase 1)	Mus musculus (Mouse)	648	Srpk1
+O88196	O88196	reviewed	TTC3_MOUSE	E3 ubiquitin-protein ligase TTC3 (EC 2.3.2.27) (RING-type E3 ubiquitin transferase TTC3) (TPR repeat protein D) (Mtprd)	Mus musculus (Mouse)	1979	Ttc3
+O88448	O88448	reviewed	KLC2_MOUSE	Kinesin light chain 2 (KLC 2)	Mus musculus (Mouse)	599	Klc2
+O88477	O88477	reviewed	IF2B1_MOUSE	Insulin-like growth factor 2 mRNA-binding protein 1 (IGF2 mRNA-binding protein 1) (IMP-1) (Coding region determinant-binding protein) (CRD-BP) (IGF-II mRNA-binding protein 1) (VICKZ family member 1) (Zipcode-binding protein 1) (ZBP-1)	Mus musculus (Mouse)	577	Igf2bp1
+O88783	O88783	reviewed	FA5_MOUSE	Coagulation factor V (Activated protein C cofactor) [Cleaved into: Coagulation factor V heavy chain; Coagulation factor V light chain]	Mus musculus (Mouse)	2183	F5
+O88809	O88809	reviewed	DCX_MOUSE	Neuronal migration protein doublecortin (Doublin) (Lissencephalin-X) (Lis-X)	Mus musculus (Mouse)	366	Dcx
+P01027	P01027	reviewed	CO3_MOUSE	Complement C3 (HSE-MSF) [Cleaved into: Complement C3 beta chain; C3-beta-c (C3bc); Complement C3 alpha chain; C3a anaphylatoxin; Acylation stimulating protein (ASP) (C3adesArg); Complement C3b alpha' chain; Complement C3c alpha' chain fragment 1; Complement C3dg fragment; Complement C3g fragment; Complement C3d fragment; Complement C3f fragment; Complement C3c alpha' chain fragment 2]	Mus musculus (Mouse)	1663	C3
+P01029	P01029	reviewed	CO4B_MOUSE	Complement C4-B [Cleaved into: Complement C4 beta chain; Complement C4 alpha chain; C4a anaphylatoxin; Complement C4 gamma chain]	Mus musculus (Mouse)	1738	C4b
+P01631	P01631	reviewed	KV2A7_MOUSE	Ig kappa chain V-II region 26-10	Mus musculus (Mouse)	113	
+P01633	P01633	reviewed	KV5A1_MOUSE	Immunoglobulin kappa chain variable 6-17 (Ig kappa chain V-V region MPC11) (Ig kappa chain V19-17)	Mus musculus (Mouse)	149	Igkv6-17
+P01634	P01634	reviewed	KV5A2_MOUSE	Ig kappa chain V-V region MOPC 21	Mus musculus (Mouse)	136	
+P01647	P01647	reviewed	KV5AE_MOUSE	Ig kappa chain V-V region HP 124E1	Mus musculus (Mouse)	108	
+P01657	P01657	reviewed	KV3A5_MOUSE	Ig kappa chain V-III region PC 2413	Mus musculus (Mouse)	111	
+P01837	P01837	reviewed	IGKC_MOUSE	Immunoglobulin kappa constant (Ig kappa chain C region MOPC 21)	Mus musculus (Mouse)	107	Igkc
+P01865	P01865	reviewed	GCAM_MOUSE	Immunoglobulin heavy constant gamma 2A (Ig gamma-2A chain C region, membrane-bound form)	Mus musculus (Mouse)	398	Ighg2a
+P01867	P01867	reviewed	IGG2B_MOUSE	Immunoglobulin heavy constant gamma 2B (Ig gamma-2B chain C region)	Mus musculus (Mouse)	404	Ighg2b
+P01869	P01869	reviewed	IGH1M_MOUSE	Ig gamma-1 chain C region, membrane-bound form	Mus musculus (Mouse)	393	Ighg1
+P02088	P02088	reviewed	HBB1_MOUSE	Hemoglobin subunit beta-1 (Beta-1-globin) (Hemoglobin beta-1 chain) (Hemoglobin beta-major chain)	Mus musculus (Mouse)	147	Hbb-b1
+P02301	P02301	reviewed	H3C_MOUSE	Histone H3.3C (Embryonic)	Mus musculus (Mouse)	136	H3-5
+P02468	P02468	reviewed	LAMC1_MOUSE	Laminin subunit gamma-1 (Laminin B2 chain) (Laminin-1 subunit gamma) (Laminin-10 subunit gamma) (Laminin-11 subunit gamma) (Laminin-2 subunit gamma) (Laminin-3 subunit gamma) (Laminin-4 subunit gamma) (Laminin-6 subunit gamma) (Laminin-7 subunit gamma) (Laminin-8 subunit gamma) (Laminin-9 subunit gamma) (S-laminin subunit gamma) (S-LAM gamma)	Mus musculus (Mouse)	1607	Lamc1
+P04443	P04443	reviewed	HBB0_MOUSE	Hemoglobin subunit beta-H0 (Beta-H0-globin) (Hemoglobin beta-H0 chain)	Mus musculus (Mouse)	147	Hbb-bh0
+P05132	P05132	reviewed	KAPCA_MOUSE	cAMP-dependent protein kinase catalytic subunit alpha (PKA C-alpha) (EC 2.7.11.11)	Mus musculus (Mouse)	351	Prkaca
+P05213	P05213	reviewed	TBA1B_MOUSE	Tubulin alpha-1B chain (EC 3.6.5.-) (Alpha-tubulin 2) (Alpha-tubulin isotype M-alpha-2) (Tubulin alpha-2 chain) [Cleaved into: Detyrosinated tubulin alpha-1B chain]	Mus musculus (Mouse)	451	Tuba1b
+P07356	P07356	reviewed	ANXA2_MOUSE	Annexin A2 (Annexin II) (Annexin-2) (Calpactin I heavy chain) (Calpactin-1 heavy chain) (Chromobindin-8) (Lipocortin II) (Placental anticoagulant protein IV) (PAP-IV) (Protein I) (p36)	Mus musculus (Mouse)	339	Anxa2
+P07901	P07901	reviewed	HS90A_MOUSE	Heat shock protein HSP 90-alpha (EC 3.6.4.10) (Heat shock 86 kDa) (HSP 86) (HSP86) (Tumor-specific transplantation 86 kDa antigen) (TSTA)	Mus musculus (Mouse)	733	Hsp90aa1
+P08113	P08113	reviewed	ENPL_MOUSE	Endoplasmin (94 kDa glucose-regulated protein) (GRP-94) (Endoplasmic reticulum resident protein 99) (ERp99) (Heat shock protein 90 kDa beta member 1) (Polymorphic tumor rejection antigen 1) (Tumor rejection antigen gp96)	Mus musculus (Mouse)	802	Hsp90b1
+P08207	P08207	reviewed	S10AA_MOUSE	Protein S100-A10 (Calpactin I light chain) (Calpactin-1 light chain) (Cellular ligand of annexin II) (S100 calcium-binding protein A10) (p10 protein) (p11)	Mus musculus (Mouse)	97	S100a10
+P08414	P08414	reviewed	KCC4_MOUSE	Calcium/calmodulin-dependent protein kinase type IV (CaMK IV) (EC 2.7.11.17) (CaM kinase-GR)	Mus musculus (Mouse)	469	Camk4
+P08553	P08553	reviewed	NFM_MOUSE	Neurofilament medium polypeptide (NF-M) (160 kDa neurofilament protein) (Neurofilament 3) (Neurofilament triplet M protein)	Mus musculus (Mouse)	848	Nefm
+P09405	P09405	reviewed	NUCL_MOUSE	Nucleolin (Protein C23)	Mus musculus (Mouse)	707	Ncl
+P0C090	P0C090	reviewed	RC3H2_MOUSE	Roquin-2 (EC 2.3.2.27) (Membrane-associated nucleic acid-binding protein) (RING finger and CCCH-type zinc finger domain-containing protein 2) (RING-type E3 ubiquitin transferase Roquin-2)	Mus musculus (Mouse)	1187	Rc3h2
+P10126	P10126	reviewed	EF1A1_MOUSE	Elongation factor 1-alpha 1 (EF-1-alpha-1) (EC 3.6.5.-) (Elongation factor Tu) (EF-Tu) (Eukaryotic elongation factor 1 A-1) (eEF1A-1)	Mus musculus (Mouse)	462	Eef1a1
+P10493	P10493	reviewed	NID1_MOUSE	Nidogen-1 (NID-1) (Entactin)	Mus musculus (Mouse)	1245	Nid1
+P10630	P10630	reviewed	IF4A2_MOUSE	Eukaryotic initiation factor 4A-II (eIF-4A-II) (eIF4A-II) (EC 3.6.4.13) (ATP-dependent RNA helicase eIF4A-2)	Mus musculus (Mouse)	407	Eif4a2
+P10853	P10853	reviewed	H2B1F_MOUSE	Histone H2B type 1-F/J/L (H2B 291A)	Mus musculus (Mouse)	126	H2bc7; H2bc11; H2bc13; H2bc15
+P11031	P11031	reviewed	TCP4_MOUSE	Activated RNA polymerase II transcriptional coactivator p15 (Positive cofactor 4) (PC4) (SUB1 homolog) (Single-stranded DNA-binding protein p9) (p14)	Mus musculus (Mouse)	127	Sub1
+P11499	P11499	reviewed	HS90B_MOUSE	Heat shock protein HSP 90-beta (Heat shock 84 kDa) (HSP 84) (HSP84) (Tumor-specific transplantation 84 kDa antigen) (TSTA)	Mus musculus (Mouse)	724	Hsp90ab1
+P11798	P11798	reviewed	KCC2A_MOUSE	Calcium/calmodulin-dependent protein kinase type II subunit alpha (CaM kinase II subunit alpha) (CaMK-II subunit alpha) (EC 2.7.11.17)	Mus musculus (Mouse)	478	Camk2a
+P11983	P11983	reviewed	TCPA_MOUSE	T-complex protein 1 subunit alpha (TCP-1-alpha) (CCT-alpha) (Tailless complex polypeptide 1A) (TCP-1-A) (Tailless complex polypeptide 1B) (TCP-1-B)	Mus musculus (Mouse)	556	Tcp1
+P12367	P12367	reviewed	KAP2_MOUSE	cAMP-dependent protein kinase type II-alpha regulatory subunit	Mus musculus (Mouse)	401	Prkar2a
+P12849	P12849	reviewed	KAP1_MOUSE	cAMP-dependent protein kinase type I-beta regulatory subunit	Mus musculus (Mouse)	381	Prkar1b
+P12970	P12970	reviewed	RL7A_MOUSE	Large ribosomal subunit protein eL8 (60S ribosomal protein L7a) (Surfeit locus protein 3)	Mus musculus (Mouse)	266	Rpl7a
+P14106	P14106	reviewed	C1QB_MOUSE	Complement C1q subcomponent subunit B	Mus musculus (Mouse)	253	C1qb
+P14115	P14115	reviewed	RL27A_MOUSE	Large ribosomal subunit protein uL15 (60S ribosomal protein L27a) (L29)	Mus musculus (Mouse)	148	Rpl27a
+P14131	P14131	reviewed	RS16_MOUSE	Small ribosomal subunit protein uS9 (40S ribosomal protein S16)	Mus musculus (Mouse)	146	Rps16
+P14148	P14148	reviewed	RL7_MOUSE	Large ribosomal subunit protein uL30 (60S ribosomal protein L7)	Mus musculus (Mouse)	270	Rpl7
+P14206	P14206	reviewed	RSSA_MOUSE	Small ribosomal subunit protein uS2 (37 kDa laminin receptor precursor) (37LRP) (37 kDa oncofetal antigen) (37/67 kDa laminin receptor) (LRP/LR) (40S ribosomal protein SA) (67 kDa laminin receptor) (67LR) (Laminin receptor 1) (LamR) (Laminin-binding protein precursor p40) (LBP/p40) (OFA/iLRP)	Mus musculus (Mouse)	295	Rpsa
+P14211	P14211	reviewed	CALR_MOUSE	Calreticulin (CRP55) (Calregulin) (Endoplasmic reticulum resident protein 60) (ERp60) (HACBP)	Mus musculus (Mouse)	416	Calr
+P14869	P14869	reviewed	RLA0_MOUSE	Large ribosomal subunit protein uL10 (60S acidic ribosomal protein P0) (60S ribosomal protein L10E)	Mus musculus (Mouse)	317	Rplp0
+P14873	P14873	reviewed	MAP1B_MOUSE	Microtubule-associated protein 1B (MAP-1B) (MAP1(X)) (MAP1.2) [Cleaved into: MAP1B heavy chain; MAP1 light chain LC1]	Mus musculus (Mouse)	2464	Map1b
+P16054	P16054	reviewed	KPCE_MOUSE	Protein kinase C epsilon type (EC 2.7.11.13) (nPKC-epsilon)	Mus musculus (Mouse)	737	Prkce
+P16546	P16546	reviewed	SPTN1_MOUSE	Spectrin alpha chain, non-erythrocytic 1 (Alpha-II spectrin) (Fodrin alpha chain)	Mus musculus (Mouse)	2472	Sptan1
+P16858	P16858	reviewed	G3P_MOUSE	Glyceraldehyde-3-phosphate dehydrogenase (GAPDH) (EC 1.2.1.12) (Peptidyl-cysteine S-nitrosylase GAPDH) (EC 2.6.99.-)	Mus musculus (Mouse)	333	Gapdh
+P17182	P17182	reviewed	ENOA_MOUSE	Alpha-enolase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lyase) (Enolase 1) (Non-neural enolase) (NNE)	Mus musculus (Mouse)	434	Eno1
+P17427	P17427	reviewed	AP2A2_MOUSE	AP-2 complex subunit alpha-2 (100 kDa coated vesicle protein C) (Adaptor protein complex AP-2 subunit alpha-2) (Adaptor-related protein complex 2 subunit alpha-2) (Alpha-adaptin C) (Alpha2-adaptin) (Clathrin assembly protein complex 2 alpha-C large chain) (Plasma membrane adaptor HA2/AP2 adaptin alpha C subunit)	Mus musculus (Mouse)	938	Ap2a2
+P18524	P18524	reviewed	HVM53_MOUSE	Ig heavy chain V region RF	Mus musculus (Mouse)	117	
+P18525	P18525	reviewed	HVM54_MOUSE	Ig heavy chain V region 5-84	Mus musculus (Mouse)	117	
+P18527	P18527	reviewed	HVM56_MOUSE	Ig heavy chain V region 914	Mus musculus (Mouse)	97	
+P18760	P18760	reviewed	COF1_MOUSE	Cofilin-1 (Cofilin, non-muscle isoform)	Mus musculus (Mouse)	166	Cfl1
+P19096	P19096	reviewed	FAS_MOUSE	Fatty acid synthase (EC 2.3.1.85) (Type I Fatty Acid Synthase) [Includes: [Acyl-carrier-protein] S-acetyltransferase (EC 2.3.1.38); [Acyl-carrier-protein] S-malonyltransferase (EC 2.3.1.39); 3-oxoacyl-[acyl-carrier-protein] synthase (EC 2.3.1.41); 3-oxoacyl-[acyl-carrier-protein] reductase (EC 1.1.1.100); 3-hydroxyacyl-[acyl-carrier-protein] dehydratase (EC 4.2.1.59); Enoyl-[acyl-carrier-protein] reductase (EC 1.3.1.39); Acyl-[acyl-carrier-protein] hydrolase (EC 3.1.2.14)]	Mus musculus (Mouse)	2504	Fasn
+P19137	P19137	reviewed	LAMA1_MOUSE	Laminin subunit alpha-1 (Laminin A chain) (Laminin-1 subunit alpha) (Laminin-3 subunit alpha) (S-laminin subunit alpha) (S-LAM alpha)	Mus musculus (Mouse)	3083	Lama1
+P19182	P19182	reviewed	IFRD1_MOUSE	Interferon-related developmental regulator 1 (Nerve growth factor-inducible protein PC4) (TPA-induced sequence 7) (TIS7 protein)	Mus musculus (Mouse)	449	Ifrd1
+P19253	P19253	reviewed	RL13A_MOUSE	Large ribosomal subunit protein uL13 (60S ribosomal protein L13a) (Transplantation antigen P198) (Tum-P198 antigen)	Mus musculus (Mouse)	203	Rpl13a
+P20029	P20029	reviewed	BIP_MOUSE	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa glucose-regulated protein) (GRP-78) (Binding-immunoglobulin protein) (BiP) (Heat shock protein 70 family protein 5) (HSP70 family protein 5) (Heat shock protein family A member 5) (Immunoglobulin heavy chain-binding protein)	Mus musculus (Mouse)	655	Hspa5
+P20357	P20357	reviewed	MTAP2_MOUSE	Microtubule-associated protein 2 (MAP-2)	Mus musculus (Mouse)	1828	Map2
+P23116	P23116	reviewed	EIF3A_MOUSE	Eukaryotic translation initiation factor 3 subunit A (eIF3a) (Centrosomin) (Eukaryotic translation initiation factor 3 subunit 10) (eIF-3-theta) (eIF3 p167) (eIF3 p180) (eIF3 p185) (p162)	Mus musculus (Mouse)	1344	Eif3a
+P25444	P25444	reviewed	RS2_MOUSE	Small ribosomal subunit protein uS5 (40S ribosomal protein S2) (40S ribosomal protein S4) (Protein LLRep3)	Mus musculus (Mouse)	293	Rps2
+P25976	P25976	reviewed	UBF1_MOUSE	Nucleolar transcription factor 1 (Upstream-binding factor 1) (UBF-1)	Mus musculus (Mouse)	765	Ubtf
+P26369	P26369	reviewed	U2AF2_MOUSE	Splicing factor U2AF 65 kDa subunit (U2 auxiliary factor 65 kDa subunit) (U2 snRNP auxiliary factor large subunit)	Mus musculus (Mouse)	475	U2af2
+P27546	P27546	reviewed	MAP4_MOUSE	Microtubule-associated protein 4 (MAP-4)	Mus musculus (Mouse)	1125	Map4
+P27659	P27659	reviewed	RL3_MOUSE	Large ribosomal subunit protein uL3 (60S ribosomal protein L3) (J1 protein)	Mus musculus (Mouse)	403	Rpl3
+P27773	P27773	reviewed	PDIA3_MOUSE	Protein disulfide-isomerase A3 (EC 5.3.4.1) (58 kDa glucose-regulated protein) (58 kDa microsomal protein) (p58) (Disulfide isomerase ER-60) (Endoplasmic reticulum resident protein 57) (ER protein 57) (ERp57) (Endoplasmic reticulum resident protein 60) (ER protein 60) (ERp60)	Mus musculus (Mouse)	505	Pdia3
+P28652	P28652	reviewed	KCC2B_MOUSE	Calcium/calmodulin-dependent protein kinase type II subunit beta (CaM kinase II subunit beta) (CaMK-II subunit beta) (EC 2.7.11.17)	Mus musculus (Mouse)	542	Camk2b
+P28656	P28656	reviewed	NP1L1_MOUSE	Nucleosome assembly protein 1-like 1 (Brain protein DN38) (NAP-1-related protein)	Mus musculus (Mouse)	391	Nap1l1
+P28658	P28658	reviewed	ATX10_MOUSE	Ataxin-10 (Brain protein E46) (Spinocerebellar ataxia type 10 protein homolog)	Mus musculus (Mouse)	475	Atxn10
+P28659	P28659	reviewed	CELF1_MOUSE	CUGBP Elav-like family member 1 (CELF-1) (50 kDa nuclear polyadenylated RNA-binding protein) (Brain protein F41) (Bruno-like protein 2) (CUG triplet repeat RNA-binding protein 1) (CUG-BP1) (CUG-BP- and ETR-3-like factor 1) (Deadenylation factor CUG-BP) (Deadenylation factor EDEN-BP) (Embryo deadenylation element-binding protein homolog) (EDEN-BP homolog) (RNA-binding protein BRUNOL-2)	Mus musculus (Mouse)	486	Celf1
+P28741	P28741	reviewed	KIF3A_MOUSE	Kinesin-like protein KIF3A (Microtubule plus end-directed kinesin motor 3A)	Mus musculus (Mouse)	701	Kif3a
+P29341	P29341	reviewed	PABP1_MOUSE	Polyadenylate-binding protein 1 (PABP-1) (Poly(A)-binding protein 1)	Mus musculus (Mouse)	636	Pabpc1
+P31230	P31230	reviewed	AIMP1_MOUSE	Aminoacyl tRNA synthase complex-interacting multifunctional protein 1 (Multisynthase complex auxiliary component p43) [Cleaved into: Endothelial monocyte-activating polypeptide 2 (EMAP-2) (Endothelial monocyte-activating polypeptide II) (EMAP-II) (Small inducible cytokine subfamily E member 1)]	Mus musculus (Mouse)	310	Aimp1
+P31324	P31324	reviewed	KAP3_MOUSE	cAMP-dependent protein kinase type II-beta regulatory subunit	Mus musculus (Mouse)	416	Prkar2b
+P31750	P31750	reviewed	AKT1_MOUSE	RAC-alpha serine/threonine-protein kinase (EC 2.7.11.1) (AKT1 kinase) (Protein kinase B) (PKB) (Protein kinase B alpha) (PKB alpha) (Proto-oncogene c-Akt) (RAC-PK-alpha) (Thymoma viral proto-oncogene)	Mus musculus (Mouse)	480	Akt1
+P32067	P32067	reviewed	LA_MOUSE	Lupus La protein homolog (La autoantigen homolog) (La ribonucleoprotein)	Mus musculus (Mouse)	415	Ssb
+P33173	P33173	reviewed	KIF1A_MOUSE	Kinesin-like protein KIF1A (Axonal transporter of synaptic vesicles)	Mus musculus (Mouse)	1695	Kif1a
+P35492	P35492	reviewed	HUTH_MOUSE	Histidine ammonia-lyase (Histidase) (EC 4.3.1.3)	Mus musculus (Mouse)	657	Hal
+P35550	P35550	reviewed	FBRL_MOUSE	rRNA 2'-O-methyltransferase fibrillarin (EC 2.1.1.-) (Histone-glutamine methyltransferase) (Nucleolar protein 1) (U6 snRNA 2'-O-methyltransferase fibrillarin)	Mus musculus (Mouse)	327	Fbl
+P35564	P35564	reviewed	CALX_MOUSE	Calnexin	Mus musculus (Mouse)	591	Canx
+P35922	P35922	reviewed	FMR1_MOUSE	Fragile X messenger ribonucleoprotein 1 (Fragile X messenger ribonucleoprotein) (FMRP) (Protein FMR-1) (mFmr1p)	Mus musculus (Mouse)	614	Fmr1
+P35979	P35979	reviewed	RL12_MOUSE	Large ribosomal subunit protein uL11 (60S ribosomal protein L12)	Mus musculus (Mouse)	165	Rpl12
+P35980	P35980	reviewed	RL18_MOUSE	Large ribosomal subunit protein eL18 (60S ribosomal protein L18)	Mus musculus (Mouse)	188	Rpl18
+P39053	P39053	reviewed	DYN1_MOUSE	Dynamin-1 (EC 3.6.5.5) (Dynamin) (Dynamin I)	Mus musculus (Mouse)	867	Dnm1
+P39054	P39054	reviewed	DYN2_MOUSE	Dynamin-2 (EC 3.6.5.5) (Dynamin UDNM)	Mus musculus (Mouse)	870	Dnm2
+P41105	P41105	reviewed	RL28_MOUSE	Large ribosomal subunit protein eL28 (60S ribosomal protein L28)	Mus musculus (Mouse)	137	Rpl28
+P42669	P42669	reviewed	PURA_MOUSE	Transcriptional activator protein Pur-alpha (Purine-rich single-stranded DNA-binding protein alpha)	Mus musculus (Mouse)	321	Pura
+P46460	P46460	reviewed	NSF_MOUSE	Vesicle-fusing ATPase (EC 3.6.4.6) (N-ethylmaleimide-sensitive fusion protein) (NEM-sensitive fusion protein) (Suppressor of K(+) transport growth defect 2) (Protein SKD2) (Vesicular-fusion protein NSF)	Mus musculus (Mouse)	744	Nsf
+P46735	P46735	reviewed	MYO1B_MOUSE	Unconventional myosin-Ib (MIH-L) (Myosin I alpha) (MMI-alpha) (MMIa)	Mus musculus (Mouse)	1107	Myo1b
+P46935	P46935	reviewed	NEDD4_MOUSE	E3 ubiquitin-protein ligase NEDD4 (EC 2.3.2.26) (HECT-type E3 ubiquitin transferase NEDD4) (Neural precursor cell expressed developmentally down-regulated protein 4) (NEDD-4)	Mus musculus (Mouse)	887	Nedd4
+P47911	P47911	reviewed	RL6_MOUSE	Large ribosomal subunit protein eL6 (60S ribosomal protein L6) (TAX-responsive enhancer element-binding protein 107) (TAXREB107)	Mus musculus (Mouse)	296	Rpl6
+P47915	P47915	reviewed	RL29_MOUSE	Large ribosomal subunit protein eL29 (60S ribosomal protein L29)	Mus musculus (Mouse)	160	Rpl29
+P47955	P47955	reviewed	RLA1_MOUSE	Large ribosomal subunit protein P1 (60S acidic ribosomal protein P1)	Mus musculus (Mouse)	114	Rplp1
+P47962	P47962	reviewed	RL5_MOUSE	Large ribosomal subunit protein uL18 (60S ribosomal protein L5)	Mus musculus (Mouse)	297	Rpl5
+P47963	P47963	reviewed	RL13_MOUSE	Large ribosomal subunit protein eL13 (60S ribosomal protein L13) (A52)	Mus musculus (Mouse)	211	Rpl13
+P47964	P47964	reviewed	RL36_MOUSE	Large ribosomal subunit protein eL36 (60S ribosomal protein L36)	Mus musculus (Mouse)	105	Rpl36
+P48774	P48774	reviewed	GSTM5_MOUSE	Glutathione S-transferase Mu 5 (EC 2.5.1.18) (Fibrous sheath component 2) (Fsc2) (GST class-mu 5)	Mus musculus (Mouse)	224	Gstm5
+P48962	P48962	reviewed	ADT1_MOUSE	ADP/ATP translocase 1 (ADP,ATP carrier protein 1) (ADP,ATP carrier protein, heart/skeletal muscle isoform T1) (Adenine nucleotide translocator 1) (ANT 1) (Solute carrier family 25 member 4)	Mus musculus (Mouse)	298	Slc25a4
+P49312	P49312	reviewed	ROA1_MOUSE	Heterogeneous nuclear ribonucleoprotein A1 (hnRNP A1) (HDP-1) (Helix-destabilizing protein) (Single-strand-binding protein) (Topoisomerase-inhibitor suppressed) (hnRNP core protein A1) [Cleaved into: Heterogeneous nuclear ribonucleoprotein A1, N-terminally processed]	Mus musculus (Mouse)	320	Hnrnpa1
+P49615	P49615	reviewed	CDK5_MOUSE	Cyclin-dependent kinase 5 (EC 2.7.11.1) (Cell division protein kinase 5) (Cyclin-dependent-like kinase 5) (Serine/threonine-protein kinase PSSALRE) (Tau protein kinase II catalytic subunit) (TPKII catalytic subunit)	Mus musculus (Mouse)	292	Cdk5
+P51410	P51410	reviewed	RL9_MOUSE	Large ribosomal subunit protein uL6 (60S ribosomal protein L9)	Mus musculus (Mouse)	192	Rpl9
+P51807	P51807	reviewed	DYLT1_MOUSE	Dynein light chain Tctex-type 1 (Activator of G-protein signaling 2) (AGS2) (T-complex testis-specific protein 1) (TCTEX-1)	Mus musculus (Mouse)	113	Dynlt1
+P51881	P51881	reviewed	ADT2_MOUSE	ADP/ATP translocase 2 (ADP,ATP carrier protein 2) (Adenine nucleotide translocator 2) (ANT 2) (Solute carrier family 25 member 5) [Cleaved into: ADP/ATP translocase 2, N-terminally processed]	Mus musculus (Mouse)	298	Slc25a5
+P52479	P52479	reviewed	UBP10_MOUSE	Ubiquitin carboxyl-terminal hydrolase 10 (EC 3.4.19.12) (Deubiquitinating enzyme 10) (Ubiquitin thioesterase 10) (Ubiquitin-specific-processing protease 10)	Mus musculus (Mouse)	792	Usp10
+P53026	P53026	reviewed	RL10A_MOUSE	Large ribosomal subunit protein uL1 (60S ribosomal protein L10a) (CSA-19) (Neural precursor cell expressed developmentally down-regulated protein 6) (NEDD-6)	Mus musculus (Mouse)	217	Rpl10a
+P54103	P54103	reviewed	DNJC2_MOUSE	DnaJ homolog subfamily C member 2 (Mouse Id associate 1) (MIDA1) (Zuotin-related factor 1)	Mus musculus (Mouse)	621	Dnajc2
+P54822	P54822	reviewed	PUR8_MOUSE	Adenylosuccinate lyase (ASL) (EC 4.3.2.2) (Adenylosuccinase) (ASase)	Mus musculus (Mouse)	484	Adsl
+P55096	P55096	reviewed	ABCD3_MOUSE	ATP-binding cassette sub-family D member 3 (EC 3.1.2.-) (EC 7.6.2.-) (68 kDa peroxisomal membrane protein) (PMP68) (70 kDa peroxisomal membrane protein) (PMP70)	Mus musculus (Mouse)	659	Abcd3
+P55194	P55194	reviewed	3BP1_MOUSE	SH3 domain-binding protein 1 (3BP-1)	Mus musculus (Mouse)	680	Sh3bp1
+P56399	P56399	reviewed	UBP5_MOUSE	Ubiquitin carboxyl-terminal hydrolase 5 (EC 3.4.19.12) (Deubiquitinating enzyme 5) (Isopeptidase T) (Ubiquitin thioesterase 5) (Ubiquitin-specific-processing protease 5)	Mus musculus (Mouse)	858	Usp5
+P56480	P56480	reviewed	ATPB_MOUSE	ATP synthase subunit beta, mitochondrial (EC 7.1.2.2) (ATP synthase F1 subunit beta)	Mus musculus (Mouse)	529	Atp5f1b
+P57724	P57724	reviewed	PCBP4_MOUSE	Poly(rC)-binding protein 4 (Alpha-CP4)	Mus musculus (Mouse)	403	Pcbp4
+P57776	P57776	reviewed	EF1D_MOUSE	Elongation factor 1-delta (EF-1-delta)	Mus musculus (Mouse)	281	Eef1d
+P58252	P58252	reviewed	EF2_MOUSE	Elongation factor 2 (EF-2) (EC 3.6.5.-)	Mus musculus (Mouse)	858	Eef2
+P60060	P60060	reviewed	SC61G_MOUSE	Protein transport protein Sec61 subunit gamma	Mus musculus (Mouse)	68	Sec61g
+P60229	P60229	reviewed	EIF3E_MOUSE	Eukaryotic translation initiation factor 3 subunit E (eIF3e) (Eukaryotic translation initiation factor 3 subunit 6) (MMTV integration site 6) (Mammary tumor-associated protein INT-6) (Viral integration site protein INT-6) (eIF-3 p48)	Mus musculus (Mouse)	445	Eif3e
+P60335	P60335	reviewed	PCBP1_MOUSE	Poly(rC)-binding protein 1 (Alpha-CP1) (Heterogeneous nuclear ribonucleoprotein E1) (hnRNP E1)	Mus musculus (Mouse)	356	Pcbp1
+P60710	P60710	reviewed	ACTB_MOUSE	Actin, cytoplasmic 1 (Beta-actin) (EC 3.6.4.-) [Cleaved into: Actin, cytoplasmic 1, N-terminally processed]	Mus musculus (Mouse)	375	Actb
+P60843	P60843	reviewed	IF4A1_MOUSE	Eukaryotic initiation factor 4A-I (eIF-4A-I) (eIF4A-I) (EC 3.6.4.13) (ATP-dependent RNA helicase eIF4A-1)	Mus musculus (Mouse)	406	Eif4a1
+P60867	P60867	reviewed	RS20_MOUSE	Small ribosomal subunit protein uS10 (40S ribosomal protein S20)	Mus musculus (Mouse)	119	Rps20
+P61161	P61161	reviewed	ARP2_MOUSE	Actin-related protein 2 (Actin-like protein 2)	Mus musculus (Mouse)	394	Actr2
+P61205	P61205	reviewed	ARF3_MOUSE	ADP-ribosylation factor 3	Mus musculus (Mouse)	181	Arf3
+P61222	P61222	reviewed	ABCE1_MOUSE	ATP-binding cassette sub-family E member 1 (RNase L inhibitor) (EC 3.6.5.-) (Ribonuclease 4 inhibitor) (RNS4I)	Mus musculus (Mouse)	599	Abce1
+P61255	P61255	reviewed	RL26_MOUSE	Large ribosomal subunit protein uL24 (60S ribosomal protein L26) (Silica-induced gene 20 protein) (SIG-20)	Mus musculus (Mouse)	145	Rpl26
+P61290	P61290	reviewed	PSME3_MOUSE	Proteasome activator complex subunit 3 (11S regulator complex subunit gamma) (REG-gamma) (Activator of multicatalytic protease subunit 3) (Ki nuclear autoantigen) (Proteasome activator 28 subunit gamma) (PA28g) (PA28gamma)	Mus musculus (Mouse)	254	Psme3
+P61327	P61327	reviewed	MGN_MOUSE	Protein mago nashi homolog	Mus musculus (Mouse)	146	Magoh
+P61358	P61358	reviewed	RL27_MOUSE	Large ribosomal subunit protein eL27 (60S ribosomal protein L27)	Mus musculus (Mouse)	136	Rpl27
+P61620	P61620	reviewed	S61A1_MOUSE	Protein transport protein Sec61 subunit alpha isoform 1 (Sec61 alpha-1)	Mus musculus (Mouse)	476	Sec61a1
+P61979	P61979	reviewed	HNRPK_MOUSE	Heterogeneous nuclear ribonucleoprotein K (hnRNP K)	Mus musculus (Mouse)	463	Hnrnpk
+P62082	P62082	reviewed	RS7_MOUSE	Small ribosomal subunit protein eS7 (40S ribosomal protein S7)	Mus musculus (Mouse)	194	Rps7
+P62141	P62141	reviewed	PP1B_MOUSE	Serine/threonine-protein phosphatase PP1-beta catalytic subunit (PP-1B) (EC 3.1.3.16) (EC 3.1.3.53)	Mus musculus (Mouse)	327	Ppp1cb
+P62242	P62242	reviewed	RS8_MOUSE	Small ribosomal subunit protein eS8 (40S ribosomal protein S8)	Mus musculus (Mouse)	208	Rps8
+P62245	P62245	reviewed	RS15A_MOUSE	Small ribosomal subunit protein uS8 (40S ribosomal protein S15a)	Mus musculus (Mouse)	130	Rps15a
+P62259	P62259	reviewed	1433E_MOUSE	14-3-3 protein epsilon (14-3-3E)	Mus musculus (Mouse)	255	Ywhae
+P62264	P62264	reviewed	RS14_MOUSE	Small ribosomal subunit protein uS11 (40S ribosomal protein S14)	Mus musculus (Mouse)	151	Rps14
+P62267	P62267	reviewed	RS23_MOUSE	Small ribosomal subunit protein uS12 (40S ribosomal protein S23)	Mus musculus (Mouse)	143	Rps23
+P62270	P62270	reviewed	RS18_MOUSE	Small ribosomal subunit protein uS13 (40S ribosomal protein S18) (Ke-3) (Ke3)	Mus musculus (Mouse)	152	Rps18
+P62274	P62274	reviewed	RS29_MOUSE	Small ribosomal subunit protein uS14 (40S ribosomal protein S29)	Mus musculus (Mouse)	56	Rps29
+P62281	P62281	reviewed	RS11_MOUSE	Small ribosomal subunit protein uS17 (40S ribosomal protein S11)	Mus musculus (Mouse)	158	Rps11
+P62301	P62301	reviewed	RS13_MOUSE	Small ribosomal subunit protein uS15 (40S ribosomal protein S13)	Mus musculus (Mouse)	151	Rps13
+P62305	P62305	reviewed	RUXE_MOUSE	Small nuclear ribonucleoprotein E (snRNP-E) (Sm protein E) (Sm-E) (SmE)	Mus musculus (Mouse)	92	Snrpe
+P62320	P62320	reviewed	SMD3_MOUSE	Small nuclear ribonucleoprotein Sm D3 (Sm-D3) (snRNP core protein D3)	Mus musculus (Mouse)	126	Snrpd3
+P62631	P62631	reviewed	EF1A2_MOUSE	Elongation factor 1-alpha 2 (EF-1-alpha-2) (Eukaryotic elongation factor 1 A-2) (eEF1A-2) (Statin-S1)	Mus musculus (Mouse)	463	Eef1a2
+P62702	P62702	reviewed	RS4X_MOUSE	Small ribosomal subunit protein eS4 (40S ribosomal protein S4, X isoform)	Mus musculus (Mouse)	263	Rps4x
+P62717	P62717	reviewed	RL18A_MOUSE	Large ribosomal subunit protein eL20 (60S ribosomal protein L18a)	Mus musculus (Mouse)	176	Rpl18a
+P62737	P62737	reviewed	ACTA_MOUSE	Actin, aortic smooth muscle (EC 3.6.4.-) (Alpha-actin-2) [Cleaved into: Actin, aortic smooth muscle, intermediate form]	Mus musculus (Mouse)	377	Acta2
+P62751	P62751	reviewed	RL23A_MOUSE	Large ribosomal subunit protein uL23 (60S ribosomal protein L23a)	Mus musculus (Mouse)	156	Rpl23a
+P62754	P62754	reviewed	RS6_MOUSE	Small ribosomal subunit protein eS6 (40S ribosomal protein S6) (Phosphoprotein NP33)	Mus musculus (Mouse)	249	Rps6
+P62806	P62806	reviewed	H4_MOUSE	Histone H4	Mus musculus (Mouse)	103	H4c1; H4c2; H4c3; H4c4; H4c6; H4c8; H4c9; H4c11; H4c12; Hist1h4m; H4c14; H4c16
+P62827	P62827	reviewed	RAN_MOUSE	GTP-binding nuclear protein Ran (EC 3.6.5.-) (GTPase Ran) (Ras-like protein TC4) (Ras-related nuclear protein)	Mus musculus (Mouse)	216	Ran
+P62830	P62830	reviewed	RL23_MOUSE	Large ribosomal subunit protein uL14 (60S ribosomal protein L23)	Mus musculus (Mouse)	140	Rpl23
+P62843	P62843	reviewed	RS15_MOUSE	Small ribosomal subunit protein uS19 (40S ribosomal protein S15) (RIG protein)	Mus musculus (Mouse)	145	Rps15
+P62849	P62849	reviewed	RS24_MOUSE	Small ribosomal subunit protein eS24 (40S ribosomal protein S24)	Mus musculus (Mouse)	133	Rps24
+P62852	P62852	reviewed	RS25_MOUSE	Small ribosomal subunit protein eS25 (40S ribosomal protein S25)	Mus musculus (Mouse)	125	Rps25
+P62855	P62855	reviewed	RS26_MOUSE	Small ribosomal subunit protein eS26 (40S ribosomal protein S26)	Mus musculus (Mouse)	115	Rps26
+P62858	P62858	reviewed	RS28_MOUSE	Small ribosomal subunit protein eS28 (40S ribosomal protein S28)	Mus musculus (Mouse)	69	Rps28
+P62862	P62862	reviewed	RS30_MOUSE	Ubiquitin-like FUBI-ribosomal protein eS30 fusion protein (FAU ubiquitin-like and ribosomal protein S30) [Cleaved into: Ubiquitin-like protein FUBI; Small ribosomal subunit protein eS30 (40S ribosomal protein S30)]	Mus musculus (Mouse)	133	Fau
+P62889	P62889	reviewed	RL30_MOUSE	Large ribosomal subunit protein eL30 (60S ribosomal protein L30)	Mus musculus (Mouse)	115	Rpl30
+P62892	P62892	reviewed	RL39_MOUSE	Large ribosomal subunit protein eL39 (60S ribosomal protein L39)	Mus musculus (Mouse)	51	Rpl39
+P62900	P62900	reviewed	RL31_MOUSE	Large ribosomal subunit protein eL31 (60S ribosomal protein L31)	Mus musculus (Mouse)	125	Rpl31
+P62908	P62908	reviewed	RS3_MOUSE	Small ribosomal subunit protein uS3 (EC 4.2.99.18) (40S ribosomal protein S3)	Mus musculus (Mouse)	243	Rps3
+P62911	P62911	reviewed	RL32_MOUSE	Large ribosomal subunit protein eL32 (60S ribosomal protein L32)	Mus musculus (Mouse)	135	Rpl32
+P62918	P62918	reviewed	RL8_MOUSE	Large ribosomal subunit protein uL2 (60S ribosomal protein L8)	Mus musculus (Mouse)	257	Rpl8
+P62960	P62960	reviewed	YBOX1_MOUSE	Y-box-binding protein 1 (YB-1) (CCAAT-binding transcription factor I subunit A) (CBF-A) (DNA-binding protein B) (DBPB) (Enhancer factor I subunit A) (EFI-A) (Nuclease-sensitive element-binding protein 1) (Y-box transcription factor)	Mus musculus (Mouse)	322	Ybx1
+P62983	P62983	reviewed	RS27A_MOUSE	Ubiquitin-ribosomal protein eS31 fusion protein (Ubiquitin carboxyl extension protein 80) [Cleaved into: Ubiquitin; Small ribosomal subunit protein eS31 (40S ribosomal protein S27a)]	Mus musculus (Mouse)	156	Rps27a
+P62996	P62996	reviewed	TRA2B_MOUSE	Transformer-2 protein homolog beta (TRA-2 beta) (TRA2-beta) (Silica-induced gene 41 protein) (SIG-41) (Splicing factor, arginine/serine-rich 10) (Transformer-2 protein homolog B)	Mus musculus (Mouse)	288	Tra2b
+P63017	P63017	reviewed	HSP7C_MOUSE	Heat shock cognate 71 kDa protein (EC 3.6.4.10) (Heat shock 70 kDa protein 8)	Mus musculus (Mouse)	646	Hspa8
+P63034	P63034	reviewed	CYH2_MOUSE	Cytohesin-2 (ARF nucleotide-binding site opener) (Protein ARNO) (PH, SEC7 and coiled-coil domain-containing protein 2) (CLM2) (SEC7 homolog B) (mSec7-2)	Mus musculus (Mouse)	400	Cyth2
+P63037	P63037	reviewed	DNJA1_MOUSE	DnaJ homolog subfamily A member 1 (DnaJ protein homolog 2) (Heat shock 40 kDa protein 4) (Heat shock protein J2) (HSJ-2)	Mus musculus (Mouse)	397	Dnaja1
+P63073	P63073	reviewed	IF4E_MOUSE	Eukaryotic translation initiation factor 4E (eIF-4E) (eIF4E) (mRNA cap-binding protein) (eIF-4F 25 kDa subunit)	Mus musculus (Mouse)	217	Eif4e
+P63158	P63158	reviewed	HMGB1_MOUSE	High mobility group protein B1 (High mobility group protein 1) (HMG-1)	Mus musculus (Mouse)	215	Hmgb1
+P63163	P63163	reviewed	RSMN_MOUSE	Small nuclear ribonucleoprotein-associated protein N (snRNP-N) (Sm protein D) (Sm-D) (Sm protein N) (Sm-N) (SmN) (Tissue-specific-splicing protein)	Mus musculus (Mouse)	240	Snrpn
+P63242	P63242	reviewed	IF5A1_MOUSE	Eukaryotic translation initiation factor 5A-1 (eIF-5A-1) (eIF-5A1) (Eukaryotic initiation factor 5A isoform 1) (eIF-5A) (eIF-4D)	Mus musculus (Mouse)	154	Eif5a
+P63276	P63276	reviewed	RS17_MOUSE	Small ribosomal subunit protein eS17 (40S ribosomal protein S17)	Mus musculus (Mouse)	135	Rps17
+P63318	P63318	reviewed	KPCG_MOUSE	Protein kinase C gamma type (PKC-gamma) (EC 2.7.11.13)	Mus musculus (Mouse)	697	Prkcg
+P63323	P63323	reviewed	RS12_MOUSE	Small ribosomal subunit protein eS12 (40S ribosomal protein S12)	Mus musculus (Mouse)	132	Rps12
+P63325	P63325	reviewed	RS10_MOUSE	Small ribosomal subunit protein eS10 (40S ribosomal protein S10)	Mus musculus (Mouse)	165	Rps10
+P67871	P67871	reviewed	CSK2B_MOUSE	Casein kinase II subunit beta (CK II beta) (Phosvitin)	Mus musculus (Mouse)	215	Csnk2b
+P67984	P67984	reviewed	RL22_MOUSE	Large ribosomal subunit protein eL22 (60S ribosomal protein L22) (Heparin-binding protein HBp15)	Mus musculus (Mouse)	128	Rpl22
+P68033	P68033	reviewed	ACTC_MOUSE	Actin, alpha cardiac muscle 1 (EC 3.6.4.-) (Alpha-cardiac actin) [Cleaved into: Actin, alpha cardiac muscle 1, intermediate form]	Mus musculus (Mouse)	377	Actc1
+P68040	P68040	reviewed	RACK1_MOUSE	Small ribosomal subunit protein RACK1 (12-3) (Guanine nucleotide-binding protein subunit beta-2-like 1) (Receptor for activated C kinase) (Receptor of activated protein C kinase 1) (Receptor of activated protein kinase C 1) (p205) [Cleaved into: Small ribosomal subunit protein RACK1, N-terminally processed (Guanine nucleotide-binding protein subunit beta-2-like 1, N-terminally processed) (Receptor of activated protein C kinase 1, N-terminally processed)]	Mus musculus (Mouse)	317	Rack1
+P68181	P68181	reviewed	KAPCB_MOUSE	cAMP-dependent protein kinase catalytic subunit beta (PKA C-beta) (EC 2.7.11.11)	Mus musculus (Mouse)	351	Prkacb
+P68369	P68369	reviewed	TBA1A_MOUSE	Tubulin alpha-1A chain (EC 3.6.5.-) (Alpha-tubulin 1) (Alpha-tubulin isotype M-alpha-1) (Tubulin alpha-1 chain) [Cleaved into: Detyrosinated tubulin alpha-1A chain]	Mus musculus (Mouse)	451	Tuba1a
+P68373	P68373	reviewed	TBA1C_MOUSE	Tubulin alpha-1C chain (EC 3.6.5.-) (Alpha-tubulin 6) (Alpha-tubulin isotype M-alpha-6) (Tubulin alpha-6 chain) [Cleaved into: Detyrosinated tubulin alpha-1C chain]	Mus musculus (Mouse)	449	Tuba1c
+P70188	P70188	reviewed	KIFA3_MOUSE	Kinesin-associated protein 3 (KAP-3) (KAP3)	Mus musculus (Mouse)	793	Kifap3
+P70288	P70288	reviewed	HDAC2_MOUSE	Histone deacetylase 2 (HD2) (EC 3.5.1.98) (Protein deacylase HDAC2) (EC 3.5.1.-) (YY1 transcription factor-binding protein)	Mus musculus (Mouse)	488	Hdac2
+P70333	P70333	reviewed	HNRH2_MOUSE	Heterogeneous nuclear ribonucleoprotein H2 (hnRNP H2) (Heterogeneous nuclear ribonucleoprotein H') (hnRNP H') [Cleaved into: Heterogeneous nuclear ribonucleoprotein H2, N-terminally processed]	Mus musculus (Mouse)	449	Hnrnph2
+P70398	P70398	reviewed	USP9X_MOUSE	Ubiquitin carboxyl-terminal hydrolase 9X (EC 3.4.19.12) (Deubiquitinating enzyme FAF-X) (Fat facets homolog) (Fat facets protein-related, X-linked) (Ubiquitin carboxyl-terminal hydrolase FAM) (Ubiquitin thioesterase FAF-X) (Ubiquitin-specific protease 9, X chromosome) (Ubiquitin-specific-processing protease FAF-X)	Mus musculus (Mouse)	2559	Usp9x
+P70670	P70670	reviewed	NACAM_MOUSE	Nascent polypeptide-associated complex subunit alpha, muscle-specific form (Alpha-NAC, muscle-specific form) (skNAC)	Mus musculus (Mouse)	2187	Naca
+P70698	P70698	reviewed	PYRG1_MOUSE	CTP synthase 1 (EC 6.3.4.2) (CTP synthetase 1) (UTP--ammonia ligase 1)	Mus musculus (Mouse)	591	Ctps1
+P80314	P80314	reviewed	TCPB_MOUSE	T-complex protein 1 subunit beta (TCP-1-beta) (CCT-beta)	Mus musculus (Mouse)	535	Cct2
+P83510	P83510	reviewed	TNIK_MOUSE	Traf2 and NCK-interacting protein kinase (EC 2.7.11.1)	Mus musculus (Mouse)	1323	Tnik
+P83882	P83882	reviewed	RL36A_MOUSE	Large ribosomal subunit protein eL42 (60S ribosomal protein L36a) (60S ribosomal protein L44)	Mus musculus (Mouse)	106	Rpl36a
+P84091	P84091	reviewed	AP2M1_MOUSE	AP-2 complex subunit mu (AP-2 mu chain) (Adaptor protein complex AP-2 subunit mu) (Adaptor-related protein complex 2 subunit mu) (Clathrin assembly protein complex 2 mu medium chain) (Clathrin coat assembly protein AP50) (Clathrin coat-associated protein AP50) (Mu2-adaptin) (Plasma membrane adaptor AP-2 50 kDa protein)	Mus musculus (Mouse)	435	Ap2m1
+P84099	P84099	reviewed	RL19_MOUSE	Large ribosomal subunit protein eL19 (60S ribosomal protein L19)	Mus musculus (Mouse)	196	Rpl19
+P84104	P84104	reviewed	SRSF3_MOUSE	Serine/arginine-rich splicing factor 3 (Pre-mRNA-splicing factor SRP20) (Protein X16) (Splicing factor, arginine/serine-rich 3)	Mus musculus (Mouse)	164	Srsf3
+P84751	P84751	reviewed	HVM63_MOUSE	Ig heavy chain Mem5	Mus musculus (Mouse)	237	
+P97351	P97351	reviewed	RS3A_MOUSE	Small ribosomal subunit protein eS1 (40S ribosomal protein S3a) (Protein TU-11)	Mus musculus (Mouse)	264	Rps3a
+P97379	P97379	reviewed	G3BP2_MOUSE	Ras GTPase-activating protein-binding protein 2 (G3BP-2) (GAP SH3 domain-binding protein 2)	Mus musculus (Mouse)	482	G3bp2
+P97427	P97427	reviewed	DPYL1_MOUSE	Dihydropyrimidinase-related protein 1 (DRP-1) (Collapsin response mediator protein 1) (CRMP-1) (Inactive dihydropyrimidinase) (Unc-33-like phosphoprotein 3) (ULIP-3)	Mus musculus (Mouse)	572	Crmp1
+P97461	P97461	reviewed	RS5_MOUSE	Small ribosomal subunit protein uS7 (40S ribosomal protein S5) [Cleaved into: Small ribosomal subunit protein uS7, N-terminally processed]	Mus musculus (Mouse)	204	Rps5
+P97801	P97801	reviewed	SMN_MOUSE	Survival motor neuron protein	Mus musculus (Mouse)	288	Smn1
+P97820	P97820	reviewed	M4K4_MOUSE	Mitogen-activated protein kinase kinase kinase kinase 4 (EC 2.7.11.1) (HPK/GCK-like kinase HGK) (MAPK/ERK kinase kinase kinase 4) (MEK kinase kinase 4) (MEKKK 4) (Nck-interacting kinase)	Mus musculus (Mouse)	1233	Map4k4
+P97855	P97855	reviewed	G3BP1_MOUSE	Ras GTPase-activating protein-binding protein 1 (G3BP-1) (EC 3.6.4.12) (EC 3.6.4.13) (ATP-dependent DNA helicase VIII) (GAP SH3 domain-binding protein 1) (HDH-VIII)	Mus musculus (Mouse)	465	G3bp1
+P97863	P97863	reviewed	NFIB_MOUSE	Nuclear factor 1 B-type (NF1-B) (Nuclear factor 1/B) (CCAAT-box-binding transcription factor) (CTF) (Nuclear factor I/B) (NF-I/B) (NFI-B) (TGGCA-binding protein)	Mus musculus (Mouse)	570	Nfib
+P99024	P99024	reviewed	TBB5_MOUSE	Tubulin beta-5 chain	Mus musculus (Mouse)	444	Tubb5
+P99027	P99027	reviewed	RLA2_MOUSE	Large ribosomal subunit protein P2 (60S acidic ribosomal protein P2)	Mus musculus (Mouse)	115	Rplp2
+Q01097	Q01097	reviewed	NMDE2_MOUSE	Glutamate receptor ionotropic, NMDA 2B (GluN2B) (Glutamate [NMDA] receptor subunit epsilon-2) (N-methyl D-aspartate receptor subtype 2B) (NMDAR2B) (NR2B)	Mus musculus (Mouse)	1482	Grin2b
+Q01405	Q01405	reviewed	SC23A_MOUSE	Protein transport protein Sec23A (SEC23-related protein A)	Mus musculus (Mouse)	765	Sec23a
+Q01853	Q01853	reviewed	TERA_MOUSE	Transitional endoplasmic reticulum ATPase (TER ATPase) (EC 3.6.4.6) (15S Mg(2+)-ATPase p97 subunit) (Valosin-containing protein) (VCP)	Mus musculus (Mouse)	806	Vcp
+Q02257	Q02257	reviewed	PLAK_MOUSE	Junction plakoglobin (Desmoplakin III) (Desmoplakin-3)	Mus musculus (Mouse)	745	Jup
+Q04447	Q04447	reviewed	KCRB_MOUSE	Creatine kinase B-type (EC 2.7.3.2) (B-CK) (Creatine kinase B chain) (Creatine phosphokinase B-type) (CPK-B)	Mus musculus (Mouse)	381	Ckb
+Q05512	Q05512	reviewed	MARK2_MOUSE	Serine/threonine-protein kinase MARK2 (EC 2.7.11.1) (EC 2.7.11.26) (ELKL motif kinase 1) (EMK-1) (MAP/microtubule affinity-regulating kinase 2) (PAR1 homolog) (PAR1 homolog b) (Par-1b) (mPar-1b)	Mus musculus (Mouse)	776	Mark2
+Q05A36	Q05A36	reviewed	MEX3C_MOUSE	RNA-binding E3 ubiquitin-protein ligase MEX3C (EC 2.3.2.27) (RING finger and KH domain-containing protein 2) (RING-type E3 ubiquitin transferase MEX3C)	Mus musculus (Mouse)	652	Mex3c
+Q05D44	Q05D44	reviewed	IF2P_MOUSE	Eukaryotic translation initiation factor 5B (eIF-5B) (EC 3.6.5.3) (Translation initiation factor IF-2)	Mus musculus (Mouse)	1216	Eif5b
+Q08943	Q08943	reviewed	SSRP1_MOUSE	FACT complex subunit SSRP1 (Facilitates chromatin transcription complex subunit SSRP1) (Recombination signal sequence recognition protein 1) (Structure-specific recognition protein 1) (T160)	Mus musculus (Mouse)	708	Ssrp1
+Q0KL02	Q0KL02	reviewed	TRIO_MOUSE	Triple functional domain protein (EC 2.7.11.1)	Mus musculus (Mouse)	3102	Trio
+Q0PHV7	Q0PHV7	reviewed	DACT3_MOUSE	Dapper homolog 3 (Dapper antagonist of catenin 3)	Mus musculus (Mouse)	610	Dact3
+Q148V7	Q148V7	reviewed	RELCH_MOUSE	RAB11-binding protein RELCH (LisH domain and HEAT repeat-containing protein KIAA1468) (RAB11-binding protein containing LisH, coiled-coil, and HEAT repeats)	Mus musculus (Mouse)	1216	Relch
+Q14B71	Q14B71	reviewed	CDCA2_MOUSE	Cell division cycle-associated protein 2	Mus musculus (Mouse)	982	Cdca2
+Q2LKU9	Q2LKU9	reviewed	NLR1A_MOUSE	NACHT, LRR and PYD domains-containing protein 1a (EC 3.4.-.-) (Caspase recruitment domain-containing protein 7) (Death effector filament-forming ced-4-like apoptosis protein) (Nucleotide-binding domain and caspase recruitment domain) [Cleaved into: NACHT, LRR and PYD domains-containing protein 1a, C-terminus (Nlrp1a-CT); NACHT, LRR and PYD domains-containing protein 1a, N-terminus (Nlrp1a-NT)]	Mus musculus (Mouse)	1182	Nlrp1a
+Q3TB82	Q3TB82	reviewed	PKHF1_MOUSE	Pleckstrin homology domain-containing family F member 1 (PH domain-containing family F member 1) (Lysosome-associated apoptosis-inducing protein containing PH and FYVE domains)	Mus musculus (Mouse)	279	Plekhf1
+Q3TDD9	Q3TDD9	reviewed	PPR21_MOUSE	Protein phosphatase 1 regulatory subunit 21 (Coiled-coil domain-containing protein 128) (Ferry endosomal RAB5 effector complex subunit 2) (Fy-2) (KLRAQ motif-containing protein 1)	Mus musculus (Mouse)	780	Ppp1r21
+Q3TDQ1	Q3TDQ1	reviewed	STT3B_MOUSE	Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit STT3B (Oligosaccharyl transferase subunit STT3B) (STT3-B) (EC 2.4.99.18) (B6dom1 antigen) (Source of immunodominant MHC-associated peptides)	Mus musculus (Mouse)	823	Stt3b
+Q3TEA8	Q3TEA8	reviewed	HP1B3_MOUSE	Heterochromatin protein 1-binding protein 3	Mus musculus (Mouse)	554	Hp1bp3
+Q3THK3	Q3THK3	reviewed	T2FA_MOUSE	General transcription factor IIF subunit 1 (Transcription initiation factor IIF subunit alpha) (TFIIF-alpha)	Mus musculus (Mouse)	508	Gtf2f1
+Q3TKT4	Q3TKT4	reviewed	SMCA4_MOUSE	Transcription activator BRG1 (EC 3.6.4.-) (ATP-dependent helicase SMARCA4) (BRG1-associated factor 190A) (BAF190A) (Protein brahma homolog 1) (SNF2-beta) (SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily A member 4)	Mus musculus (Mouse)	1613	Smarca4
+Q3TLH4	Q3TLH4	reviewed	PRC2C_MOUSE	Protein PRRC2C (BAT2 domain-containing protein 1) (HLA-B-associated transcript 2-like 2) (Proline-rich and coiled-coil-containing protein 2C)	Mus musculus (Mouse)	2846	Prrc2c
+Q3TPX4	Q3TPX4	reviewed	EXOC5_MOUSE	Exocyst complex component 5 (Exocyst complex component Sec10)	Mus musculus (Mouse)	708	Exoc5
+Q3U2I3	Q3U2I3	reviewed	FHI1B_MOUSE	FHF complex subunit HOOK-interacting protein 1B (FTS- and Hook-interacting protein) (FHIP)	Mus musculus (Mouse)	975	Fhip1b
+Q3UDK1	Q3UDK1	reviewed	TRAD1_MOUSE	TRAF-type zinc finger domain-containing protein 1 (Protein FLN29)	Mus musculus (Mouse)	580	Trafd1
+Q3UE17	Q3UE17	reviewed	MEX3D_MOUSE	RNA-binding protein MEX3D (RING finger and KH domain-containing protein 1)	Mus musculus (Mouse)	643	Mex3d
+Q3UEB3	Q3UEB3	reviewed	PUF60_MOUSE	Poly(U)-binding-splicing factor PUF60 (60 kDa poly(U)-binding-splicing factor)	Mus musculus (Mouse)	564	Puf60
+Q3UFS0	Q3UFS0	reviewed	ZY11B_MOUSE	Protein zyg-11 homolog B	Mus musculus (Mouse)	744	Zyg11b
+Q3UGY8	Q3UGY8	reviewed	BIG3_MOUSE	Brefeldin A-inhibited guanine nucleotide-exchange protein 3 (ARFGEF family member 3)	Mus musculus (Mouse)	2170	Arfgef3
+Q3UHD6	Q3UHD6	reviewed	SNX27_MOUSE	Sorting nexin-27	Mus musculus (Mouse)	539	Snx27
+Q3UHH1	Q3UHH1	reviewed	ZSWM8_MOUSE	Zinc finger SWIM domain-containing protein 8	Mus musculus (Mouse)	1832	Zswim8
+Q3UHL1	Q3UHL1	reviewed	CAMKV_MOUSE	CaM kinase-like vesicle-associated protein	Mus musculus (Mouse)	512	Camkv
+Q3UJB9	Q3UJB9	reviewed	EDC4_MOUSE	Enhancer of mRNA-decapping protein 4	Mus musculus (Mouse)	1406	Edc4
+Q3UM29	Q3UM29	reviewed	COG7_MOUSE	Conserved oligomeric Golgi complex subunit 7 (COG complex subunit 7) (Component of oligomeric Golgi complex 7)	Mus musculus (Mouse)	770	Cog7
+Q3UMU9	Q3UMU9	reviewed	HDGR2_MOUSE	Hepatoma-derived growth factor-related protein 2 (HRP-2)	Mus musculus (Mouse)	669	Hdgfl2
+Q3URQ0	Q3URQ0	reviewed	TEX10_MOUSE	Testis-expressed protein 10	Mus musculus (Mouse)	928	Tex10
+Q3UYV9	Q3UYV9	reviewed	NCBP1_MOUSE	Nuclear cap-binding protein subunit 1 (80 kDa nuclear cap-binding protein) (CBP80) (NCBP 80 kDa subunit)	Mus musculus (Mouse)	790	Ncbp1
+Q52KI8	Q52KI8	reviewed	SRRM1_MOUSE	Serine/arginine repetitive matrix protein 1 (Plenty-of-prolines 101)	Mus musculus (Mouse)	946	Srrm1
+Q569Z5	Q569Z5	reviewed	DDX46_MOUSE	Probable ATP-dependent RNA helicase DDX46 (EC 3.6.4.13) (DEAD box protein 46)	Mus musculus (Mouse)	1032	Ddx46
+Q5BLK4	Q5BLK4	reviewed	TUT7_MOUSE	Terminal uridylyltransferase 7 (TUTase 7) (EC 2.7.7.52) (Zinc finger CCHC domain-containing protein 6)	Mus musculus (Mouse)	1491	Tut7
+Q5DTT2	Q5DTT2	reviewed	PSD1_MOUSE	PH and SEC7 domain-containing protein 1 (Exchange factor for ADP-ribosylation factor guanine nucleotide factor 6) (Exchange factor for ARF6) (Exchange factor for ARF6 A) (Pleckstrin homology and SEC7 domain-containing protein 1)	Mus musculus (Mouse)	1024	Psd
+Q5DU02	Q5DU02	reviewed	UBP22_MOUSE	Ubiquitin carboxyl-terminal hydrolase 22 (EC 3.4.19.12) (Deubiquitinating enzyme 22) (Ubiquitin thioesterase 22) (Ubiquitin-specific-processing protease 22)	Mus musculus (Mouse)	525	Usp22
+Q5DU14	Q5DU14	reviewed	MYO16_MOUSE	Unconventional myosin-XVI (Neuronal tyrosine-phosphorylated phosphoinositide-3-kinase adapter 3) (Unconventional myosin-16)	Mus musculus (Mouse)	1919	Myo16
+Q5SF07	Q5SF07	reviewed	IF2B2_MOUSE	Insulin-like growth factor 2 mRNA-binding protein 2 (IGF2 mRNA-binding protein 2) (IMP-2) (IGF-II mRNA-binding protein 2) (VICKZ family member 2)	Mus musculus (Mouse)	592	Igf2bp2
+Q5SNZ0	Q5SNZ0	reviewed	GRDN_MOUSE	Girdin (Akt phosphorylation enhancer) (APE) (Coiled-coil domain-containing protein 88A) (G alpha-interacting vesicle-associated protein) (GIV) (Girders of actin filament) (Hook-related protein 1) (HkRP1)	Mus musculus (Mouse)	1873	Ccdc88a
+Q5SQX6	Q5SQX6	reviewed	CYFP2_MOUSE	Cytoplasmic FMR1-interacting protein 2 (p53-inducible protein 121)	Mus musculus (Mouse)	1253	Cyfip2
+Q5SSL4	Q5SSL4	reviewed	ABR_MOUSE	Active breakpoint cluster region-related protein	Mus musculus (Mouse)	859	Abr
+Q5SWP3	Q5SWP3	reviewed	NACAD_MOUSE	NAC-alpha domain-containing protein 1	Mus musculus (Mouse)	1504	Nacad
+Q5U4C1	Q5U4C1	reviewed	GASP1_MOUSE	G-protein coupled receptor-associated sorting protein 1 (GASP-1)	Mus musculus (Mouse)	1347	Gprasp1
+Q5XJV6	Q5XJV6	reviewed	LMTK3_MOUSE	Serine/threonine-protein kinase LMTK3 (EC 2.7.11.1) (Apoptosis-associated tyrosine kinase 3) (Lemur tyrosine kinase 3)	Mus musculus (Mouse)	1424	Lmtk3
+Q60575	Q60575	reviewed	KIF1B_MOUSE	Kinesin-like protein KIF1B (EC 5.6.1.3)	Mus musculus (Mouse)	1816	Kif1b
+Q60605	Q60605	reviewed	MYL6_MOUSE	Myosin light polypeptide 6 (17 kDa myosin light chain) (LC17) (Myosin light chain 3) (MLC-3) (Myosin light chain alkali 3) (Myosin light chain A3) (Smooth muscle and nonmuscle myosin light chain alkali 6)	Mus musculus (Mouse)	151	Myl6
+Q60668	Q60668	reviewed	HNRPD_MOUSE	Heterogeneous nuclear ribonucleoprotein D0 (hnRNP D0) (AU-rich element RNA-binding protein 1)	Mus musculus (Mouse)	355	Hnrnpd
+Q60737	Q60737	reviewed	CSK21_MOUSE	Casein kinase II subunit alpha (CK II alpha) (EC 2.7.11.1)	Mus musculus (Mouse)	391	Csnk2a1
+Q60749	Q60749	reviewed	KHDR1_MOUSE	KH domain-containing, RNA-binding, signal transduction-associated protein 1 (GAP-associated tyrosine phosphoprotein p62) (Src-associated in mitosis 68 kDa protein) (Sam68) (p21 Ras GTPase-activating protein-associated p62) (p68)	Mus musculus (Mouse)	443	Khdrbs1
+Q60809	Q60809	reviewed	CNOT7_MOUSE	CCR4-NOT transcription complex subunit 7 (EC 3.1.13.4) (CCR4-associated factor 1) (CAF-1)	Mus musculus (Mouse)	285	Cnot7
+Q60865	Q60865	reviewed	CAPR1_MOUSE	Caprin-1 (Cytoplasmic activation- and proliferation-associated protein 1) (GPI-anchored membrane protein 1) (GPI-anchored protein p137) (GPI-p137) (p137GPI) (Membrane component chromosome 11 surface marker 1) (RNA granule protein 105)	Mus musculus (Mouse)	707	Caprin1
+Q60875	Q60875	reviewed	ARHG2_MOUSE	Rho guanine nucleotide exchange factor 2 (Guanine nucleotide exchange factor H1) (GEF-H1) (LBC'S first cousin) (Lymphoid blast crisis-like 1) (Oncogene LFC) (Rhobin)	Mus musculus (Mouse)	985	Arhgef2
+Q60899	Q60899	reviewed	ELAV2_MOUSE	ELAV-like protein 2 (ELAV-like neuronal protein 1) (Hu-antigen B) (HuB) (Nervous system-specific RNA-binding protein Mel-N1)	Mus musculus (Mouse)	360	Elavl2
+Q60900	Q60900	reviewed	ELAV3_MOUSE	ELAV-like protein 3 (Hu-antigen C) (HuC)	Mus musculus (Mouse)	367	Elavl3
+Q60934	Q60934	reviewed	GRIK1_MOUSE	Glutamate receptor ionotropic, kainate 1 (GluK1) (Glutamate receptor 5) (GluR-5) (GluR5)	Mus musculus (Mouse)	836	Grik1
+Q60987	Q60987	reviewed	FOXG1_MOUSE	Forkhead box protein G1 (FoxG1) (Brain factor 1) (BF-1) (BF1) (Forkhead-related protein FKHL1)	Mus musculus (Mouse)	481	Foxg1
+Q60996	Q60996	reviewed	2A5G_MOUSE	Serine/threonine-protein phosphatase 2A 56 kDa regulatory subunit gamma isoform (PP2A B subunit isoform B'-alpha-3) (PP2A B subunit isoform B'-gamma) (PP2A B subunit isoform B56-gamma) (PP2A B subunit isoform PR61-gamma) (PP2A B subunit isoform R5-gamma)	Mus musculus (Mouse)	524	Ppp2r5c
+Q61024	Q61024	reviewed	ASNS_MOUSE	Asparagine synthetase [glutamine-hydrolyzing] (EC 6.3.5.4) (Glutamine-dependent asparagine synthetase)	Mus musculus (Mouse)	561	Asns
+Q61074	Q61074	reviewed	PPM1G_MOUSE	Protein phosphatase 1G (EC 3.1.3.16) (Fibroblast growth factor-inducible protein 13) (FIN13) (Protein phosphatase 1C) (Protein phosphatase 2C isoform gamma) (PP2C-gamma) (Protein phosphatase magnesium-dependent 1 gamma)	Mus musculus (Mouse)	542	Ppm1g
+Q61140	Q61140	reviewed	BCAR1_MOUSE	Breast cancer anti-estrogen resistance protein 1 (CRK-associated substrate) (p130cas)	Mus musculus (Mouse)	874	Bcar1
+Q61147	Q61147	reviewed	CERU_MOUSE	Ceruloplasmin (Cuproxidase ceruloplasmin) (EC 1.16.3.4) (Ferroxidase ceruloplasmin) (EC 1.16.3.1) (Glutathione peroxidase ceruloplasmin) (EC 1.11.1.9) (Glutathione-dependent peroxiredoxin ceruloplasmin) (EC 1.11.1.27)	Mus musculus (Mouse)	1061	Cp
+Q61205	Q61205	reviewed	PA1B3_MOUSE	Platelet-activating factor acetylhydrolase IB subunit alpha1 (EC 3.1.1.47) (PAF acetylhydrolase 29 kDa subunit) (PAF-AH 29 kDa subunit) (PAF-AH subunit gamma) (PAFAH subunit gamma)	Mus musculus (Mouse)	232	Pafah1b3
+Q61553	Q61553	reviewed	FSCN1_MOUSE	Fascin (Singed-like protein)	Mus musculus (Mouse)	493	Fscn1
+Q61584	Q61584	reviewed	FXR1_MOUSE	RNA-binding protein FXR1 (FXR1P) (mFxr1p)	Mus musculus (Mouse)	677	Fxr1
+Q61595	Q61595	reviewed	KTN1_MOUSE	Kinectin	Mus musculus (Mouse)	1327	Ktn1
+Q61646	Q61646	reviewed	HPT_MOUSE	Haptoglobin [Cleaved into: Haptoglobin alpha chain; Haptoglobin beta chain]	Mus musculus (Mouse)	347	Hp
+Q61656	Q61656	reviewed	DDX5_MOUSE	Probable ATP-dependent RNA helicase DDX5 (EC 3.6.4.13) (DEAD box RNA helicase DEAD1) (mDEAD1) (DEAD box protein 5) (RNA helicase p68)	Mus musculus (Mouse)	614	Ddx5
+Q61687	Q61687	reviewed	ATRX_MOUSE	Transcriptional regulator ATRX (EC 3.6.4.12) (ATP-dependent helicase ATRX) (HP1 alpha-interacting protein) (HP1-BP38 protein) (Heterochromatin protein 2) (X-linked nuclear protein)	Mus musculus (Mouse)	2476	Atrx
+Q61701	Q61701	reviewed	ELAV4_MOUSE	ELAV-like protein 4 (Hu-antigen D) (HuD) (Paraneoplastic encephalomyelitis antigen HuD)	Mus musculus (Mouse)	385	Elavl4
+Q61771	Q61771	reviewed	KIF3B_MOUSE	Kinesin-like protein KIF3B (Microtubule plus end-directed kinesin motor 3B) [Cleaved into: Kinesin-like protein KIF3B, N-terminally processed]	Mus musculus (Mouse)	747	Kif3b
+Q61937	Q61937	reviewed	NPM_MOUSE	Nucleophosmin (NPM) (Nucleolar phosphoprotein B23) (Nucleolar protein NO38) (Numatrin)	Mus musculus (Mouse)	292	Npm1
+Q61990	Q61990	reviewed	PCBP2_MOUSE	Poly(rC)-binding protein 2 (Alpha-CP2) (CTBP) (CBP) (Putative heterogeneous nuclear ribonucleoprotein X) (hnRNP X)	Mus musculus (Mouse)	362	Pcbp2
+Q62018	Q62018	reviewed	CTR9_MOUSE	RNA polymerase-associated protein CTR9 homolog (SH2 domain-binding protein 1) (Tetratricopeptide repeat-containing, SH2-binding phosphoprotein of 150 kDa) (TPR-containing, SH2-binding phosphoprotein of 150 kDa) (p150TSP)	Mus musculus (Mouse)	1173	Ctr9
+Q62093	Q62093	reviewed	SRSF2_MOUSE	Serine/arginine-rich splicing factor 2 (Protein PR264) (Putative myelin regulatory factor 1) (MRF-1) (Splicing component, 35 kDa) (Splicing factor SC35) (SC-35) (Splicing factor, arginine/serine-rich 2)	Mus musculus (Mouse)	221	Srsf2
+Q62167	Q62167	reviewed	DDX3X_MOUSE	ATP-dependent RNA helicase DDX3X (EC 3.6.4.13) (D1Pas1-related sequence 2) (DEAD box RNA helicase DEAD3) (mDEAD3) (DEAD box protein 3, X-chromosomal) (Embryonic RNA helicase)	Mus musculus (Mouse)	662	Ddx3x
+Q62188	Q62188	reviewed	DPYL3_MOUSE	Dihydropyrimidinase-related protein 3 (DRP-3) (Unc-33-like phosphoprotein 1) (ULIP-1)	Mus musculus (Mouse)	570	Dpysl3
+Q62189	Q62189	reviewed	SNRPA_MOUSE	U1 small nuclear ribonucleoprotein A (U1 snRNP A) (U1-A) (U1A)	Mus musculus (Mouse)	287	Snrpa
+Q62318	Q62318	reviewed	TIF1B_MOUSE	Transcription intermediary factor 1-beta (TIF1-beta) (E3 SUMO-protein ligase TRIM28) (EC 2.3.2.27) (KRAB-A-interacting protein) (KRIP-1) (RING-type E3 ubiquitin transferase TIF1-beta) (Tripartite motif-containing protein 28)	Mus musculus (Mouse)	834	Trim28
+Q62448	Q62448	reviewed	IF4G2_MOUSE	Eukaryotic translation initiation factor 4 gamma 2 (eIF-4-gamma 2) (eIF-4G 2) (eIF4G 2) (Novel APOBEC-1 target 1) (Translation repressor NAT1) (p97)	Mus musculus (Mouse)	906	Eif4g2
+Q64337	Q64337	reviewed	SQSTM_MOUSE	Sequestosome-1 (STONE14) (Ubiquitin-binding protein p62)	Mus musculus (Mouse)	442	Sqstm1
+Q64362	Q64362	reviewed	AKTIP_MOUSE	AKT-interacting protein (FT1) (Fused toes protein)	Mus musculus (Mouse)	292	Aktip
+Q64511	Q64511	reviewed	TOP2B_MOUSE	DNA topoisomerase 2-beta (EC 5.6.2.2) (DNA topoisomerase II, beta isozyme)	Mus musculus (Mouse)	1612	Top2b
+Q68FD5	Q68FD5	reviewed	CLH1_MOUSE	Clathrin heavy chain 1	Mus musculus (Mouse)	1675	Cltc
+Q68FF6	Q68FF6	reviewed	GIT1_MOUSE	ARF GTPase-activating protein GIT1 (ARF GAP GIT1) (G protein-coupled receptor kinase-interactor 1) (GRK-interacting protein 1)	Mus musculus (Mouse)	770	Git1
+Q68FL6	Q68FL6	reviewed	SYMC_MOUSE	Methionine--tRNA ligase, cytoplasmic (EC 6.1.1.10) (Methionyl-tRNA synthetase) (MetRS)	Mus musculus (Mouse)	902	Mars1
+Q69Z99	Q69Z99	reviewed	ZN512_MOUSE	Zinc finger protein 512	Mus musculus (Mouse)	562	Znf512
+Q69ZR2	Q69ZR2	reviewed	HECD1_MOUSE	E3 ubiquitin-protein ligase HECTD1 (EC 2.3.2.26) (HECT domain-containing protein 1) (HECT-type E3 ubiquitin transferase HECTD1) (Protein open mind)	Mus musculus (Mouse)	2618	Hectd1
+Q6A065	Q6A065	reviewed	CE170_MOUSE	Centrosomal protein of 170 kDa (Cep170)	Mus musculus (Mouse)	1588	Cep170
+Q6A0A2	Q6A0A2	reviewed	LAR4B_MOUSE	La-related protein 4B (La ribonucleoprotein domain family member 4B) (La ribonucleoprotein domain family member 5) (La-related protein 5)	Mus musculus (Mouse)	741	Larp4b
+Q6A0A9	Q6A0A9	reviewed	F120A_MOUSE	Constitutive coactivator of PPAR-gamma-like protein 1 (Oxidative stress-associated SRC activator) (Protein FAM120A)	Mus musculus (Mouse)	1112	FAM120A
+Q6DFV5	Q6DFV5	reviewed	HELZ_MOUSE	Probable helicase with zinc finger domain (EC 3.6.4.-)	Mus musculus (Mouse)	1964	Helz
+Q6DFW4	Q6DFW4	reviewed	NOP58_MOUSE	Nucleolar protein 58 (MSSP) (Nucleolar protein 5) (SIK-similar protein)	Mus musculus (Mouse)	536	Nop58
+Q6GQT1	Q6GQT1	reviewed	A2MG_MOUSE	Alpha-2-macroglobulin-P (Alpha-2-macroglobulin)	Mus musculus (Mouse)	1474	A2m
+Q6IR34	Q6IR34	reviewed	GPSM1_MOUSE	G-protein-signaling modulator 1 (Activator of G-protein signaling 3)	Mus musculus (Mouse)	673	Gpsm1
+Q6NV83	Q6NV83	reviewed	SR140_MOUSE	U2 snRNP-associated SURP motif-containing protein (140 kDa Ser/Arg-rich domain protein) (U2-associated protein SR140)	Mus musculus (Mouse)	1029	U2surp
+Q6NVG5	Q6NVG5	reviewed	MREG_MOUSE	Melanoregulin (Dilute suppressor protein) (Whn-dependent transcript 2)	Mus musculus (Mouse)	214	Mreg
+Q6NZJ6	Q6NZJ6	reviewed	IF4G1_MOUSE	Eukaryotic translation initiation factor 4 gamma 1 (eIF-4-gamma 1) (eIF-4G 1) (eIF-4G1)	Mus musculus (Mouse)	1600	Eif4g1
+Q6P4T2	Q6P4T2	reviewed	U520_MOUSE	U5 small nuclear ribonucleoprotein 200 kDa helicase (EC 3.6.4.13) (BRR2 homolog) (U5 snRNP-specific 200 kDa protein) (U5-200KD)	Mus musculus (Mouse)	2136	Snrnp200
+Q6P542	Q6P542	reviewed	ABCF1_MOUSE	ATP-binding cassette sub-family F member 1	Mus musculus (Mouse)	837	Abcf1
+Q6P5B0	Q6P5B0	reviewed	RRP12_MOUSE	RRP12-like protein	Mus musculus (Mouse)	1295	Rrp12
+Q6P5D3	Q6P5D3	reviewed	DHX57_MOUSE	Putative ATP-dependent RNA helicase DHX57 (EC 3.6.4.13) (DEAH box protein 57)	Mus musculus (Mouse)	1388	Dhx57
+Q6P5G6	Q6P5G6	reviewed	UBXN7_MOUSE	UBX domain-containing protein 7	Mus musculus (Mouse)	467	Ubxn7
+Q6P5U7	Q6P5U7	reviewed	NWD2_MOUSE	NACHT and WD repeat domain-containing protein 2 (Leucine-rich repeat and WD repeat-containing protein KIAA1239)	Mus musculus (Mouse)	1742	Nwd2
+Q6PCP5	Q6PCP5	reviewed	MFF_MOUSE	Mitochondrial fission factor	Mus musculus (Mouse)	291	Mff
+Q6PDI5	Q6PDI5	reviewed	ECM29_MOUSE	Proteasome adapter and scaffold protein ECM29 (Proteasome-associated protein ECM29 homolog)	Mus musculus (Mouse)	1840	Ecpas
+Q6PDK8	Q6PDK8	reviewed	DTX4_MOUSE	E3 ubiquitin-protein ligase DTX4 (EC 2.3.2.27) (Protein deltex-4) (Deltex4) (RING-type E3 ubiquitin transferase DTX4)	Mus musculus (Mouse)	616	Dtx4
+Q6PDM2	Q6PDM2	reviewed	SRSF1_MOUSE	Serine/arginine-rich splicing factor 1 (ASF/SF2) (Pre-mRNA-splicing factor SRp30a) (Splicing factor, arginine/serine-rich 1)	Mus musculus (Mouse)	248	Srsf1
+Q6PEB6	Q6PEB6	reviewed	PHOCN_MOUSE	MOB-like protein phocein (Class II mMOB1) (Mob1 homolog 3) (Mob3) (Mps one binder kinase activator-like 3) (Preimplantation protein 3)	Mus musculus (Mouse)	225	Mob4
+Q6PEE2	Q6PEE2	reviewed	CTIF_MOUSE	CBP80/20-dependent translation initiation factor	Mus musculus (Mouse)	600	Ctif
+Q6PFR5	Q6PFR5	reviewed	TRA2A_MOUSE	Transformer-2 protein homolog alpha (TRA-2 alpha) (TRA2-alpha) (Transformer-2 protein homolog A)	Mus musculus (Mouse)	281	Tra2a
+Q6PGC1	Q6PGC1	reviewed	DHX29_MOUSE	ATP-dependent RNA helicase DHX29 (EC 3.6.4.13) (DEAH box protein 29)	Mus musculus (Mouse)	1365	Dhx29
+Q6PGN3	Q6PGN3	reviewed	DCLK2_MOUSE	Serine/threonine-protein kinase DCLK2 (EC 2.7.11.1) (CaMK-like CREB regulatory kinase 2) (CL2) (CLICK-II) (CLICK2) (Doublecortin-like and CAM kinase-like 2) (Doublecortin-like kinase 2)	Mus musculus (Mouse)	756	Dclk2
+Q6Y7W8	Q6Y7W8	reviewed	GGYF2_MOUSE	GRB10-interacting GYF protein 2 (PERQ amino acid-rich with GYF domain-containing protein 2) (Trinucleotide repeat-containing gene 15 protein)	Mus musculus (Mouse)	1291	Gigyf2
+Q6ZPE2	Q6ZPE2	reviewed	MTMR5_MOUSE	Myotubularin-related protein 5 (Inactive phosphatidylinositol 3-phosphatase 5) (SET-binding factor 1) (Sbf1)	Mus musculus (Mouse)	1867	Sbf1
+Q6ZPZ3	Q6ZPZ3	reviewed	ZC3H4_MOUSE	Zinc finger CCCH domain-containing protein 4	Mus musculus (Mouse)	1304	Zc3h4
+Q6ZQ08	Q6ZQ08	reviewed	CNOT1_MOUSE	CCR4-NOT transcription complex subunit 1 (CCR4-associated factor 1)	Mus musculus (Mouse)	2375	Cnot1
+Q6ZQ58	Q6ZQ58	reviewed	LARP1_MOUSE	La-related protein 1 (La ribonucleoprotein domain family member 1)	Mus musculus (Mouse)	1072	Larp1
+Q6ZWN5	Q6ZWN5	reviewed	RS9_MOUSE	Small ribosomal subunit protein uS4 (40S ribosomal protein S9)	Mus musculus (Mouse)	194	Rps9
+Q6ZWU9	Q6ZWU9	reviewed	RS27_MOUSE	Small ribosomal subunit protein eS27 (40S ribosomal protein S27)	Mus musculus (Mouse)	84	Rps27
+Q6ZWV3	Q6ZWV3	reviewed	RL10_MOUSE	Large ribosomal subunit protein uL16 (60S ribosomal protein L10) (Protein QM homolog) (Ribosomal protein L10)	Mus musculus (Mouse)	214	Rpl10
+Q6ZWV7	Q6ZWV7	reviewed	RL35_MOUSE	Large ribosomal subunit protein uL29 (60S ribosomal protein L35)	Mus musculus (Mouse)	123	Rpl35
+Q6ZWY3	Q6ZWY3	reviewed	RS27L_MOUSE	Small ribosomal subunit protein eS27-like (40S ribosomal protein S27-like)	Mus musculus (Mouse)	84	Rps27l
+Q70FJ1	Q70FJ1	reviewed	AKAP9_MOUSE	A-kinase anchor protein 9 (AKAP-9) (Protein kinase A-anchoring protein 9) (PRKA9)	Mus musculus (Mouse)	3797	Akap9
+Q78PY7	Q78PY7	reviewed	SND1_MOUSE	Staphylococcal nuclease domain-containing protein 1 (EC 3.1.31.1) (100 kDa coactivator) (p100 co-activator)	Mus musculus (Mouse)	910	Snd1
+Q791T5	Q791T5	reviewed	MTCH1_MOUSE	Mitochondrial carrier homolog 1 (Mitochondrial carrier-like protein 1)	Mus musculus (Mouse)	389	Mtch1
+Q7TMK9	Q7TMK9	reviewed	HNRPQ_MOUSE	Heterogeneous nuclear ribonucleoprotein Q (hnRNP Q) (Glycine- and tyrosine-rich RNA-binding protein) (GRY-RBP) (NS1-associated protein 1) (Synaptotagmin-binding, cytoplasmic RNA-interacting protein) (pp68)	Mus musculus (Mouse)	623	Syncrip
+Q7TMM9	Q7TMM9	reviewed	TBB2A_MOUSE	Tubulin beta-2A chain	Mus musculus (Mouse)	445	Tubb2a
+Q7TN29	Q7TN29	reviewed	SMAP2_MOUSE	Stromal membrane-associated protein 2 (Stromal membrane-associated protein 1-like)	Mus musculus (Mouse)	428	Smap2
+Q7TN33	Q7TN33	reviewed	CELF6_MOUSE	CUGBP Elav-like family member 6 (CELF-6) (Bruno-like protein 6) (CUG-BP- and ETR-3-like factor 6) (RNA-binding protein BRUNOL-6)	Mus musculus (Mouse)	460	Celf6
+Q7TN98	Q7TN98	reviewed	CPEB4_MOUSE	Cytoplasmic polyadenylation element-binding protein 4 (CPE-BP4) (CPE-binding protein 4) (mCPEB-4)	Mus musculus (Mouse)	729	Cpeb4
+Q7TN99	Q7TN99	reviewed	CPEB3_MOUSE	Cytoplasmic polyadenylation element-binding protein 3 (CPE-BP3) (CPE-binding protein 3) (mCPEB-3)	Mus musculus (Mouse)	716	Cpeb3
+Q7TNC4	Q7TNC4	reviewed	LC7L2_MOUSE	Putative RNA-binding protein Luc7-like 2 (CGI-74 homolog)	Mus musculus (Mouse)	392	Luc7l2
+Q7TNM2	Q7TNM2	reviewed	TRI46_MOUSE	Tripartite motif-containing protein 46 (Gene Y protein) (GeneY) (Tripartite, fibronectin type-III and C-terminal SPRY motif protein)	Mus musculus (Mouse)	759	Trim46
+Q7TNV0	Q7TNV0	reviewed	DEK_MOUSE	Protein DEK	Mus musculus (Mouse)	380	Dek
+Q7TPH6	Q7TPH6	reviewed	MYCB2_MOUSE	E3 ubiquitin-protein ligase MYCBP2 (EC 2.3.2.33) (Myc-binding protein 2) (Pam/highwire/rpm-1 protein) (Protein Magellan) (Protein associated with Myc)	Mus musculus (Mouse)	4749	Mycbp2
+Q7TPM1	Q7TPM1	reviewed	PRC2B_MOUSE	Protein PRRC2B (HLA-B-associated transcript 2-like 1) (Proline-rich coiled-coil protein 2B)	Mus musculus (Mouse)	1486	Prrc2b
+Q7TPV4	Q7TPV4	reviewed	MBB1A_MOUSE	Myb-binding protein 1A (Myb-binding protein of 160 kDa)	Mus musculus (Mouse)	1344	Mybbp1a
+Q7TQH0	Q7TQH0	reviewed	ATX2L_MOUSE	Ataxin-2-like protein	Mus musculus (Mouse)	1049	Atxn2l
+Q7TSC1	Q7TSC1	reviewed	PRC2A_MOUSE	Protein PRRC2A (HLA-B-associated transcript 2) (Proline-rich and coiled-coil-containing protein 2A)	Mus musculus (Mouse)	2158	Prrc2a
+Q7TSD4	Q7TSD4	reviewed	TBATA_MOUSE	Protein TBATA (Protein SPATIAL) (Stromal protein associated with thymii and lymph node) (Thymus, brain and testes-associated protein)	Mus musculus (Mouse)	393	Tbata
+Q7TSY6	Q7TSY6	reviewed	CELF4_MOUSE	CUGBP Elav-like family member 4 (CELF-4) (Bruno-like protein 4) (CUG-BP- and ETR-3-like factor 4) (RNA-binding protein BRUNOL-4)	Mus musculus (Mouse)	486	Celf4
+Q7TT37	Q7TT37	reviewed	ELP1_MOUSE	Elongator complex protein 1 (ELP1) (IkappaB kinase complex-associated protein) (IKK complex-associated protein)	Mus musculus (Mouse)	1333	Elp1
+Q80SY5	Q80SY5	reviewed	PR38B_MOUSE	Pre-mRNA-splicing factor 38B	Mus musculus (Mouse)	542	Prpf38b
+Q80TL7	Q80TL7	reviewed	MON2_MOUSE	Protein MON2 homolog (Protein SF21)	Mus musculus (Mouse)	1715	Mon2
+Q80TM9	Q80TM9	reviewed	NISCH_MOUSE	Nischarin (Imidazoline receptor 1) (I-1) (IR1) (Imidazoline receptor I-1-like protein) (Imidazoline-1 receptor) (I1R)	Mus musculus (Mouse)	1593	Nisch
+Q80TT8	Q80TT8	reviewed	CUL9_MOUSE	Cullin-9 (CUL-9) (p53-associated parkin-like cytoplasmic protein)	Mus musculus (Mouse)	2530	Cul9
+Q80U04	Q80U04	reviewed	PJA2_MOUSE	E3 ubiquitin-protein ligase Praja-2 (Praja2) (EC 2.3.2.27) (RING finger protein 131) (RING-type E3 ubiquitin transferase Praja-2)	Mus musculus (Mouse)	707	Pja2
+Q80U28	Q80U28	reviewed	MADD_MOUSE	MAP kinase-activating death domain protein (Rab3 GDP/GTP exchange factor) (RabGEF) (Rab3 GDP/GTP exchange protein) (Rab3GEP)	Mus musculus (Mouse)	1577	Madd
+Q80U49	Q80U49	reviewed	C170B_MOUSE	Centrosomal protein of 170 kDa protein B (Centrosomal protein 170B) (Cep170B)	Mus musculus (Mouse)	1574	Cep170b
+Q80U78	Q80U78	reviewed	PUM1_MOUSE	Pumilio homolog 1	Mus musculus (Mouse)	1189	Pum1
+Q80WJ7	Q80WJ7	reviewed	LYRIC_MOUSE	Protein LYRIC (3D3/LYRIC) (Lysine-rich CEACAM1 co-isolated protein) (Metadherin) (Metastasis adhesion protein)	Mus musculus (Mouse)	579	Mtdh
+Q80WS3	Q80WS3	reviewed	FBLL1_MOUSE	rRNA/tRNA 2'-O-methyltransferase fibrillarin-like protein 1 (EC 2.1.1.-) (Protein-glutamine methyltransferase)	Mus musculus (Mouse)	314	Fbll1
+Q80X50	Q80X50	reviewed	UBP2L_MOUSE	Ubiquitin-associated protein 2-like (RNA polymerase II degradation factor Ubap2l)	Mus musculus (Mouse)	1107	Ubap2l
+Q80XI3	Q80XI3	reviewed	IF4G3_MOUSE	Eukaryotic translation initiation factor 4 gamma 3 (eIF-4-gamma 3) (eIF-4G 3) (eIF4G 3) (eIF-4-gamma II) (eIF4GII)	Mus musculus (Mouse)	1579	Eif4g3
+Q80XU3	Q80XU3	reviewed	NUCKS_MOUSE	Nuclear ubiquitous casein and cyclin-dependent kinase substrate 1 (JC7)	Mus musculus (Mouse)	234	Nucks1
+Q80Y20	Q80Y20	reviewed	ALKB8_MOUSE	tRNA (carboxymethyluridine(34)-5-O)-methyltransferase ALKBH8 (EC 2.1.1.229) (Alkylated DNA repair protein alkB homolog 8) (Alpha-ketoglutarate-dependent dioxygenase ALKBH8) (S-adenosyl-L-methionine-dependent tRNA methyltransferase ALKBH8)	Mus musculus (Mouse)	664	Alkbh8
+Q80YA9	Q80YA9	reviewed	CNKR2_MOUSE	Connector enhancer of kinase suppressor of ras 2 (Connector enhancer of KSR 2) (CNK homolog protein 2) (CNK2)	Mus musculus (Mouse)	1032	Cnksr2
+Q80YF9	Q80YF9	reviewed	RHG33_MOUSE	Rho GTPase-activating protein 33 (Rho-type GTPase-activating protein 33) (Sorting nexin-26) (Tc10/CDC42 GTPase-activating protein)	Mus musculus (Mouse)	1305	Arhgap33
+Q80YS6	Q80YS6	reviewed	AFAP1_MOUSE	Actin filament-associated protein 1 (110 kDa actin filament-associated protein) (AFAP-110)	Mus musculus (Mouse)	731	Afap1
+Q80YT7	Q80YT7	reviewed	MYOME_MOUSE	Myomegalin (Phosphodiesterase 4D-interacting protein)	Mus musculus (Mouse)	2224	Pde4dip
+Q810B6	Q810B6	reviewed	ANFY1_MOUSE	Rabankyrin-5 (Rank-5) (Ankyrin repeat and FYVE domain-containing protein 1) (Ankyrin repeats hooked to a zinc finger motif)	Mus musculus (Mouse)	1169	Ankfy1
+Q810U5	Q810U5	reviewed	CCD50_MOUSE	Coiled-coil domain-containing protein 50 (Protein Ymer)	Mus musculus (Mouse)	305	Ccdc50
+Q811L6	Q811L6	reviewed	MAST4_MOUSE	Microtubule-associated serine/threonine-protein kinase 4 (EC 2.7.11.1)	Mus musculus (Mouse)	2618	Mast4
+Q811P8	Q811P8	reviewed	RHG32_MOUSE	Rho GTPase-activating protein 32 (Brain-specific Rho GTPase-activating protein) (GAB-associated Cdc42/Rac GTPase-activating protein) (GC-GAP) (Rho-type GTPase-activating protein 32) (Rho/Cdc42/Rac GTPase-activating protein RICS) (RhoGAP involved in the beta-catenin-N-cadherin and NMDA receptor signaling) (p200RhoGAP) (p250GAP)	Mus musculus (Mouse)	2089	Arhgap32
+Q812A2	Q812A2	reviewed	SRGP3_MOUSE	SLIT-ROBO Rho GTPase-activating protein 3 (srGAP3) (Rho GTPase-activating protein 14) (WAVE-associated Rac GTPase-activating protein) (WRP)	Mus musculus (Mouse)	1099	Srgap3
+Q812E0	Q812E0	reviewed	CPEB2_MOUSE	Cytoplasmic polyadenylation element-binding protein 2 (CPE-BP2) (CPE-binding protein 2) (mCPEB-2)	Mus musculus (Mouse)	521	Cpeb2
+Q8BFQ4	Q8BFQ4	reviewed	WDR82_MOUSE	WD repeat-containing protein 82	Mus musculus (Mouse)	313	Wdr82
+Q8BFR5	Q8BFR5	reviewed	EFTU_MOUSE	Elongation factor Tu, mitochondrial	Mus musculus (Mouse)	452	Tufm
+Q8BFZ3	Q8BFZ3	reviewed	ACTBL_MOUSE	Beta-actin-like protein 2 (Kappa-actin)	Mus musculus (Mouse)	376	Actbl2
+Q8BG18	Q8BG18	reviewed	NECA1_MOUSE	N-terminal EF-hand calcium-binding protein 1 (EF-hand calcium-binding protein 1)	Mus musculus (Mouse)	352	Necab1
+Q8BH15	Q8BH15	reviewed	CNO10_MOUSE	CCR4-NOT transcription complex subunit 10	Mus musculus (Mouse)	744	Cnot10
+Q8BH59	Q8BH59	reviewed	S2512_MOUSE	Electrogenic aspartate/glutamate antiporter SLC25A12, mitochondrial (Solute carrier family 25 member 12)	Mus musculus (Mouse)	677	Slc25a12
+Q8BIE6	Q8BIE6	reviewed	FRM4A_MOUSE	FERM domain-containing protein 4A	Mus musculus (Mouse)	1020	Frmd4a
+Q8BIF2	Q8BIF2	reviewed	RFOX3_MOUSE	RNA binding protein fox-1 homolog 3 (Fox-1 homolog C) (Hexaribonucleotide-binding protein 3) (Fox-3) (Neuronal nuclei antigen) (NeuN antigen)	Mus musculus (Mouse)	374	Rbfox3
+Q8BKS9	Q8BKS9	reviewed	PUM3_MOUSE	Pumilio homolog 3	Mus musculus (Mouse)	647	Pum3
+Q8BL97	Q8BL97	reviewed	SRSF7_MOUSE	Serine/arginine-rich splicing factor 7 (Splicing factor, arginine/serine-rich 7)	Mus musculus (Mouse)	267	Srsf7
+Q8BMJ2	Q8BMJ2	reviewed	SYLC_MOUSE	Leucine--tRNA ligase, cytoplasmic (EC 6.1.1.4) (Leucyl-tRNA synthetase) (LeuRS)	Mus musculus (Mouse)	1178	Lars1
+Q8BMK4	Q8BMK4	reviewed	CKAP4_MOUSE	Cytoskeleton-associated protein 4 (63-kDa cytoskeleton-linking membrane protein) (Climp-63) (p63)	Mus musculus (Mouse)	575	Ckap4
+Q8BML9	Q8BML9	reviewed	SYQ_MOUSE	Glutamine--tRNA ligase (EC 6.1.1.18) (Glutaminyl-tRNA synthetase) (GlnRS)	Mus musculus (Mouse)	775	Qars1
+Q8BN59	Q8BN59	reviewed	LARP6_MOUSE	La-related protein 6 (Acheron) (Achn) (La ribonucleoprotein domain family member 6)	Mus musculus (Mouse)	492	Larp6
+Q8BNE1	Q8BNE1	reviewed	TCAF1_MOUSE	TRPM8 channel-associated factor 1 (TRP channel-associated factor 1)	Mus musculus (Mouse)	924	Tcaf1
+Q8BNU0	Q8BNU0	reviewed	ARMC6_MOUSE	Armadillo repeat-containing protein 6	Mus musculus (Mouse)	468	Armc6
+Q8BP67	Q8BP67	reviewed	RL24_MOUSE	Large ribosomal subunit protein eL24 (60S ribosomal protein L24)	Mus musculus (Mouse)	157	Rpl24
+Q8BP71	Q8BP71	reviewed	RFOX2_MOUSE	RNA binding protein fox-1 homolog 2 (Fox-1 homolog B) (Fox-1 homolog Fxh) (Hexaribonucleotide-binding protein 2) (RNA-binding motif protein 9) (RNA-binding protein 9)	Mus musculus (Mouse)	449	Rbfox2
+Q8BPN8	Q8BPN8	reviewed	DMXL2_MOUSE	DmX-like protein 2 (Rabconnectin-3)	Mus musculus (Mouse)	3032	Dmxl2
+Q8BTG3	Q8BTG3	reviewed	T11L1_MOUSE	T-complex protein 11-like protein 1	Mus musculus (Mouse)	509	Tcp11l1
+Q8BTI7	Q8BTI7	reviewed	ANR52_MOUSE	Serine/threonine-protein phosphatase 6 regulatory ankyrin repeat subunit C (PP6-ARS-C) (Serine/threonine-protein phosphatase 6 regulatory subunit ARS-C)	Mus musculus (Mouse)	1076	Ankrd52
+Q8BTV1	Q8BTV1	reviewed	TUSC3_MOUSE	Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit TUSC3 (Oligosaccharyl transferase subunit TUSC3) (Magnesium uptake/transporter TUSC3) (Protein N33) (Tumor suppressor candidate 3)	Mus musculus (Mouse)	347	Tusc3
+Q8BU30	Q8BU30	reviewed	SYIC_MOUSE	Isoleucine--tRNA ligase, cytoplasmic (EC 6.1.1.5) (Isoleucyl-tRNA synthetase) (IRS) (IleRS)	Mus musculus (Mouse)	1262	Iars1
+Q8BUK6	Q8BUK6	reviewed	HOOK3_MOUSE	Protein Hook homolog 3 (mHK3)	Mus musculus (Mouse)	718	Hook3
+Q8BWW4	Q8BWW4	reviewed	LARP4_MOUSE	La-related protein 4 (La ribonucleoprotein domain family member 4)	Mus musculus (Mouse)	719	Larp4
+Q8BWZ3	Q8BWZ3	reviewed	NAA25_MOUSE	N-alpha-acetyltransferase 25, NatB auxiliary subunit (Mitochondrial distribution and morphology protein 20) (N-terminal acetyltransferase B complex subunit MDM20) (NatB complex subunit MDM20) (N-terminal acetyltransferase B complex subunit NAA25)	Mus musculus (Mouse)	972	Naa25
+Q8BX17	Q8BX17	reviewed	GEMI5_MOUSE	Gem-associated protein 5 (Gemin5)	Mus musculus (Mouse)	1502	Gemin5
+Q8BZX4	Q8BZX4	reviewed	SREK1_MOUSE	Splicing regulatory glutamine/lysine-rich protein 1 (Serine/arginine-rich-splicing regulatory protein 86) (SRrp86) (Splicing factor, arginine/serine-rich 12)	Mus musculus (Mouse)	494	Srek1
+Q8C050	Q8C050	reviewed	KS6A5_MOUSE	Ribosomal protein S6 kinase alpha-5 (S6K-alpha-5) (EC 2.7.11.1) (90 kDa ribosomal protein S6 kinase 5) (Nuclear mitogen- and stress-activated protein kinase 1) (RSK-like protein kinase) (RLSK)	Mus musculus (Mouse)	863	Rps6ka5
+Q8C0L8	Q8C0L8	reviewed	COG5_MOUSE	Conserved oligomeric Golgi complex subunit 5 (COG complex subunit 5) (Component of oligomeric Golgi complex 5)	Mus musculus (Mouse)	829	Cog5
+Q8C163	Q8C163	reviewed	EXOG_MOUSE	Nuclease EXOG, mitochondrial (EC 3.1.30.-) (Endonuclease G-like 1) (Endo G-like 1)	Mus musculus (Mouse)	368	Exog
+Q8C2Q3	Q8C2Q3	reviewed	RBM14_MOUSE	RNA-binding protein 14 (RNA-binding motif protein 14)	Mus musculus (Mouse)	669	Rbm14
+Q8C3F2	Q8C3F2	reviewed	F120C_MOUSE	Constitutive coactivator of PPAR-gamma-like protein 2 (Protein FAM120C)	Mus musculus (Mouse)	1091	Fam120c
+Q8C3X8	Q8C3X8	reviewed	LMF2_MOUSE	Lipase maturation factor 2 (Transmembrane protein 112B) (Transmembrane protein 153)	Mus musculus (Mouse)	702	Lmf2
+Q8C5L3	Q8C5L3	reviewed	CNOT2_MOUSE	CCR4-NOT transcription complex subunit 2 (CCR4-associated factor 2)	Mus musculus (Mouse)	540	Cnot2
+Q8C5Q4	Q8C5Q4	reviewed	GRSF1_MOUSE	G-rich sequence factor 1 (GRSF-1)	Mus musculus (Mouse)	479	Grsf1
+Q8C754	Q8C754	reviewed	VPS52_MOUSE	Vacuolar protein sorting-associated protein 52 homolog	Mus musculus (Mouse)	723	Vps52
+Q8C854	Q8C854	reviewed	MYEF2_MOUSE	Myelin expression factor 2 (MEF-2) (MyEF-2)	Mus musculus (Mouse)	591	Myef2
+Q8CDG3	Q8CDG3	reviewed	VCIP1_MOUSE	Deubiquitinating protein VCPIP1 (EC 3.4.19.12) (Valosin-containing protein p97/p47 complex-interacting protein 1) (Valosin-containing protein p97/p47 complex-interacting protein p135) (VCP/p47 complex-interacting 135-kDa protein)	Mus musculus (Mouse)	1220	Vcpip1
+Q8CGC7	Q8CGC7	reviewed	SYEP_MOUSE	Bifunctional glutamate/proline--tRNA ligase (Bifunctional aminoacyl-tRNA synthetase) [Includes: Glutamate--tRNA ligase (EC 6.1.1.17) (Glutamyl-tRNA synthetase) (GluRS); Proline--tRNA ligase (EC 6.1.1.15) (Prolyl-tRNA synthetase) (ProRS)]	Mus musculus (Mouse)	1512	Eprs1
+Q8CGI1	Q8CGI1	reviewed	F193A_MOUSE	Protein FAM193A	Mus musculus (Mouse)	1231	Fam193a
+Q8CGY8	Q8CGY8	reviewed	OGT1_MOUSE	UDP-N-acetylglucosamine--peptide N-acetylglucosaminyltransferase 110 kDa subunit (EC 2.4.1.255) (O-GlcNAc transferase subunit p110) (O-linked N-acetylglucosamine transferase 110 kDa subunit) (OGT)	Mus musculus (Mouse)	1046	Ogt
+Q8CGZ0	Q8CGZ0	reviewed	CHERP_MOUSE	Calcium homeostasis endoplasmic reticulum protein (SR-related CTD-associated factor 6)	Mus musculus (Mouse)	936	Cherp
+Q8CH18	Q8CH18	reviewed	CCAR1_MOUSE	Cell division cycle and apoptosis regulator protein 1 (Cell cycle and apoptosis regulatory protein 1) (CARP-1)	Mus musculus (Mouse)	1146	Ccar1
+Q8CH77	Q8CH77	reviewed	NAV1_MOUSE	Neuron navigator 1 (Pore membrane and/or filament-interacting-like protein 3)	Mus musculus (Mouse)	1875	Nav1
+Q8CHT1	Q8CHT1	reviewed	NGEF_MOUSE	Ephexin-1 (Eph-interacting exchange protein) (Neuronal guanine nucleotide exchange factor)	Mus musculus (Mouse)	710	Ngef
+Q8CI03	Q8CI03	reviewed	FWCH1_MOUSE	FLYWCH-type zinc finger-containing protein 1	Mus musculus (Mouse)	673	Flywch1
+Q8CIE6	Q8CIE6	reviewed	COPA_MOUSE	Coatomer subunit alpha (Alpha-coat protein) (Alpha-COP) [Cleaved into: Xenin (Xenopsin-related peptide); Proxenin]	Mus musculus (Mouse)	1224	Copa
+Q8CIN6	Q8CIN6	reviewed	CELF3_MOUSE	CUGBP Elav-like family member 3 (CELF-3) (Bruno-like protein 1) (CUG-BP- and ETR-3-like factor 3) (ELAV-type RNA-binding protein 1) (ETR-1) (RNA-binding protein BRUNOL-1) (Trinucleotide repeat-containing gene 4 protein)	Mus musculus (Mouse)	465	Celf3
+Q8CIQ7	Q8CIQ7	reviewed	DOCK3_MOUSE	Dedicator of cytokinesis protein 3 (Modifier of cell adhesion) (Presenilin-binding protein) (PBP)	Mus musculus (Mouse)	2027	Dock3
+Q8CJ67	Q8CJ67	reviewed	STAU2_MOUSE	Double-stranded RNA-binding protein Staufen homolog 2	Mus musculus (Mouse)	570	Stau2
+Q8CJG0	Q8CJG0	reviewed	AGO2_MOUSE	Protein argonaute-2 (Argonaute2) (mAgo2) (EC 3.1.26.n2) (Argonaute RISC catalytic component 2) (Eukaryotic translation initiation factor 2C 2) (eIF-2C 2) (eIF2C 2) (Piwi/argonaute family protein meIF2C2) (Protein slicer)	Mus musculus (Mouse)	860	Ago2
+Q8CJG1	Q8CJG1	reviewed	AGO1_MOUSE	Protein argonaute-1 (Argonaute1) (mAgo1) (Argonaute RISC catalytic component 1) (Eukaryotic translation initiation factor 2C 1) (eIF-2C 1) (eIF2C 1) (Piwi/argonaute family protein meIF2C1)	Mus musculus (Mouse)	857	Ago1
+Q8JZQ9	Q8JZQ9	reviewed	EIF3B_MOUSE	Eukaryotic translation initiation factor 3 subunit B (eIF3b) (Eukaryotic translation initiation factor 3 subunit 9) (eIF-3-eta) (eIF3 p116)	Mus musculus (Mouse)	803	Eif3b
+Q8JZU2	Q8JZU2	reviewed	TXTP_MOUSE	Tricarboxylate transport protein, mitochondrial (Citrate transport protein) (CTP) (Solute carrier family 25 member 1) (Tricarboxylate carrier protein)	Mus musculus (Mouse)	311	Slc25a1
+Q8K0C4	Q8K0C4	reviewed	CP51A_MOUSE	Lanosterol 14-alpha demethylase (LDM) (EC 1.14.14.154) (CYPLI) (Cytochrome P450 51A1) (CYP51) (Cytochrome P450-14DM) (Cytochrome P45014DM) (Cytochrome P450LI) (Sterol 14-alpha demethylase)	Mus musculus (Mouse)	503	Cyp51a1
+Q8K0D0	Q8K0D0	reviewed	CDK17_MOUSE	Cyclin-dependent kinase 17 (EC 2.7.11.22) (Cell division protein kinase 17) (PCTAIRE-motif protein kinase 2) (Serine/threonine-protein kinase PCTAIRE-2)	Mus musculus (Mouse)	523	Cdk17
+Q8K0E8	Q8K0E8	reviewed	FIBB_MOUSE	Fibrinogen beta chain [Cleaved into: Fibrinopeptide B; Fibrinogen beta chain]	Mus musculus (Mouse)	481	Fgb
+Q8K0V4	Q8K0V4	reviewed	CNOT3_MOUSE	CCR4-NOT transcription complex subunit 3 (CCR4-associated factor 3)	Mus musculus (Mouse)	751	Cnot3
+Q8K1A6	Q8K1A6	reviewed	C2D1A_MOUSE	Coiled-coil and C2 domain-containing protein 1A (Five prime repressor element under dual repression-binding protein 1) (FRE under dual repression-binding protein 1) (Freud-1)	Mus musculus (Mouse)	943	Cc2d1a
+Q8K212	Q8K212	reviewed	PACS1_MOUSE	Phosphofurin acidic cluster sorting protein 1 (PACS-1)	Mus musculus (Mouse)	961	Pacs1
+Q8K268	Q8K268	reviewed	ABCF3_MOUSE	ATP-binding cassette sub-family F member 3	Mus musculus (Mouse)	709	Abcf3
+Q8K2C9	Q8K2C9	reviewed	HACD3_MOUSE	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase 3 (EC 4.2.1.134) (3-hydroxyacyl-CoA dehydratase 3) (HACD3) (Butyrate-induced protein 1) (B-ind1) (Protein-tyrosine phosphatase-like A domain-containing protein 1)	Mus musculus (Mouse)	362	Hacd3
+Q8K2F0	Q8K2F0	reviewed	BRD3_MOUSE	Bromodomain-containing protein 3 (Bromodomain-containing FSH-like protein FSRG2)	Mus musculus (Mouse)	726	Brd3
+Q8K2Q7	Q8K2Q7	reviewed	BROX_MOUSE	BRO1 domain-containing protein BROX (BRO1 domain- and CAAX motif-containing protein)	Mus musculus (Mouse)	411	Brox
+Q8K310	Q8K310	reviewed	MATR3_MOUSE	Matrin-3	Mus musculus (Mouse)	846	Matr3
+Q8K341	Q8K341	reviewed	ATAT_MOUSE	Alpha-tubulin N-acetyltransferase 1 (Alpha-TAT) (Alpha-TAT1) (TAT) (EC 2.3.1.108) (Acetyltransferase mec-17 homolog)	Mus musculus (Mouse)	421	Atat1
+Q8K4P8	Q8K4P8	reviewed	HECW1_MOUSE	E3 ubiquitin-protein ligase HECW1 (EC 2.3.2.26) (HECT, C2 and WW domain-containing protein 1) (HECT-type E3 ubiquitin transferase HECW1) (NEDD4-like E3 ubiquitin-protein ligase 1) (mNEDL1)	Mus musculus (Mouse)	1604	Hecw1
+Q8QZY1	Q8QZY1	reviewed	EIF3L_MOUSE	Eukaryotic translation initiation factor 3 subunit L (eIF3l) (66 kDa tyrosine-rich heat shock protein) (67 kDa polymerase-associated factor) (Eukaryotic translation initiation factor 3 subunit 6-interacting protein) (Eukaryotic translation initiation factor 3 subunit E-interacting protein) (HSP-66Y) (PAF67)	Mus musculus (Mouse)	564	Eif3l
+Q8R001	Q8R001	reviewed	MARE2_MOUSE	Microtubule-associated protein RP/EB family member 2 (APC-binding protein EB2) (End-binding protein 2) (EB2)	Mus musculus (Mouse)	326	Mapre2
+Q8R010	Q8R010	reviewed	AIMP2_MOUSE	Aminoacyl tRNA synthase complex-interacting multifunctional protein 2 (Multisynthase complex auxiliary component p38) (Protein JTV-1)	Mus musculus (Mouse)	320	Aimp2
+Q8R081	Q8R081	reviewed	HNRPL_MOUSE	Heterogeneous nuclear ribonucleoprotein L (hnRNP L)	Mus musculus (Mouse)	586	Hnrnpl
+Q8R0S2	Q8R0S2	reviewed	IQEC1_MOUSE	IQ motif and SEC7 domain-containing protein 1	Mus musculus (Mouse)	961	Iqsec1
+Q8R1A4	Q8R1A4	reviewed	DOCK7_MOUSE	Dedicator of cytokinesis protein 7 (Protein moonlight)	Mus musculus (Mouse)	2130	Dock7
+Q8R1B4	Q8R1B4	reviewed	EIF3C_MOUSE	Eukaryotic translation initiation factor 3 subunit C (eIF3c) (Eukaryotic translation initiation factor 3 subunit 8) (eIF3 p110)	Mus musculus (Mouse)	911	Eif3c
+Q8R1N4	Q8R1N4	reviewed	NUDC3_MOUSE	NudC domain-containing protein 3	Mus musculus (Mouse)	363	Nudcd3
+Q8R1T1	Q8R1T1	reviewed	CHMP7_MOUSE	Charged multivesicular body protein 7 (Chromatin-modifying protein 7)	Mus musculus (Mouse)	451	Chmp7
+Q8R307	Q8R307	reviewed	VPS18_MOUSE	Vacuolar protein sorting-associated protein 18 homolog	Mus musculus (Mouse)	973	Vps18
+Q8R3L2	Q8R3L2	reviewed	TCF25_MOUSE	Ribosome quality control complex subunit TCF25 (Nuclear localized protein 1) (Transcription factor 25) (TCF-25)	Mus musculus (Mouse)	676	Tcf25
+Q8R3S6	Q8R3S6	reviewed	EXOC1_MOUSE	Exocyst complex component 1 (Exocyst complex component Sec3)	Mus musculus (Mouse)	894	Exoc1
+Q8R418	Q8R418	reviewed	DICER_MOUSE	Endoribonuclease Dicer (EC 3.1.26.3) (Double-strand-specific ribonuclease mDCR-1)	Mus musculus (Mouse)	1916	Dicer1
+Q8R4E6	Q8R4E6	reviewed	PURG_MOUSE	Purine-rich element-binding protein gamma	Mus musculus (Mouse)	350	Purg
+Q8R4H2	Q8R4H2	reviewed	ARHGC_MOUSE	Rho guanine nucleotide exchange factor 12 (Leukemia-associated RhoGEF)	Mus musculus (Mouse)	1543	Arhgef12
+Q8R570	Q8R570	reviewed	SNP47_MOUSE	Synaptosomal-associated protein 47 (SNAP-47) (Synaptosomal-associated 47 kDa protein)	Mus musculus (Mouse)	413	Snap47
+Q8VCM7	Q8VCM7	reviewed	FIBG_MOUSE	Fibrinogen gamma chain	Mus musculus (Mouse)	436	Fgg
+Q8VDJ3	Q8VDJ3	reviewed	VIGLN_MOUSE	Vigilin (High density lipoprotein-binding protein) (HDL-binding protein)	Mus musculus (Mouse)	1268	Hdlbp
+Q8VDM4	Q8VDM4	reviewed	PSMD2_MOUSE	26S proteasome non-ATPase regulatory subunit 2 (26S proteasome regulatory subunit RPN1) (26S proteasome regulatory subunit S2) (26S proteasome subunit p97)	Mus musculus (Mouse)	908	Psmd2
+Q8VDM6	Q8VDM6	reviewed	HNRL1_MOUSE	Heterogeneous nuclear ribonucleoprotein U-like protein 1	Mus musculus (Mouse)	859	Hnrnpul1
+Q8VDP4	Q8VDP4	reviewed	CCAR2_MOUSE	Cell cycle and apoptosis regulator protein 2 (Cell division cycle and apoptosis regulator protein 2)	Mus musculus (Mouse)	922	Ccar2
+Q8VE19	Q8VE19	reviewed	MIOS_MOUSE	GATOR2 complex protein MIOS	Mus musculus (Mouse)	875	Mios
+Q8VEF1	Q8VEF1	reviewed	ASTRA_MOUSE	Protein Aster-A (GRAM domain-containing protein 1A)	Mus musculus (Mouse)	722	Gramd1a
+Q8VH51	Q8VH51	reviewed	RBM39_MOUSE	RNA-binding protein 39 (Coactivator of activating protein 1 and estrogen receptors) (Coactivator of AP-1 and ERs) (RNA-binding motif protein 39) (RNA-binding region-containing protein 2)	Mus musculus (Mouse)	530	Rbm39
+Q8VHH5	Q8VHH5	reviewed	AGAP3_MOUSE	Arf-GAP with GTPase, ANK repeat and PH domain-containing protein 3 (AGAP-3) (CRAM-associated GTPase) (CRAG) (Centaurin-gamma-3) (Cnt-g3) (MR1-interacting protein) (MRIP-1)	Mus musculus (Mouse)	910	Agap3
+Q8VHK9	Q8VHK9	reviewed	DHX36_MOUSE	ATP-dependent DNA/RNA helicase DHX36 (EC 3.6.4.13) (DEAD/H box polypeptide 36) (DEAH box protein 36) (MLE-like protein 1) (RNA helicase associated with AU-rich element ARE)	Mus musculus (Mouse)	1001	Dhx36
+Q8VHN7	Q8VHN7	reviewed	AGRV1_MOUSE	Adhesion G-protein coupled receptor V1 (ADGRV1) (EC 3.4.-.-) (G-protein coupled receptor 98) (Monogenic audiogenic seizure susceptibility protein 1) (MASS1) (Neurepin) (Protein rueda) (Very large G-protein coupled receptor 1) (VLGR1) [Cleaved into: ADGRV1 subunit alpha; ADGRV1 subunit beta (VLGR1 subunit beta) (Vbeta)]	Mus musculus (Mouse)	6298	Adgrv1
+Q8VI24	Q8VI24	reviewed	SATB2_MOUSE	DNA-binding protein SATB2 (Special AT-rich sequence-binding protein 2)	Mus musculus (Mouse)	733	Satb2
+Q91V12	Q91V12	reviewed	BACH_MOUSE	Cytosolic acyl coenzyme A thioester hydrolase (EC 3.1.2.2) (Acyl-CoA thioesterase 7) (Brain acyl-CoA hydrolase) (BACH) (CTE-IIa) (CTE-II) (Long chain acyl-CoA thioester hydrolase)	Mus musculus (Mouse)	381	Acot7
+Q91VI7	Q91VI7	reviewed	RINI_MOUSE	Ribonuclease inhibitor (Ribonuclease/angiogenin inhibitor 1)	Mus musculus (Mouse)	456	Rnh1
+Q91VR5	Q91VR5	reviewed	DDX1_MOUSE	ATP-dependent RNA helicase DDX1 (EC 3.6.4.13) (DEAD box protein 1)	Mus musculus (Mouse)	740	Ddx1
+Q91VY9	Q91VY9	reviewed	ZN622_MOUSE	Cytoplasmic 60S subunit biogenesis factor ZNF622 (Zinc finger protein 622)	Mus musculus (Mouse)	476	Znf622
+Q91W50	Q91W50	reviewed	CSDE1_MOUSE	Cold shock domain-containing protein E1	Mus musculus (Mouse)	798	Csde1
+Q91W86	Q91W86	reviewed	VPS11_MOUSE	Vacuolar protein sorting-associated protein 11 homolog	Mus musculus (Mouse)	941	Vps11
+Q91WJ8	Q91WJ8	reviewed	FUBP1_MOUSE	Far upstream element-binding protein 1 (FBP) (FUSE-binding protein 1)	Mus musculus (Mouse)	651	Fubp1
+Q91WK2	Q91WK2	reviewed	EIF3H_MOUSE	Eukaryotic translation initiation factor 3 subunit H (eIF3h) (Eukaryotic translation initiation factor 3 subunit 3) (eIF-3-gamma) (eIF3 p40 subunit)	Mus musculus (Mouse)	352	Eif3h
+Q91X72	Q91X72	reviewed	HEMO_MOUSE	Hemopexin	Mus musculus (Mouse)	460	Hpx
+Q91YK0	Q91YK0	reviewed	LRC49_MOUSE	Leucine-rich repeat-containing protein 49 (Tubulin polyglutamylase complex subunit 4) (PGs4) (p79)	Mus musculus (Mouse)	686	Lrrc49
+Q91YM2	Q91YM2	reviewed	RHG35_MOUSE	Rho GTPase-activating protein 35 (Glucocorticoid receptor DNA-binding factor 1)	Mus musculus (Mouse)	1499	Arhgap35
+Q91YQ5	Q91YQ5	reviewed	RPN1_MOUSE	Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit 1 (Dolichyl-diphosphooligosaccharide--protein glycosyltransferase 67 kDa subunit) (Ribophorin I) (RPN-I) (Ribophorin-1)	Mus musculus (Mouse)	608	Rpn1
+Q91Z31	Q91Z31	reviewed	PTBP2_MOUSE	Polypyrimidine tract-binding protein 2 (Brain-enriched polypyrimidine tract-binding protein) (Brain-enriched PTB) (Neural polypyrimidine tract-binding protein) (RRM-type RNA-binding protein brPTB)	Mus musculus (Mouse)	531	Ptbp2
+Q91Z67	Q91Z67	reviewed	SRGP2_MOUSE	SLIT-ROBO Rho GTPase-activating protein 2 (srGAP2) (Formin-binding protein 2) (Formin-binding protein 27) (FBP-27)	Mus musculus (Mouse)	1071	Srgap2
+Q91Z92	Q91Z92	reviewed	B3GT6_MOUSE	Beta-1,3-galactosyltransferase 6 (Beta-1,3-GalTase 6) (Beta3Gal-T6) (Beta3GalT6) (EC 2.4.1.134) (GAG GalTII) (Galactosyltransferase II) (Galactosylxylosylprotein 3-beta-galactosyltransferase) (UDP-Gal:betaGal beta 1,3-galactosyltransferase polypeptide 6)	Mus musculus (Mouse)	325	B3galt6
+Q920B9	Q920B9	reviewed	SP16H_MOUSE	FACT complex subunit SPT16 (Chromatin-specific transcription elongation factor 140 kDa subunit) (FACT 140 kDa subunit) (FACTp140) (Facilitates chromatin transcription complex subunit SPT16)	Mus musculus (Mouse)	1047	Supt16h
+Q920I9	Q920I9	reviewed	WDR7_MOUSE	WD repeat-containing protein 7 (TGF-beta resistance-associated protein TRAG)	Mus musculus (Mouse)	1489	Wdr7
+Q920L1	Q920L1	reviewed	FADS1_MOUSE	Acyl-CoA (8-3)-desaturase (EC 1.14.19.44) (Delta(5) fatty acid desaturase) (D5D) (Delta(5) desaturase) (Delta-5 desaturase) (Fatty acid desaturase 1)	Mus musculus (Mouse)	447	Fads1
+Q920Q4	Q920Q4	reviewed	VPS16_MOUSE	Vacuolar protein sorting-associated protein 16 homolog (mVPS16)	Mus musculus (Mouse)	839	Vps16
+Q921F2	Q921F2	reviewed	TADBP_MOUSE	TAR DNA-binding protein 43 (TDP-43)	Mus musculus (Mouse)	414	Tardbp
+Q921F4	Q921F4	reviewed	HNRLL_MOUSE	Heterogeneous nuclear ribonucleoprotein L-like	Mus musculus (Mouse)	591	Hnrnpll
+Q921M4	Q921M4	reviewed	GOGA2_MOUSE	Golgin subfamily A member 2 (130 kDa cis-Golgi matrix protein) (GM130)	Mus musculus (Mouse)	999	Golga2
+Q922B2	Q922B2	reviewed	SYDC_MOUSE	Aspartate--tRNA ligase, cytoplasmic (EC 6.1.1.12) (Aspartyl-tRNA synthetase) (AspRS)	Mus musculus (Mouse)	501	Dars1
+Q922F4	Q922F4	reviewed	TBB6_MOUSE	Tubulin beta-6 chain	Mus musculus (Mouse)	447	Tubb6
+Q922K7	Q922K7	reviewed	NOP2_MOUSE	28S rRNA (cytosine-C(5))-methyltransferase (EC 2.1.1.-) (Nucleolar protein 1) (Nucleolar protein 2 homolog) (Proliferating-cell nucleolar antigen p120) (Proliferation-associated nucleolar protein p120)	Mus musculus (Mouse)	793	Nop2
+Q922Q2	Q922Q2	reviewed	RIOK1_MOUSE	Serine/threonine-protein kinase RIO1 (EC 2.7.11.1) (EC 3.6.3.-) (RIO kinase 1)	Mus musculus (Mouse)	567	Riok1
+Q923D5	Q923D5	reviewed	WBP11_MOUSE	WW domain-binding protein 11 (WBP-11) (Splicing factor that interacts with PQBP-1 and PP1)	Mus musculus (Mouse)	641	Wbp11
+Q923T9	Q923T9	reviewed	KCC2G_MOUSE	Calcium/calmodulin-dependent protein kinase type II subunit gamma (CaM kinase II subunit gamma) (CaMK-II subunit gamma) (EC 2.7.11.17)	Mus musculus (Mouse)	529	Camk2g
+Q924C1	Q924C1	reviewed	XPO5_MOUSE	Exportin-5 (Exp5) (Ran-binding protein 21)	Mus musculus (Mouse)	1204	Xpo5
+Q99104	Q99104	reviewed	MYO5A_MOUSE	Unconventional myosin-Va (Dilute myosin heavy chain, non-muscle)	Mus musculus (Mouse)	1853	Myo5a
+Q99J45	Q99J45	reviewed	NRBP_MOUSE	Nuclear receptor-binding protein (HLS7-interacting protein kinase) (MLF1 adapter molecule)	Mus musculus (Mouse)	535	Nrbp1
+Q99JF8	Q99JF8	reviewed	PSIP1_MOUSE	PC4 and SFRS1-interacting protein (Lens epithelium-derived growth factor) (mLEDGF)	Mus musculus (Mouse)	528	Psip1
+Q99JX4	Q99JX4	reviewed	EIF3M_MOUSE	Eukaryotic translation initiation factor 3 subunit M (eIF3m) (PCI domain-containing protein 1)	Mus musculus (Mouse)	374	Eif3m
+Q99KE3	Q99KE3	reviewed	DOK4_MOUSE	Docking protein 4 (Downstream of tyrosine kinase 4)	Mus musculus (Mouse)	325	Dok4
+Q99KP6	Q99KP6	reviewed	PRP19_MOUSE	Pre-mRNA-processing factor 19 (EC 2.3.2.27) (Nuclear matrix protein 200) (PRP19/PSO4 homolog) (RING-type E3 ubiquitin transferase PRP19) (Senescence evasion factor)	Mus musculus (Mouse)	504	Prpf19
+Q99KX1	Q99KX1	reviewed	MLF2_MOUSE	Myeloid leukemia factor 2 (Myelodysplasia-myeloid leukemia factor 2)	Mus musculus (Mouse)	247	Mlf2
+Q99LF4	Q99LF4	reviewed	RTCB_MOUSE	RNA-splicing ligase RtcB homolog (EC 6.5.1.8) (3'-phosphate/5'-hydroxy nucleic acid ligase) (Focal adhesion-associated protein) (FAAP)	Mus musculus (Mouse)	505	Rtcb
+Q99LG4	Q99LG4	reviewed	TTC5_MOUSE	Tetratricopeptide repeat protein 5 (TPR repeat protein 5) (Stress-responsive activator of p300) (Protein Strap)	Mus musculus (Mouse)	440	Ttc5
+Q99M28	Q99M28	reviewed	RNPS1_MOUSE	RNA-binding protein with serine-rich domain 1	Mus musculus (Mouse)	305	Rnps1
+Q99ME2	Q99ME2	reviewed	WDR6_MOUSE	tRNA (34-2'-O)-methyltransferase regulator WDR6 (WD repeat-containing protein 6) (mWDR6)	Mus musculus (Mouse)	1125	Wdr6
+Q99ME9	Q99ME9	reviewed	GTPB4_MOUSE	GTP-binding protein 4 (Chronic renal failure gene protein) (GTP-binding protein NGB) (Nucleolar GTP-binding protein 1)	Mus musculus (Mouse)	634	Gtpbp4
+Q99NB9	Q99NB9	reviewed	SF3B1_MOUSE	Splicing factor 3B subunit 1 (Pre-mRNA-splicing factor SF3b 155 kDa subunit) (SF3b155) (Spliceosome-associated protein 155) (SAP 155)	Mus musculus (Mouse)	1304	Sf3b1
+Q99NH0	Q99NH0	reviewed	ANR17_MOUSE	Ankyrin repeat domain-containing protein 17 (Ankyrin repeat domain-containing protein FOE) (Gene trap ankyrin repeat protein)	Mus musculus (Mouse)	2603	Ankrd17
+Q99PG2	Q99PG2	reviewed	OGFR_MOUSE	Opioid growth factor receptor (OGFr) (Zeta-type opioid receptor)	Mus musculus (Mouse)	633	Ogfr
+Q99PU8	Q99PU8	reviewed	DHX30_MOUSE	ATP-dependent RNA helicase DHX30 (EC 3.6.4.13) (DEAH box protein 30)	Mus musculus (Mouse)	1217	Dhx30
+Q99PV0	Q99PV0	reviewed	PRP8_MOUSE	Pre-mRNA-processing-splicing factor 8 (Splicing factor Prp8)	Mus musculus (Mouse)	2335	Prpf8
+Q9CPN8	Q9CPN8	reviewed	IF2B3_MOUSE	Insulin-like growth factor 2 mRNA-binding protein 3 (IGF2 mRNA-binding protein 3) (IMP-3) (mIMP-3) (IGF-II mRNA-binding protein 3) (VICKZ family member 3)	Mus musculus (Mouse)	579	Igf2bp3
+Q9CPR4	Q9CPR4	reviewed	RL17_MOUSE	Large ribosomal subunit protein uL22 (60S ribosomal protein L17)	Mus musculus (Mouse)	184	Rpl17
+Q9CPT5	Q9CPT5	reviewed	NOP16_MOUSE	Nucleolar protein 16	Mus musculus (Mouse)	178	Nop16
+Q9CPU4	Q9CPU4	reviewed	MGST3_MOUSE	Glutathione S-transferase 3, mitochondrial (EC 2.5.1.-) (Glutathione peroxidase MGST3) (EC 1.11.1.-) (LTC4 synthase MGST3) (EC 4.4.1.20)	Mus musculus (Mouse)	153	Mgst3
+Q9CQ69	Q9CQ69	reviewed	QCR8_MOUSE	Cytochrome b-c1 complex subunit 8 (Complex III subunit 8) (Complex III subunit VIII) (Ubiquinol-cytochrome c reductase complex 9.5 kDa protein) (Ubiquinol-cytochrome c reductase complex ubiquinone-binding protein QP-C)	Mus musculus (Mouse)	82	Uqcrq
+Q9CQ80	Q9CQ80	reviewed	VPS25_MOUSE	Vacuolar protein-sorting-associated protein 25 (ESCRT-II complex subunit VPS25)	Mus musculus (Mouse)	176	Vps25
+Q9CQE8	Q9CQE8	reviewed	RTRAF_MOUSE	RNA transcription, translation and transport factor protein	Mus musculus (Mouse)	244	RTRAF
+Q9CQF3	Q9CQF3	reviewed	CPSF5_MOUSE	Cleavage and polyadenylation specificity factor subunit 5 (Nucleoside diphosphate-linked moiety X motif 21) (Nudix motif 21) (Nudix hydrolase 21)	Mus musculus (Mouse)	227	Nudt21
+Q9CQM9	Q9CQM9	reviewed	GLRX3_MOUSE	Glutaredoxin-3 (PKC-interacting cousin of thioredoxin) (PICOT) (PKC-theta-interacting protein) (PKCq-interacting protein) (Thioredoxin-like protein 2)	Mus musculus (Mouse)	337	Glrx3
+Q9CQR2	Q9CQR2	reviewed	RS21_MOUSE	Small ribosomal subunit protein eS21 (40S ribosomal protein S21)	Mus musculus (Mouse)	83	Rps21
+Q9CR57	Q9CR57	reviewed	RL14_MOUSE	Large ribosomal subunit protein eL14 (60S ribosomal protein L14)	Mus musculus (Mouse)	217	Rpl14
+Q9CR62	Q9CR62	reviewed	M2OM_MOUSE	Mitochondrial 2-oxoglutarate/malate carrier protein (OGCP) (alpha-oxoglutarate carrier) (Solute carrier family 25 member 11) (SLC25A11)	Mus musculus (Mouse)	314	Slc25a11
+Q9CRB0	Q9CRB0	reviewed	SNX24_MOUSE	Sorting nexin-24	Mus musculus (Mouse)	169	Snx24
+Q9CWF2	Q9CWF2	reviewed	TBB2B_MOUSE	Tubulin beta-2B chain	Mus musculus (Mouse)	445	Tubb2b
+Q9CWN7	Q9CWN7	reviewed	CNO11_MOUSE	CCR4-NOT transcription complex subunit 11	Mus musculus (Mouse)	505	Cnot11
+Q9CWR2	Q9CWR2	reviewed	SMYD3_MOUSE	Histone-lysine N-methyltransferase SMYD3 (EC 2.1.1.354) (SET and MYND domain-containing protein 3) (Zinc finger MYND domain-containing protein 1)	Mus musculus (Mouse)	428	Smyd3
+Q9CX86	Q9CX86	reviewed	ROA0_MOUSE	Heterogeneous nuclear ribonucleoprotein A0 (hnRNP A0)	Mus musculus (Mouse)	305	Hnrnpa0
+Q9CXK8	Q9CXK8	reviewed	NIP7_MOUSE	60S ribosome subunit biogenesis protein NIP7 homolog (Nucleolar pre-rRNA processing protein NIP7) (PEachy) (kDa93)	Mus musculus (Mouse)	180	Nip7
+Q9CXW4	Q9CXW4	reviewed	RL11_MOUSE	Large ribosomal subunit protein uL5 (60S ribosomal protein L11)	Mus musculus (Mouse)	178	Rpl11
+Q9CXY6	Q9CXY6	reviewed	ILF2_MOUSE	Interleukin enhancer-binding factor 2 (Nuclear factor of activated T-cells 45 kDa)	Mus musculus (Mouse)	390	Ilf2
+Q9CY58	Q9CY58	reviewed	SERB1_MOUSE	SERPINE1 mRNA-binding protein 1 (PAI1 RNA-binding protein 1) (PAI-RBP1) (Plasminogen activator inhibitor 1 RNA-binding protein)	Mus musculus (Mouse)	407	Serbp1
+Q9CYI4	Q9CYI4	reviewed	LUC7L_MOUSE	Putative RNA-binding protein Luc7-like 1	Mus musculus (Mouse)	371	Luc7l
+Q9CZM2	Q9CZM2	reviewed	RL15_MOUSE	Large ribosomal subunit protein eL15 (60S ribosomal protein L15)	Mus musculus (Mouse)	204	Rpl15
+Q9CZX0	Q9CZX0	reviewed	ELP3_MOUSE	Elongator complex protein 3 (EC 2.3.1.311) (tRNA uridine(34) acetyltransferase)	Mus musculus (Mouse)	547	Elp3
+Q9CZX8	Q9CZX8	reviewed	RS19_MOUSE	Small ribosomal subunit protein eS19 (40S ribosomal protein S19)	Mus musculus (Mouse)	145	Rps19
+Q9D071	Q9D071	reviewed	MMS19_MOUSE	MMS19 nucleotide excision repair protein homolog (MET18 homolog) (MMS19-like protein)	Mus musculus (Mouse)	1031	Mms19
+Q9D0E1	Q9D0E1	reviewed	HNRPM_MOUSE	Heterogeneous nuclear ribonucleoprotein M (hnRNP M)	Mus musculus (Mouse)	729	Hnrnpm
+Q9D0F3	Q9D0F3	reviewed	LMAN1_MOUSE	Protein ERGIC-53 (ER-Golgi intermediate compartment 53 kDa protein) (Lectin mannose-binding 1) (p58)	Mus musculus (Mouse)	517	Lman1
+Q9D0I8	Q9D0I8	reviewed	MRT4_MOUSE	mRNA turnover protein 4 homolog (Ribosome assembly factor Mrto4)	Mus musculus (Mouse)	239	Mrto4
+Q9D0I9	Q9D0I9	reviewed	SYRC_MOUSE	Arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (Arginyl-tRNA synthetase) (ArgRS)	Mus musculus (Mouse)	660	Rars1
+Q9D0R2	Q9D0R2	reviewed	SYTC_MOUSE	Threonine--tRNA ligase 1, cytoplasmic (EC 6.1.1.3) (Threonine--tRNA ligase, cytoplasmic) (Threonyl-tRNA synthetase) (ThrRS) (Threonyl-tRNA synthetase 1)	Mus musculus (Mouse)	722	Tars1
+Q9D1M4	Q9D1M4	reviewed	MCA3_MOUSE	Eukaryotic translation elongation factor 1 epsilon-1 (Elongation factor p18) (Multisynthase complex auxiliary component p18)	Mus musculus (Mouse)	174	Eef1e1
+Q9D1R9	Q9D1R9	reviewed	RL34_MOUSE	Large ribosomal subunit protein eL34 (60S ribosomal protein L34)	Mus musculus (Mouse)	117	Rpl34
+Q9D2R0	Q9D2R0	reviewed	AACS_MOUSE	Acetoacetyl-CoA synthetase (EC 6.2.1.16)	Mus musculus (Mouse)	672	Aacs
+Q9D2U5	Q9D2U5	reviewed	NAA38_MOUSE	N-alpha-acetyltransferase 38, NatC auxiliary subunit (LSM domain-containing protein 1)	Mus musculus (Mouse)	125	Naa38
+Q9D394	Q9D394	reviewed	RUFY3_MOUSE	Protein RUFY3 (Rap2-interacting protein x) (RIPx) (Single axon-regulated protein 1) (Singar1)	Mus musculus (Mouse)	469	Rufy3
+Q9D454	Q9D454	reviewed	CX049_MOUSE	Uncharacterized protein CXorf49 homolog	Mus musculus (Mouse)	513	
+Q9D4H1	Q9D4H1	reviewed	EXOC2_MOUSE	Exocyst complex component 2 (Exocyst complex component Sec5)	Mus musculus (Mouse)	924	Exoc2
+Q9D6F9	Q9D6F9	reviewed	TBB4A_MOUSE	Tubulin beta-4A chain (Tubulin beta-4 chain)	Mus musculus (Mouse)	444	Tubb4a
+Q9D6N5	Q9D6N5	reviewed	NC2A_MOUSE	Dr1-associated corepressor (Dr1-associated protein 1) (Negative cofactor 2-alpha) (NC2-alpha)	Mus musculus (Mouse)	205	Drap1
+Q9D6Z1	Q9D6Z1	reviewed	NOP56_MOUSE	Nucleolar protein 56 (Nucleolar protein 5A)	Mus musculus (Mouse)	580	Nop56
+Q9D7H3	Q9D7H3	reviewed	RTCA_MOUSE	RNA 3'-terminal phosphate cyclase (RNA cyclase) (RNA-3'-phosphate cyclase) (EC 6.5.1.4) (RNA terminal phosphate cyclase domain-containing protein 1)	Mus musculus (Mouse)	366	RtcA
+Q9D7S7	Q9D7S7	reviewed	RL22L_MOUSE	Ribosomal protein eL22-like 1 (60S ribosomal protein L22-like 1) (Large ribosomal subunit protein eL22-like 1)	Mus musculus (Mouse)	122	Rpl22l1
+Q9D7X3	Q9D7X3	reviewed	DUS3_MOUSE	Dual specificity protein phosphatase 3 (EC 3.1.3.16) (EC 3.1.3.48) (T-DSP11) (Vaccinia H1-related phosphatase) (VHR)	Mus musculus (Mouse)	185	Dusp3
+Q9D823	Q9D823	reviewed	RL37_MOUSE	Large ribosomal subunit protein eL37 (60S ribosomal protein L37)	Mus musculus (Mouse)	97	Rpl37
+Q9D883	Q9D883	reviewed	U2AF1_MOUSE	Splicing factor U2AF 35 kDa subunit (U2 auxiliary factor 35 kDa subunit) (U2 snRNP auxiliary factor small subunit)	Mus musculus (Mouse)	239	U2af1
+Q9D8E6	Q9D8E6	reviewed	RL4_MOUSE	Large ribosomal subunit protein uL4 (60S ribosomal protein L4)	Mus musculus (Mouse)	419	Rpl4
+Q9D8N0	Q9D8N0	reviewed	EF1G_MOUSE	Elongation factor 1-gamma (EF-1-gamma) (eEF-1B gamma)	Mus musculus (Mouse)	437	Eef1g
+Q9D8N2	Q9D8N2	reviewed	DEN10_MOUSE	DENN domain-containing protein 10 (Protein FAM45A)	Mus musculus (Mouse)	357	Dennd10
+Q9D903	Q9D903	reviewed	EBP2_MOUSE	Probable rRNA-processing protein EBP2	Mus musculus (Mouse)	306	Ebna1bp2
+Q9D9S3	Q9D9S3	reviewed	RWD2A_MOUSE	RWD domain-containing protein 2A	Mus musculus (Mouse)	292	Rwdd2a
+Q9DAW6	Q9DAW6	reviewed	PRP4_MOUSE	U4/U6 small nuclear ribonucleoprotein Prp4 (U4/U6 snRNP 60 kDa protein) (WD splicing factor Prp4)	Mus musculus (Mouse)	521	Prpf4
+Q9DBC7	Q9DBC7	reviewed	KAP0_MOUSE	cAMP-dependent protein kinase type I-alpha regulatory subunit [Cleaved into: cAMP-dependent protein kinase type I-alpha regulatory subunit, N-terminally processed]	Mus musculus (Mouse)	381	Prkar1a
+Q9DC16	Q9DC16	reviewed	ERGI1_MOUSE	Endoplasmic reticulum-Golgi intermediate compartment protein 1 (ER-Golgi intermediate compartment 32 kDa protein) (ERGIC-32)	Mus musculus (Mouse)	290	Ergic1
+Q9DCA5	Q9DCA5	reviewed	BRX1_MOUSE	Ribosome biogenesis protein BRX1 homolog (Brix domain-containing protein 2)	Mus musculus (Mouse)	353	Brix1
+Q9DCH4	Q9DCH4	reviewed	EIF3F_MOUSE	Eukaryotic translation initiation factor 3 subunit F (eIF3f) (Deubiquitinating enzyme eIF3f) (EC 3.4.19.12) (Eukaryotic translation initiation factor 3 subunit 5) (eIF-3-epsilon) (eIF3 p47)	Mus musculus (Mouse)	361	Eif3f
+Q9DCR2	Q9DCR2	reviewed	AP3S1_MOUSE	AP-3 complex subunit sigma-1 (AP-3 complex subunit sigma-3A) (Adaptor-related protein complex 3 subunit sigma-1) (Sigma-3A-adaptin) (Sigma3A-adaptin) (Sigma-adaptin 3a)	Mus musculus (Mouse)	193	Ap3s1
+Q9EP89	Q9EP89	reviewed	LACTB_MOUSE	Serine beta-lactamase-like protein LACTB, mitochondrial (EC 3.4.-.-)	Mus musculus (Mouse)	551	Lactb
+Q9EPN1	Q9EPN1	reviewed	NBEA_MOUSE	Neurobeachin (Lysosomal-trafficking regulator 2)	Mus musculus (Mouse)	2936	Nbea
+Q9EPU0	Q9EPU0	reviewed	RENT1_MOUSE	Regulator of nonsense transcripts 1 (EC 3.6.4.12) (EC 3.6.4.13) (ATP-dependent helicase RENT1) (Nonsense mRNA reducing factor 1) (NORF1) (Up-frameshift suppressor 1 homolog) (mUpf1)	Mus musculus (Mouse)	1124	Upf1
+Q9EQQ9	Q9EQQ9	reviewed	OGA_MOUSE	Protein O-GlcNAcase (OGA) (EC 3.2.1.169) (Beta-N-acetylhexosaminidase) (Beta-hexosaminidase) (Bifunctional protein NCOAT) (Meningioma-expressed antigen 5) (N-acetyl-beta-D-glucosaminidase) (N-acetyl-beta-glucosaminidase)	Mus musculus (Mouse)	916	Oga
+Q9ER64	Q9ER64	reviewed	OSBL5_MOUSE	Oxysterol-binding protein-related protein 5 (ORP-5) (OSBP-related protein 5) (Oxysterol-binding protein homolog 1)	Mus musculus (Mouse)	874	Osbpl5
+Q9ERB0	Q9ERB0	reviewed	SNP29_MOUSE	Synaptosomal-associated protein 29 (SNAP-29) (Golgi SNARE of 32 kDa) (Gs32) (Soluble 29 kDa NSF attachment protein) (Vesicle-membrane fusion protein SNAP-29)	Mus musculus (Mouse)	260	Snap29
+Q9ERD7	Q9ERD7	reviewed	TBB3_MOUSE	Tubulin beta-3 chain	Mus musculus (Mouse)	450	Tubb3
+Q9ERL9	Q9ERL9	reviewed	GCYA1_MOUSE	Guanylate cyclase soluble subunit alpha-1 (GCS-alpha-1) (EC 4.6.1.2) (Guanylate cyclase soluble subunit alpha-3) (GCS-alpha-3) (Soluble guanylate cyclase large subunit)	Mus musculus (Mouse)	691	Gucy1a1
+Q9ES28	Q9ES28	reviewed	ARHG7_MOUSE	Rho guanine nucleotide exchange factor 7 (Beta-Pix) (PAK-interacting exchange factor beta) (p85SPR)	Mus musculus (Mouse)	862	Arhgef7
+Q9ESN6	Q9ESN6	reviewed	TRIM2_MOUSE	Tripartite motif-containing protein 2 (EC 2.3.2.27) (E3 ubiquitin-protein ligase TRIM2) (Neural activity-related RING finger protein) (RING-type E3 ubiquitin transferase TRIM2)	Mus musculus (Mouse)	744	Trim2
+Q9EST3	Q9EST3	reviewed	4ET_MOUSE	Eukaryotic translation initiation factor 4E transporter (4E-T) (eIF4E transporter) (CD40 ligand-activated specific transcript 4) (Eukaryotic translation initiation factor 4E nuclear import factor 1)	Mus musculus (Mouse)	983	Eif4enif1
+Q9ESX5	Q9ESX5	reviewed	DKC1_MOUSE	H/ACA ribonucleoprotein complex subunit DKC1 (EC 5.4.99.-) (Dyskerin) (Nopp140-associated protein of 57 kDa) (Nucleolar protein NAP57) (Nucleolar protein family A member 4) (snoRNP protein DKC1)	Mus musculus (Mouse)	509	Dkc1
+Q9JHU4	Q9JHU4	reviewed	DYHC1_MOUSE	Cytoplasmic dynein 1 heavy chain 1 (Cytoplasmic dynein heavy chain 1) (Dynein heavy chain, cytosolic)	Mus musculus (Mouse)	4644	Dync1h1
+Q9JIF7	Q9JIF7	reviewed	COPB_MOUSE	Coatomer subunit beta (Beta-coat protein) (Beta-COP)	Mus musculus (Mouse)	953	Copb1
+Q9JIK5	Q9JIK5	reviewed	DDX21_MOUSE	Nucleolar RNA helicase 2 (EC 3.6.4.13) (DEAD box protein 21) (Gu-alpha) (Nucleolar RNA helicase Gu) (Nucleolar RNA helicase II) (RH II/Gu)	Mus musculus (Mouse)	851	Ddx21
+Q9JJ43	Q9JJ43	reviewed	RFOX1_MOUSE	RNA binding protein fox-1 homolog 1 (Ataxin-2-binding protein 1) (Fox-1 homolog A)	Mus musculus (Mouse)	396	Rbfox1
+Q9JJ80	Q9JJ80	reviewed	RPF2_MOUSE	Ribosome production factor 2 homolog (Brix domain-containing protein 1) (Ribosome biogenesis protein RPF2 homolog)	Mus musculus (Mouse)	306	Rpf2
+Q9JJI8	Q9JJI8	reviewed	RL38_MOUSE	Large ribosomal subunit protein eL38 (60S ribosomal protein L38)	Mus musculus (Mouse)	70	Rpl38
+Q9JJZ2	Q9JJZ2	reviewed	TBA8_MOUSE	Tubulin alpha-8 chain (EC 3.6.5.-) (Alpha-tubulin 8) [Cleaved into: Dephenylalaninated tubulin alpha-8 chain]	Mus musculus (Mouse)	449	Tuba8
+Q9JKC8	Q9JKC8	reviewed	AP3M1_MOUSE	AP-3 complex subunit mu-1 (AP-3 adaptor complex mu3A subunit) (Adaptor-related protein complex 3 subunit mu-1) (Mu-adaptin 3A) (Mu3A-adaptin)	Mus musculus (Mouse)	418	Ap3m1
+Q9JKN6	Q9JKN6	reviewed	NOVA1_MOUSE	RNA-binding protein Nova-1 (Neuro-oncological ventral antigen 1) (Ventral neuron-specific protein 1)	Mus musculus (Mouse)	507	Nova1
+Q9JLM8	Q9JLM8	reviewed	DCLK1_MOUSE	Serine/threonine-protein kinase DCLK1 (EC 2.7.11.1) (Doublecortin-like and CAM kinase-like 1) (Doublecortin-like kinase 1)	Mus musculus (Mouse)	756	Dclk1
+Q9JM52	Q9JM52	reviewed	MINK1_MOUSE	Misshapen-like kinase 1 (EC 2.7.11.1) (GCK family kinase MiNK) (MAPK/ERK kinase kinase kinase 6) (MEK kinase kinase 6) (MEKKK 6) (Misshapen/NIK-related kinase) (Mitogen-activated protein kinase kinase kinase kinase 6)	Mus musculus (Mouse)	1308	Mink1
+Q9JME5	Q9JME5	reviewed	AP3B2_MOUSE	AP-3 complex subunit beta-2 (Adaptor protein complex AP-3 subunit beta-2) (Adaptor-related protein complex 3 subunit beta-2) (Beta-3B-adaptin) (Clathrin assembly protein complex 3 beta-2 large chain)	Mus musculus (Mouse)	1082	Ap3b2
+Q9QUG9	Q9QUG9	reviewed	GRP2_MOUSE	RAS guanyl-releasing protein 2 (Calcium and DAG-regulated guanine nucleotide exchange factor I) (CalDAG-GEFI) (F25B3.3 kinase-like protein)	Mus musculus (Mouse)	608	Rasgrp2
+Q9QWI6	Q9QWI6	reviewed	SRCN1_MOUSE	SRC kinase signaling inhibitor 1 (SNAP-25-interacting protein) (SNIP) (p130Cas-associated protein) (p140Cap)	Mus musculus (Mouse)	1250	Srcin1
+Q9QXJ4	Q9QXJ4	reviewed	ARL10_MOUSE	ADP-ribosylation factor-like protein 10 (ADP-ribosylation factor-like membrane-associated protein)	Mus musculus (Mouse)	243	Arl10
+Q9QXK3	Q9QXK3	reviewed	COPG2_MOUSE	Coatomer subunit gamma-2 (Gamma-2-coat protein) (Gamma-2-COP)	Mus musculus (Mouse)	871	Copg2
+Q9QYF1	Q9QYF1	reviewed	RDH11_MOUSE	Retinol dehydrogenase 11 (EC 1.1.1.300) (Androgen-regulated short-chain dehydrogenase/reductase 1) (Cell line MC/9.IL4-derived protein 1) (M42C60) (Prostate short-chain dehydrogenase/reductase 1) (Retinal reductase 1) (RalR1) (Short-chain aldehyde dehydrogenase) (SCALD)	Mus musculus (Mouse)	316	Rdh11
+Q9QYH6	Q9QYH6	reviewed	MAGD1_MOUSE	Melanoma-associated antigen D1 (Dlxin-1) (MAGE-D1 antigen) (Neurotrophin receptor-interacting MAGE homolog)	Mus musculus (Mouse)	775	Maged1
+Q9QYK9	Q9QYK9	reviewed	KCC1B_MOUSE	Calcium/calmodulin-dependent protein kinase type 1B (EC 2.7.11.17) (CaM kinase I beta) (CaM kinase IB) (CaM-KI beta) (CaMKI-beta) (Pregnancy up-regulated non-ubiquitously-expressed CaM kinase homolog)	Mus musculus (Mouse)	343	Pnck
+Q9QZD9	Q9QZD9	reviewed	EIF3I_MOUSE	Eukaryotic translation initiation factor 3 subunit I (eIF3i) (Eukaryotic translation initiation factor 3 subunit 2) (TGF-beta receptor-interacting protein 1) (TRIP-1) (eIF-3-beta) (eIF3 p36)	Mus musculus (Mouse)	325	Eif3i
+Q9QZE5	Q9QZE5	reviewed	COPG1_MOUSE	Coatomer subunit gamma-1 (Gamma-1-coat protein) (Gamma-1-COP)	Mus musculus (Mouse)	874	Copg1
+Q9R0Q7	Q9R0Q7	reviewed	TEBP_MOUSE	Prostaglandin E synthase 3 (EC 5.3.99.3) (Cytosolic prostaglandin E2 synthase) (cPGES) (Hsp90 co-chaperone) (Progesterone receptor complex p23) (Sid 3177) (Telomerase-binding protein p23)	Mus musculus (Mouse)	160	Ptges3
+Q9R0U0	Q9R0U0	reviewed	SRS10_MOUSE	Serine/arginine-rich splicing factor 10 (FUS-interacting serine-arginine-rich protein 1) (Neural-salient serine/arginine-rich protein) (Neural-specific SR protein) (Splicing factor, arginine/serine-rich 13A) (TLS-associated protein with Ser-Arg repeats) (TASR) (TLS-associated protein with SR repeats) (TLS-associated serine-arginine protein) (TLS-associated SR protein)	Mus musculus (Mouse)	262	Srsf10
+Q9R1L5	Q9R1L5	reviewed	MAST1_MOUSE	Microtubule-associated serine/threonine-protein kinase 1 (EC 2.7.11.1) (Syntrophin-associated serine/threonine-protein kinase)	Mus musculus (Mouse)	1570	Mast1
+Q9R1P0	Q9R1P0	reviewed	PSA4_MOUSE	Proteasome subunit alpha type-4 (Macropain subunit C9) (Multicatalytic endopeptidase complex subunit C9) (Proteasome component C9) (Proteasome subunit L) (Proteasome subunit alpha-3) (alpha-3)	Mus musculus (Mouse)	261	Psma4
+Q9R1R2	Q9R1R2	reviewed	TRIM3_MOUSE	Tripartite motif-containing protein 3 (EC 2.3.2.27) (RING finger protein 22) (RING finger protein HAC1)	Mus musculus (Mouse)	744	Trim3
+Q9WTX2	Q9WTX2	reviewed	PRKRA_MOUSE	Interferon-inducible double-stranded RNA-dependent protein kinase activator A (PKR-associated protein X) (PKR-associating protein X) (RAX) (Protein activator of the interferon-induced protein kinase) (Protein kinase, interferon-inducible double-stranded RNA-dependent activator)	Mus musculus (Mouse)	313	Prkra
+Q9WVG6	Q9WVG6	reviewed	CARM1_MOUSE	Histone-arginine methyltransferase CARM1 (EC 2.1.1.319) (Coactivator-associated arginine methyltransferase 1) (Protein arginine N-methyltransferase 4)	Mus musculus (Mouse)	608	Carm1
+Q9Z0H4	Q9Z0H4	reviewed	CELF2_MOUSE	CUGBP Elav-like family member 2 (CELF-2) (Bruno-like protein 3) (CUG triplet repeat RNA-binding protein 2) (CUG-BP2) (CUG-BP- and ETR-3-like factor 2) (ELAV-type RNA-binding protein 3) (ETR-3) (mETR-3) (Neuroblastoma apoptosis-related RNA-binding protein) (mNapor) (RNA-binding protein BRUNOL-3)	Mus musculus (Mouse)	508	Celf2
+Q9Z0R9	Q9Z0R9	reviewed	FADS2_MOUSE	Acyl-CoA 6-desaturase (EC 1.14.19.3) (Delta(6) fatty acid desaturase) (D6D) (Delta(6) desaturase) (Delta-6 desaturase) (Fatty acid desaturase 2)	Mus musculus (Mouse)	444	Fads2
+Q9Z108	Q9Z108	reviewed	STAU1_MOUSE	Double-stranded RNA-binding protein Staufen homolog 1	Mus musculus (Mouse)	487	Stau1
+Q9Z1D1	Q9Z1D1	reviewed	EIF3G_MOUSE	Eukaryotic translation initiation factor 3 subunit G (eIF3g) (Eukaryotic translation initiation factor 3 RNA-binding subunit) (eIF-3 RNA-binding subunit) (Eukaryotic translation initiation factor 3 subunit 4) (eIF-3-delta) (eIF3 p42) (eIF3 p44)	Mus musculus (Mouse)	320	Eif3g
+Q9Z1Q9	Q9Z1Q9	reviewed	SYVC_MOUSE	Valine--tRNA ligase (EC 6.1.1.9) (Protein G7a) (Valyl-tRNA synthetase) (ValRS)	Mus musculus (Mouse)	1263	Vars1
+Q9Z1R2	Q9Z1R2	reviewed	BAG6_MOUSE	Large proline-rich protein BAG6 (BAG family molecular chaperone regulator 6) (BCL2-associated athanogene 6) (BAG-6) (HLA-B-associated transcript 3) (Protein Scythe)	Mus musculus (Mouse)	1154	Bag6
+Q9Z1Z0	Q9Z1Z0	reviewed	USO1_MOUSE	General vesicular transport factor p115 (Protein USO1 homolog) (Transcytosis-associated protein) (TAP) (Vesicle-docking protein)	Mus musculus (Mouse)	959	Uso1
+Q9Z1Z2	Q9Z1Z2	reviewed	STRAP_MOUSE	Serine-threonine kinase receptor-associated protein (UNR-interacting protein)	Mus musculus (Mouse)	350	Strap
+Q9Z204	Q9Z204	reviewed	HNRPC_MOUSE	Heterogeneous nuclear ribonucleoproteins C1/C2 (hnRNP C1/C2)	Mus musculus (Mouse)	313	Hnrnpc
+Q9Z2H5	Q9Z2H5	reviewed	E41L1_MOUSE	Band 4.1-like protein 1 (Erythrocyte membrane protein band 4.1-like 1) (Neuronal protein 4.1) (4.1N)	Mus musculus (Mouse)	879	Epb41l1
+Q9Z2Q2	Q9Z2Q2	reviewed	KNOP1_MOUSE	Lysine-rich nucleolar protein 1 (Testis-specific gene 118 protein)	Mus musculus (Mouse)	478	Knop1
+Q9Z2X1	Q9Z2X1	reviewed	HNRPF_MOUSE	Heterogeneous nuclear ribonucleoprotein F (hnRNP F) [Cleaved into: Heterogeneous nuclear ribonucleoprotein F, N-terminally processed]	Mus musculus (Mouse)	415	Hnrnpf

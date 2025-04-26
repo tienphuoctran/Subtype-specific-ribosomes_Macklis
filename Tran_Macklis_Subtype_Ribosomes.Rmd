@@ -62,6 +62,29 @@ median_of_ratios_normalize <- function(abundance_df) {
   scaling_factors <- exp(sample_medians)
   sweep(abundance_df, 2, scaling_factors, "/")
 }
+
+## Given a vector wherein some elements have multiple items separated by ";",
+## output a new vector of accession, wherein each element is a single item
+parse_protein_ids <- function(ids) {
+  # Check if input is a vector
+  if (!is.vector(ids)) {
+    stop("Input must be a vector")
+  }
+  
+  # Split IDs on semicolon and unlist to create a single vector
+  parsed_ids <- unlist(strsplit(ids, split = ";"))
+  
+  # Remove any whitespace
+  parsed_ids <- trimws(parsed_ids)
+  
+  # Remove any empty strings
+  parsed_ids <- parsed_ids[parsed_ids != ""]
+  
+  # Remove duplicates while maintaining order
+  parsed_ids <- unique(parsed_ids)
+  
+  return(parsed_ids)
+}
 ```
 
 ### External datasets
@@ -70,12 +93,32 @@ median_of_ratios_normalize <- function(abundance_df) {
 ### Ribosome Uniprot Accession and Gene names
 Ribosome_uniprot_ID_GeneNames <- read_excel("External_dataset/Ribosome_uniprot_ID_GeneNames.xlsx") %>% select(2:4)
 
+### tRNA synthetase 
+# AARS_and_MSC<- c("P26638", "P32921", "Q8BGQ7","Q8BLY2","Q8BMJ2","Q8BU30","Q8CGC7","Q9D0I9","Q9D0R2","Q3THG9","Q68FL6","Q8BML9","Q8BP47","Q91WQ3","Q922B2","Q9ER72","Q8C0C7","Q9WUA2","Q8R010","P31230","O43324")
+
 ### mESC RAPs with updated uniprot Accession (Simsek et al. Cell 2017)
 mESC_RAPs <- read_excel("External_dataset/2017_Simsek_TMT_RiboMS_suppl3.xlsx", skip = 2) %>% 
   filter(., `Right NPV Puro` >= 0.99 & `Right NPV RNase` >= 0.99) %>% 
   mutate(gene_name = case_when( is.na(Symbol) ~ `UniProt Acession`, !is.na(Symbol) ~ Symbol)
          )
 colnames(mESC_RAPs)[1] <- "Accession"
+
+### RAPs from hESCs (Bartsch et al. Sci Adv. 2023)
+ARC_RAPs_hESC <- read_excel("External_dataset/ARC_RAPs_sheet1.xlsx", 
+    col_types = c("text", "skip", "text", 
+        "skip", "skip", "skip", "skip", "skip", 
+        "skip")) %>% 
+  mutate(Protein_name = sub("^(\\w)", "\\U\\1", tolower(Protein_name), perl=TRUE))
+
+### Putative RAPs from bulk forebrain at E12.5, using RAPIDASH (Susanto et al. Mol. Cell 2024)
+## Full data frame
+RAPIDASH_forebrain <- read_excel("External_dataset/2024_Susanto_RAPDISH_TableS5_LFQ_EmbryonicForebrain.xlsx")
+## Uniprot Accession
+RAPIDASH_gene_name <- parse_protein_ids(RAPIDASH_forebrain$`Gene names`)
+
+### Immunoglobulin
+Immunoglobulin <- c("P01857", "P01847", "P018527", "P01865", "P01837", "P01869", "P01867", "P01833", 
+                    "P01633", "P01631", "P01634", "P01647", "P01657", "P18524", "P18525", "P18527")
 
 ### SCPN_vs_CPN transcriptomic and nanoRibo-seq dataset (Froberg et al. Cell Reports 2023)
 NanoRiboSeq_subtypeComparisons <- read_csv("External_dataset/NanoRiboSeq_subtypeComparisons.csv", show_col_types = FALSE)
@@ -128,34 +171,106 @@ Individual_analysis <- Reduce(function(x, y) merge(x, y, by="Accession", all=TRU
 ### Rename column names
 colnames(Individual_analysis) <- c("Accession", "SCPN_Ctrl_Rep1", "SCPN_Ctrl_Rep2", "SCPN_Ctrl_Rep3", "SCPN_Ctrl_Rep4", "SCPN_Ctrl_Rep5", "CPN_Ctrl_Rep1", "CPN_Ctrl_Rep2", "CPN_Ctrl_Rep4", "SCPN_rRNA_Rep1", "SCPN_rRNA_Rep2", "SCPN_rRNA_Rep3", "SCPN_rRNA_Rep4", "SCPN_rRNA_Rep5", "CPN_rRNA_Rep1", "CPN_rRNA_Rep2", "CPN_rRNA_Rep3", "CPN_rRNA_Rep4")
 
-### Categorize proteins
+### For rigor, we only focus our analysis on canonical proteins, and not specific protein isoforms. Thus, I removed the "-#" after some accessions. 
+Individual_analysis <- mutate(Individual_analysis, Accession = str_remove(Accession, "-.*") )
+### We also only consider proteins with detectable abundance (MS1 detection), thus I remove rows with no quantative value
 Individual_analysis <- Individual_analysis %>% 
+  filter(!if_all(starts_with(c("SCPN_Ctrl", "SCPN_rRNA", "CPN_Ctrl", "CPN_rRNA")), is.na))
+
+#### Annotate what proteins are RPs, known RAPs, and putative RAPs in E12.5 forebrain.
+#### I addition to using Accession number for cross-referencing datasets to annotate proteins, I also use primary gene name. This is because of multiple reasons: 1) Some sources have old outdated Uniprot accession, so it's easier to use gene names; 2) one source lists RAPs from human ESC, so it's easier to use gene names for cross-species referencing. 3) Some gene names readily identify the protein function, e.g. eukaryotic translation initiation factors have EIF at the beginning of their gene names. 
+
+### First, I recovered the gene names of the detected proteins from the MS analysis:
+## I created a list of Uniprot accession. 
+cat(Individual_analysis$Accession, file = "Individual_analysis_Protein_output/Individual_Analysis_Accession.txt", sep = "\n")
+
+## Then, I upload the list to Uniprot to perform ID mapping, after which I imported the ouput. 
+Individual_analysis_idmapping <- read_tsv("Individual_analysis_Protein_output/idmapping_2025_03_05.tsv", show_col_types = FALSE) %>%
+  select("Entry", "Gene Names (primary)") %>%
+  mutate(Accession = `Entry`) %>%
+  mutate(gene_name = `Gene Names (primary)`) %>%
+  select(Accession, gene_name)
+
+## Then I add the primary gene names to the experimental data frame
+Individual_analysis_w_genename <- left_join(Individual_analysis, Individual_analysis_idmapping, 
+                                            by = "Accession")
+
+# ### Remove Immunoglobulin complex proteins, since these are most likely from the antibody used for IP
+# Individual_analysis_w_genename <- Individual_analysis_w_genename %>% 
+#   filter(., !(Accession %in% Immunoglobulin))
+         
+### Second, I now annotate the detected proteins, including checking whether they are RAPs by referencing previous reports on RAPs.
+Individual_analysis_w_genename <- Individual_analysis_w_genename %>% 
   mutate("Group" = case_when(
-    Accession %in% mESC_RAPs$Accession & !(Accession %in% Ribosome_uniprot_ID_GeneNames$Entry) ~ "RAP",
-    Accession %in% Ribosome_uniprot_ID_GeneNames$Entry ~ "Ribosomal protein",
-    .default ="Other")) 
+      # Annotate core ribosomal proteins
+      Accession %in% Ribosome_uniprot_ID_GeneNames$Entry ~ "Ribosomal protein",
+      
+      # Annotate translation factors
+      grepl("Eif", gene_name) ~ "Translation factor", 
+      grepl("Eef", gene_name) ~ "Translation factor",
+      
+      # Annotate known RAPs (from either mESC or hESC)
+      gene_name %in% mESC_RAPs$Symbol & !(Accession %in% Ribosome_uniprot_ID_GeneNames$Entry) ~ "RAP",
+      gene_name %in% ARC_RAPs_hESC$Protein_name ~ "RAP",
+      
+      # Annotate additional proteins that are putative RAPs in E12.5 forebrain, identified by RAPIDASH
+      gene_name %in% RAPIDASH_gene_name & !(Accession %in% Ribosome_uniprot_ID_GeneNames$Entry) ~ "E_Brain_RAP",
+      
+      # Other proteins
+      .default ="Other"))
+
+### Write report of analysis of individual samples into Table S2
+Individual_analysis_w_genename_output <- Individual_analysis_w_genename [, c(1, 19, 20, 2:18)] %>%
+  mutate(Group = ifelse(Group == "E_Brain_RAP", "E12.5 forebrain RAP", Group)) %>%
+  mutate(across(c(4:20), ~ifelse(is.na(.), "ND", .)))
+
+write.csv(Individual_analysis_w_genename_output , file = "Tables/TableS2.csv",  row.names = FALSE)
 ```
 
 ```{r IndividualAnalysis_Barplot}
 ### Make a barplot showing per-sample number of identified proteins with quantified abundance (Figure 1E)
-Individual_analysis_for_barplot <- Individual_analysis %>%
-  pivot_longer(., cols = colnames(Individual_analysis)[2:18], values_to = "Abundance") %>%
+Individual_analysis_for_barplot <- Individual_analysis_w_genename %>%
+  pivot_longer(., cols = colnames(Individual_analysis_w_genename)[2:18], values_to = "Abundance") %>%
   filter(!is.na(Abundance)) %>%
-  mutate(name = factor(name, levels=colnames(Individual_analysis)[2:18]))
+  mutate(name = factor(name, levels=colnames(Individual_analysis_w_genename)[2:18])) %>%
+  mutate(Group = factor(Group, 
+                        levels = c("Other", 
+                                   # "Ig",
+                                   "E_Brain_RAP", "RAP", 
+                                   "Translation factor", "Ribosomal protein"))
+  )
 
-ggplot(Individual_analysis_for_barplot, aes(x=name)) +
-  geom_bar(stat="count", aes(fill=Group)) +
-  scale_fill_manual(values = c("#E69F00", "#cc79a7", "#009E73")) +
+Individual_analysis_for_barplot_color_scheme <- c(
+    "Ribosomal protein" = "#009E73",  # Teal green
+    "Translation factor" = "#CC79A7",  # Deep magenta
+    "RAP" = "#E69F00",                # Bright gold
+    "E_Brain_RAP" = "#F0E442",
+    # "Ig" = "#ffa1a1",
+    "Other" = "#B4B8DD"               # Periwinkle blue
+)
+
+Individual_analysis_Barplot <- ggplot(Individual_analysis_for_barplot, aes(x=name)) +
+  geom_bar(stat="count", aes(fill=Group), color = "black",     # Border color
+          linewidth = 0.1) +
+  scale_fill_manual(values = Individual_analysis_for_barplot_color_scheme) +
   theme_pubr() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) + 
+  labs(x = "Sample", 
+       y = "# Proteins") 
+
+### Print the plot
+Individual_analysis_Barplot
+
+### Save the plot
+ggsave("Plots/Fig1E_Individual_analysis_Barplot.pdf", plot = Individual_analysis_Barplot, width = 7, height = 5, units = "in")
 ```
 
-```{r GeneOntology_OtherProteins}
-### Gene Ontology analysis of proteins not classified as ribosomal proteins or mESC RAPs (Figure 1E)
+```{r ProteinClassification_OtherProteins}
+### Gene Ontology analysis of proteins not classified as ribosomal proteins, translation factors, or RAPs (Figure 1F)
 ### First, identify proteins found in 3 or more of rRNA IP samples and not at all in any Control for each sample
-Individual_analysis_tally <- Individual_analysis
-## I need to rename SCPN to Sub and CPN to Cal for easy, unambiguous operations with string. 
-colnames(Individual_analysis_tally) <- c("Accession", "Sub_Ctrl1", "Sub_Ctrl2","Sub_Ctrl3", "Sub_Ctrl4","Sub_Ctrl5", "Cal_Ctrl1", "Cal_Ctrl2","Cal_Ctrl4", "Sub_rRNA1", "Sub_rRNA2","Sub_rRNA3","Sub_rRNA4","Sub_rRNA5", "Cal_rRNA1", "Cal_rRNA2","Cal_rRNA3","Cal_rRNA4", "Group")
+Individual_analysis_tally <- Individual_analysis_w_genename
+## I need to rename SCPN to Sub and CPN to Cal for easy, unambiguous operations with string.
+colnames(Individual_analysis_tally) <- c("Accession", "Sub_Ctrl1", "Sub_Ctrl2","Sub_Ctrl3", "Sub_Ctrl4","Sub_Ctrl5", "Cal_Ctrl1", "Cal_Ctrl2","Cal_Ctrl4", "Sub_rRNA1", "Sub_rRNA2","Sub_rRNA3","Sub_rRNA4","Sub_rRNA5", "Cal_rRNA1", "Cal_rRNA2","Cal_rRNA3","Cal_rRNA4", "gene_name", "Group")
 ## Tally the number of samples per subtype wherein a protein has abundance value
 Individual_analysis_tally["SCPN_rRNA_Tally"] <- 5- rowSums(is.na(Individual_analysis_tally %>% select(contains ("Sub_rRNA"))))
 Individual_analysis_tally["SCPN_Ctrl_Tally"] <- 5- rowSums(is.na(Individual_analysis_tally %>% select(contains ("Sub_Ctrl"))))
@@ -164,45 +279,93 @@ Individual_analysis_tally["CPN_Ctrl_Tally"] <- 3- rowSums(is.na(Individual_analy
 
 ## Generate files with Accession numbers of "other" proteins for each subtype
 SCPN_OtherProteins <- Individual_analysis_tally %>% filter(SCPN_rRNA_Tally >=3 & SCPN_Ctrl_Tally ==0 & Group == "Other" )
-#cat(SCPN_OtherProteins$Accession, file = "SubProteins_Other_noRAP.txt", sep = "\n")
+cat(SCPN_OtherProteins$Accession, file = "SubProteins_Other_noRAP.txt", sep = "\n")
 CPN_OtherProteins <- Individual_analysis_tally %>% filter(CPN_rRNA_Tally >=3 & CPN_Ctrl_Tally ==0 & Group == "Other" )
-#cat(CPN_OtherProteins$Accession, file = "CalProteins_Other_noRAP.txt", sep = "\n")
+cat(CPN_OtherProteins$Accession, file = "CalProteins_Other_noRAP.txt", sep = "\n")
 
-### These lists were then submitted externally to DAVID for GO analysis, using mouse genome as background
-## DAVID outputs are below. Note I added a column with GO term only (no description) in Excel to submit to REVIGO 
-SCPN_others_3GOterms_DAVID <- read_excel("Individual_analysis_OtherProteins_GO_analysis/SCPN_others_3GOterms_DAVID.xlsx")
-CPN_others_3GOterms_DAVID <- read_excel("Individual_analysis_OtherProteins_GO_analysis/CPN_others_3GOterms_DAVID.xlsx")
+### These lists were then submitted externally to PANTHER for GO analysis.
+## I used PANTHER Overrepresentation Test (Released 20240807), analyzing the list of proteins against the mouse genome
+## Annotation Data Set: PANTHER Protein Class; Test Type: Fisher's Exact, Correction: Calculate False Discovery Rate
 
-### Then DAVID outputs were submitted to REVIGO (using GO term and adjusted p-value (Benjamini-Hochberg))
-##  REVIGO biiological process table outputs (with all nodes collapsed) were then saved as tsv. I 
-Sub_BP <- read_tsv("Individual_analysis_OtherProteins_GO_analysis/SCPN_Revigo_BP.tsv", show_col_types = FALSE) 
-Cal_BP <- read_tsv("Individual_analysis_OtherProteins_GO_analysis/CPN_Revigo_BP.tsv", show_col_types = FALSE) 
+### SCPN
+SCPN_OtherProteins_PANTHER_Protein <- read.table("Individual_analysis_OtherProteins_PANTHER/SubProteins_Other_PANTHER_ProteinClass.txt", 
+                          header = TRUE,
+                          skip = 11,
+                          sep = "\t",
+                          quote = "",
+                          fill = TRUE)
+## Clean up column names by removing repetitive parts
+colnames(SCPN_OtherProteins_PANTHER_Protein) <- c("Protein_Class", "REFLIST", "Observed", "Expected", "Over_Under", "Fold_Enrichment", "P_value", "FDR")
 
-### Visualize GO analysis result (Related to Figure 1F)
-## Make new dataframe compiling GO Term ID, Name, and -Log10(p.adj) from REVIGO, 
-## and Count (# proteins in our list fitting GO term) and PopHits (# protein with GO term in mouse genome) from DAVID
-SCPN_other_REVIGO_DAVID <- left_join(Sub_BP[, c(1:3)], SCPN_others_3GOterms_DAVID[, c(3, 8, 14)], by = "TermID")
-CPN_other_REVIGO_DAVID <- left_join(Cal_BP[, c(1:3)], CPN_others_3GOterms_DAVID[, c(3, 8, 14)], by = "TermID" )
+## Convert scientific notation to numeric where appropriate
+SCPN_OtherProteins_PANTHER_Protein$P_value <- as.numeric(SCPN_OtherProteins_PANTHER_Protein$P_value)
+SCPN_OtherProteins_PANTHER_Protein$FDR <- as.numeric(SCPN_OtherProteins_PANTHER_Protein$FDR)
 
-## Plot 10 terms with smallest adjusted p-value for SCPN
-ggplot(SCPN_other_REVIGO_DAVID[1:10,], aes(x = -Value, y = reorder(Name, dplyr::desc(Value)))) +
-  geom_point(aes(size = Count), color = "#4495d7", alpha=.8 ) +
-  scale_size_continuous(range = c(3, 8)) +
-  scale_x_continuous(limits = c(3, 15)) + 
-  labs(y = "GO Term - BP", 
+## Simplify the Protein class names
+SCPN_OtherProteins_PANTHER_Protein$Short_Name <- sub(" \\(PC\\d+\\)$", "", SCPN_OtherProteins_PANTHER_Protein$Protein_Class)
+
+### Similarly, I import CPN report from PANTHER
+CPN_OtherProteins_PANTHER_Protein <- read.table("Individual_analysis_OtherProteins_PANTHER/CalProteins_Other_PANTHER_ProteinClass.txt", 
+                          header = TRUE,
+                          skip = 11,
+                          sep = "\t",
+                          quote = "",
+                          fill = TRUE)
+## Clean up column names by removing repetitive parts
+colnames(CPN_OtherProteins_PANTHER_Protein) <- c("Protein_Class", "REFLIST", "Observed", "Expected", "Over_Under", "Fold_Enrichment", "P_value", "FDR")
+
+## Convert scientific notation to numeric where appropriate
+CPN_OtherProteins_PANTHER_Protein$P_value <- as.numeric(CPN_OtherProteins_PANTHER_Protein$P_value)
+CPN_OtherProteins_PANTHER_Protein$FDR <- as.numeric(CPN_OtherProteins_PANTHER_Protein$FDR)
+
+## Simplify the Protein class names
+CPN_OtherProteins_PANTHER_Protein$Short_Name <- sub(" \\(PC\\d+\\)$", "", CPN_OtherProteins_PANTHER_Protein$Protein_Class)
+
+### Visualize Protein Classification Overrepresation results (Related to Figure 1F)
+
+## Plot 5 terms with smallest adjusted p-value for SCPN
+SCPN_OtherProteins_Class <- ggplot(SCPN_OtherProteins_PANTHER_Protein %>%
+  filter(Over_Under == "+") %>%    # Keep only rows with "+" in Over_Under
+  arrange(FDR) %>%                 # Sort by FDR in ascending order
+  dplyr::slice(1:5), 
+  aes(x = -log10(FDR), y = reorder(Short_Name, dplyr::desc(FDR)))) +
+  geom_point(aes(size = Observed), color = "#4495d7", alpha=.8 ) +
+  scale_size_continuous(name = "# Proteins", 
+                      breaks = c( 5, 10, 15, 20), 
+                      range = c(3, 8)) +
+  scale_x_continuous(limits = c(1, 8)) +
+  labs(y = "PANTHER - Protein Class",
        x = "-Log10(p.adj)",
        size = "# Proteins") +
-  theme_pubr() 
+  theme_pubr()
 
-## Plot 10 terms with smallest adjusted p-value for CPN
-ggplot(CPN_other_REVIGO_DAVID[1:10,], aes(x = -Value, y = reorder(Name, dplyr::desc(Value)))) +
-  geom_point(aes(size = Count), color = "#ed6d52", alpha=.8) +
-  scale_size_continuous(range = c(3,8), breaks = c(5, 10, 15, 20)) +
-  scale_x_continuous(limits = c(3, 12)) + 
-  labs(y = "GO Term - BP", 
+## Print the plot
+SCPN_OtherProteins_Class
+
+## Save the plot as a PDF
+ggsave("Plots/Fig1E_SCPN_Others_protein_classes_plot.pdf", plot = SCPN_OtherProteins_Class, width = 6.5, height = 2.5, units = "in")
+
+## Plot 5 terms with smallest adjusted p-value for CPN
+CPN_OtherProteins_Class <- ggplot(CPN_OtherProteins_PANTHER_Protein %>%
+  filter(Over_Under == "+") %>%    # Keep only rows with "+" in Over_Under
+  arrange(FDR) %>%                 # Sort by FDR in ascending order
+  dplyr::slice(1:5), 
+  aes(x = -log10(FDR), y = reorder(Short_Name, dplyr::desc(FDR)))) +
+  geom_point(aes(size = Observed), color = "#ed6d52", alpha=.8 ) +
+  scale_size_continuous(name = "# Proteins", 
+                      breaks = c( 5, 10, 15, 20), 
+                      range = c(3, 8)) +
+  scale_x_continuous(limits = c(1, 8)) +
+  labs(y = "PANTHER - Protein Class",
        x = "-Log10(p.adj)",
        size = "# Proteins") +
-  theme_pubr() 
+  theme_pubr()
+
+## Print the plot
+CPN_OtherProteins_Class
+
+## Save the plot as a PDF
+ggsave("Plots/Fig1F_CPN_Others_protein_classes_plot.pdf", plot = CPN_OtherProteins_Class, width = 6.5, height = 2.5, units = "in")
 ```
 
 ### "Label-free quantification" mode- group analysis of rRNA IP samples (related to Figure 2)
@@ -236,10 +399,12 @@ GroupAnalysis_Peptides_output["SubTally"] <-  5- rowSums(is.na(GroupAnalysis_Pep
                                                                    select(10:14))) 
 GroupAnalysis_Peptides_output ["CalTally"] <-  4- rowSums(is.na(GroupAnalysis_Peptides_output %>%
                                                                    select(6:9)))
-GroupAnalysis_Peptides_output_2 <- GroupAnalysis_Peptides_output %>% filter(SubTally + CalTally >0) %>% select(1, 2, 3, 4, 5, 10:14, 6:9) %>% mutate(across(c(6:14), ~ifelse(is.na(.), "ND", .)))
+GroupAnalysis_Peptides_output_2 <- GroupAnalysis_Peptides_output %>% 
+  filter(SubTally + CalTally >0) %>% select(1, 2, 3, 4, 5, 10:14, 6:9) %>% 
+  mutate(across(c(6:14), ~ifelse(is.na(.), "ND", .)))
 
-## Write csv
-#write.csv(GroupAnalysis_Peptides_output_4, file = "TableS3.csv",  row.names = FALSE)
+## Write Supplementary Table S3
+write.csv(GroupAnalysis_Peptides_output_2, file = "Tables/TableS3.csv",  row.names = FALSE)
 
 ### Protein-level output that considers both unique and non-unique peptides. 
 ### Only used for extraction of accession and corresponding gene name of detected protein!
@@ -307,7 +472,7 @@ Upset_plot_groups <- c("1-2 out of 4 CPN samples", "3-4 out of 4 CPN samples" ,
                        "1-2 out of 5 SCPN samples", "3-5 out of 5 SCPN samples")
 
 ### Make the upset plot with the "ComplexUpset" package
-ComplexUpset::upset(Upset_plot_Detection_df, Upset_plot_groups,
+Group_Analysis_Upset_plot <- ComplexUpset::upset(Upset_plot_Detection_df, Upset_plot_groups,
                     sort_sets=FALSE,
                     base_annotations=list('Intersection size'=intersection_size(counts=TRUE, 
                                                                                 mapping=aes(fill=Protein)) + 
@@ -326,6 +491,12 @@ ComplexUpset::upset(Upset_plot_Detection_df, Upset_plot_groups,
                                        ),
                     themes=list(default=theme())
 )
+## Print the plot
+Group_Analysis_Upset_plot
+
+## Save the plot
+ggsave("Plots/Fig2A_Group_Analysis_Upset_plot.pdf", plot = Group_Analysis_Upset_plot, width = 8, height = 5, units = "in")
+
 ### Generate Table S4
 Comparative_ProteinDetection_output <- Upset_plot_Detection_df %>% mutate(Accession = `Proteins`)
 ## Add gene name based only Accession,
@@ -345,7 +516,7 @@ Comparative_ProteinDetection_output_order  <- Comparative_ProteinDetection_outpu
   mutate(across(c(6:14), ~ifelse(is.na(.), "ND", .)))
 
 ## Write a csv file
-#write.csv(Comparative_ProteinDetection_output_order, file = "TableS4.csv",  row.names = FALSE)
+write.csv(Comparative_ProteinDetection_output_order, file = "Tables/TableS4.csv",  row.names = FALSE)
 ```
 
 ### Differential analysis of proteins shared between SCPN and CPN (Figure 2D)
@@ -368,7 +539,7 @@ imputed_Sub_samples <- MsCoreUtils::impute_knn(data.matrix(normalized_Sub_sample
 normalized_Cal_samples <- normalized_df_filtered %>% select(contains("Cal"))
 imputed_Cal_samples <- MsCoreUtils::impute_knn(data.matrix(normalized_Cal_samples ) ,k = 2) %>% as.data.frame()
 ## Merge the two imputed dataframes and make sure the columns such CPN samples preceed SCPN samples
-merged_norm_imputed_df <- merge(imputed_Cal_samples, imputed_Sub_samples, , by = 'row.names', all = TRUE)
+merged_norm_imputed_df <- merge(imputed_Cal_samples, imputed_Sub_samples, by = 'row.names', all = TRUE)
 ```
 
 ## Using limma implemented in DEP
@@ -435,7 +606,7 @@ df_wide_BH_annotate_output <- df_wide_BH_annotate %>% select(Accession, name, "S
 colnames(df_wide_BH_annotate_output) <- c("UniProt_Accession", "Gene", "SCPN_rRNA_Rep1", "SCPN_rRNA_Rep2", "SCPN_rRNA_Rep3", "SCPN_rRNA_Rep4", "SCPN_rRNA_Rep5", "CPN_rRNA_Rep1", "CPN_rRNA_Rep2", "CPN_rRNA_Rep3", "CPN_rRNA_Rep4", "Log2(CPN_rRNA/SCPN_rRNA)", "CPN_rRNA_vs_SCPN_rRNA_p.val", "CPN_rRNA_vs_SCPN_rRNA_p.adj", "Protein Group")
 
 ## Write Csv file
-# write.csv(df_wide_BH_annotate_output, file = "TableS5. csv", row.names = FALSE)
+write.csv(df_wide_BH_annotate_output, file = "Tables/TableS5. csv", row.names = FALSE)
 ```
 
 ### Validation of subtype-specific gene expression of proteins that are exclusively detected in SCPN RCs and that have known interactions with components of ribosomes

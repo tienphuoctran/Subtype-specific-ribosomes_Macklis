@@ -224,7 +224,7 @@ Individual_analysis_w_genename_output <- Individual_analysis_w_genename [, c(1, 
   mutate(Group = ifelse(Group == "E_Brain_RAP", "E12.5 forebrain RAP", Group)) %>%
   mutate(across(c(4:20), ~ifelse(is.na(.), "ND", .)))
 
-write.csv(Individual_analysis_w_genename_output , file = "Tables/TableS2.csv",  row.names = FALSE)
+# write.csv(Individual_analysis_w_genename_output , file = "Tables/TableS2.csv",  row.names = FALSE)
 ```
 
 ```{r IndividualAnalysis_Barplot}
@@ -262,7 +262,7 @@ Individual_analysis_Barplot <- ggplot(Individual_analysis_for_barplot, aes(x=nam
 Individual_analysis_Barplot
 
 ### Save the plot
-ggsave("Plots/Fig1E_Individual_analysis_Barplot.pdf", plot = Individual_analysis_Barplot, width = 7, height = 5, units = "in")
+# ggsave("Plots/Fig1E_Individual_analysis_Barplot.pdf", plot = Individual_analysis_Barplot, width = 7, height = 5, units = "in")
 ```
 
 ```{r ProteinClassification_OtherProteins}
@@ -343,7 +343,7 @@ SCPN_OtherProteins_Class <- ggplot(SCPN_OtherProteins_PANTHER_Protein %>%
 SCPN_OtherProteins_Class
 
 ## Save the plot as a PDF
-ggsave("Plots/Fig1E_SCPN_Others_protein_classes_plot.pdf", plot = SCPN_OtherProteins_Class, width = 6.5, height = 2.5, units = "in")
+# ggsave("Plots/Fig1E_SCPN_Others_protein_classes_plot.pdf", plot = SCPN_OtherProteins_Class, width = 6.5, height = 2.5, units = "in")
 
 ## Plot 5 terms with smallest adjusted p-value for CPN
 CPN_OtherProteins_Class <- ggplot(CPN_OtherProteins_PANTHER_Protein %>%
@@ -365,7 +365,7 @@ CPN_OtherProteins_Class <- ggplot(CPN_OtherProteins_PANTHER_Protein %>%
 CPN_OtherProteins_Class
 
 ## Save the plot as a PDF
-ggsave("Plots/Fig1F_CPN_Others_protein_classes_plot.pdf", plot = CPN_OtherProteins_Class, width = 6.5, height = 2.5, units = "in")
+# ggsave("Plots/Fig1F_CPN_Others_protein_classes_plot.pdf", plot = CPN_OtherProteins_Class, width = 6.5, height = 2.5, units = "in")
 ```
 
 ### "Label-free quantification" mode- group analysis of rRNA IP samples (related to Figure 2)
@@ -404,7 +404,7 @@ GroupAnalysis_Peptides_output_2 <- GroupAnalysis_Peptides_output %>%
   mutate(across(c(6:14), ~ifelse(is.na(.), "ND", .)))
 
 ## Write Supplementary Table S3
-write.csv(GroupAnalysis_Peptides_output_2, file = "Tables/TableS3.csv",  row.names = FALSE)
+# write.csv(GroupAnalysis_Peptides_output_2, file = "Tables/TableS3.csv",  row.names = FALSE)
 
 ### Protein-level output that considers both unique and non-unique peptides. 
 ### Only used for extraction of accession and corresponding gene name of detected protein!
@@ -495,7 +495,7 @@ Group_Analysis_Upset_plot <- ComplexUpset::upset(Upset_plot_Detection_df, Upset_
 Group_Analysis_Upset_plot
 
 ## Save the plot
-ggsave("Plots/Fig2A_Group_Analysis_Upset_plot.pdf", plot = Group_Analysis_Upset_plot, width = 8, height = 5, units = "in")
+# ggsave("Plots/Fig2A_Group_Analysis_Upset_plot.pdf", plot = Group_Analysis_Upset_plot, width = 8, height = 5, units = "in")
 
 ### Generate Table S4
 Comparative_ProteinDetection_output <- Upset_plot_Detection_df %>% mutate(Accession = `Proteins`)
@@ -516,30 +516,12 @@ Comparative_ProteinDetection_output_order  <- Comparative_ProteinDetection_outpu
   mutate(across(c(6:14), ~ifelse(is.na(.), "ND", .)))
 
 ## Write a csv file
-write.csv(Comparative_ProteinDetection_output_order, file = "Tables/TableS4.csv",  row.names = FALSE)
+# write.csv(Comparative_ProteinDetection_output_order, file = "Tables/TableS4.csv",  row.names = FALSE)
 ```
 
 ### Differential analysis of proteins shared between SCPN and CPN (Figure 2D)
 
-```{r Normalization_Imputation}
-### "Median of ratios" normalization of protein abundances to address input and technical variations
-Geometricmean_output_numbers <- Geometricmean_output %>% column_to_rownames(var = "Proteins")
-normalized_df <- median_of_ratios_normalize(Geometricmean_output_numbers)
-
-### Filter proteins present in 3 to 5 samples of both subtypes for subsequent differential analysis
-normalized_df["SubTally"] <-  5- rowSums(is.na(normalized_df %>% select(contains("Sub")))) 
-normalized_df["CalTally"] <-  4- rowSums(is.na(normalized_df %>% select(contains("Cal")))) 
-normalized_df_filtered <- normalized_df %>% filter(SubTally>=3 & CalTally>=3) %>% select(-contains("Tally"))
-
-### Within-group imputation with knn
-## Load MsCoreUtils package here in the script to avoid namespace conflicts with other packages, 
-library(MsCoreUtils) 
-normalized_Sub_samples <- normalized_df_filtered %>% select(contains("Sub"))
-imputed_Sub_samples <- MsCoreUtils::impute_knn(data.matrix(normalized_Sub_samples) ,k = 2) %>% as.data.frame()
-normalized_Cal_samples <- normalized_df_filtered %>% select(contains("Cal"))
-imputed_Cal_samples <- MsCoreUtils::impute_knn(data.matrix(normalized_Cal_samples ) ,k = 2) %>% as.data.frame()
-## Merge the two imputed dataframes and make sure the columns such CPN samples preceed SCPN samples
-merged_norm_imputed_df <- merge(imputed_Cal_samples, imputed_Sub_samples, by = 'row.names', all = TRUE)
+```{}
 ```
 
 ## Using limma implemented in DEP
@@ -606,7 +588,7 @@ df_wide_BH_annotate_output <- df_wide_BH_annotate %>% select(Accession, name, "S
 colnames(df_wide_BH_annotate_output) <- c("UniProt_Accession", "Gene", "SCPN_rRNA_Rep1", "SCPN_rRNA_Rep2", "SCPN_rRNA_Rep3", "SCPN_rRNA_Rep4", "SCPN_rRNA_Rep5", "CPN_rRNA_Rep1", "CPN_rRNA_Rep2", "CPN_rRNA_Rep3", "CPN_rRNA_Rep4", "Log2(CPN_rRNA/SCPN_rRNA)", "CPN_rRNA_vs_SCPN_rRNA_p.val", "CPN_rRNA_vs_SCPN_rRNA_p.adj", "Protein Group")
 
 ## Write Csv file
-write.csv(df_wide_BH_annotate_output, file = "Tables/TableS5. csv", row.names = FALSE)
+# write.csv(df_wide_BH_annotate_output, file = "Tables/TableS5.csv", row.names = FALSE)
 ```
 
 ### Validation of subtype-specific gene expression of proteins that are exclusively detected in SCPN RCs and that have known interactions with components of ribosomes

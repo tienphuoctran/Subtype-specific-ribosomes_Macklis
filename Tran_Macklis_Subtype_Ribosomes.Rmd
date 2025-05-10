@@ -521,7 +521,25 @@ Comparative_ProteinDetection_output_order  <- Comparative_ProteinDetection_outpu
 
 ### Differential analysis of proteins shared between SCPN and CPN (Figure 2D)
 
-```{}
+```{r Normalization_Imputation}
+### "Median of ratios" normalization of protein abundances to address input and technical variations
+Geometricmean_output_numbers <- Geometricmean_output %>% column_to_rownames(var = "Proteins")
+normalized_df <- median_of_ratios_normalize(Geometricmean_output_numbers)
+
+### Filter proteins present in 3 to 5 samples of both subtypes for subsequent differential analysis
+normalized_df["SubTally"] <-  5- rowSums(is.na(normalized_df %>% select(contains("Sub")))) 
+normalized_df["CalTally"] <-  4- rowSums(is.na(normalized_df %>% select(contains("Cal")))) 
+normalized_df_filtered <- normalized_df %>% filter(SubTally>=3 & CalTally>=3) %>% select(-contains("Tally"))
+
+### Within-group imputation with knn
+## Load MsCoreUtils package here in the script to avoid namespace conflicts with other packages, 
+library(MsCoreUtils) 
+normalized_Sub_samples <- normalized_df_filtered %>% select(contains("Sub"))
+imputed_Sub_samples <- MsCoreUtils::impute_knn(data.matrix(normalized_Sub_samples) ,k = 2) %>% as.data.frame()
+normalized_Cal_samples <- normalized_df_filtered %>% select(contains("Cal"))
+imputed_Cal_samples <- MsCoreUtils::impute_knn(data.matrix(normalized_Cal_samples ) ,k = 2) %>% as.data.frame()
+## Merge the two imputed dataframes and make sure the columns such CPN samples preceed SCPN samples
+merged_norm_imputed_df <- merge(imputed_Cal_samples, imputed_Sub_samples, by = 'row.names', all = TRUE)
 ```
 
 ## Using limma implemented in DEP
@@ -594,30 +612,72 @@ colnames(df_wide_BH_annotate_output) <- c("UniProt_Accession", "Gene", "SCPN_rRN
 ### Validation of subtype-specific gene expression of proteins that are exclusively detected in SCPN RCs and that have known interactions with components of ribosomes
 
 ```{r Transcriptomic_&_Translational_dataset_integration}
+
+SCPN_Proteins_to_check <- "Cmas|Prkce|Snx27|S100a10|Dnaja1|Cct2|Pdia3|Pten|Mon2|Rtraf|Asns"
 ### Annotate MA plot of SCPN_vs_CPN transcriptomic analysis with names of proteins of interest
 ### Showing only transcripts with siginificant differences between subtypes
-ggplot(data = NanoRiboSeq_mRNA, aes(x=log10(baseMean), y= log2FoldChange))+ 
+
+NanoRiboSeq_mRNA_annotated_plot <- ggplot(data = NanoRiboSeq_mRNA, aes(x=log10(baseMean), y= log2FoldChange))+ 
   geom_point(data = filter(NanoRiboSeq_mRNA, !is.na(`mRNA_sig`)),
-             aes(color = `mRNA_sig`)) + 
+             aes(color = `mRNA_sig`), alpha = 0.8, size = 2) + 
   scale_colour_manual(values=c("#ed6d52", "#4495d7", "#cccccc")) + 
   geom_text_repel(data = filter(NanoRiboSeq_mRNA,
-                                grepl("Cmas|Prkce|Snx27|S100a10|Dnaja1|Cct2|Pdia3|Pten|Mon2|Rtraf", NanoRiboSeq_mRNA$external_gene_name ) & `mRNA_sig` != "shared"),
-  aes(label=external_gene_name), size = 3,
-    box.padding = unit(1, "lines"),
-    point.padding = unit(0, "lines"), max.overlaps = Inf, show.legend = FALSE) + theme_classic2() 
+                                grepl(SCPN_Proteins_to_check, NanoRiboSeq_mRNA$external_gene_name ) & `mRNA_sig` != "shared"),
+  aes(label=external_gene_name), 
+    size = 4,
+    fontface = "bold",  # Make labels bold
+    box.padding = unit(1.5, "lines"), 
+  nudge_x = 0,
+    nudge_y = .3,
+    point.padding = unit(0, "lines"), 
+    max.overlaps = Inf, 
+    show.legend = FALSE) + 
+  labs(y="Log2(Fold Change)", 
+       x= "Log10(baseMean)") + 
+  theme_classic2() +
+  theme(
+    axis.title = element_text(size = 14),  # Larger, bold axis titles
+    axis.text = element_text(size = 12),  # Larger axis text
+    legend.title = element_text(size = 12),  # Larger, bold legend title
+    legend.text = element_text(size = 10)  # Larger legend text
+  )
+
+# Show the plot
+NanoRiboSeq_mRNA_annotated_plot
+
+# Save the plot
+# ggsave("Plots/Fig4A_mRNA_Annotated.pdf", plot = NanoRiboSeq_mRNA_annotated_plot, width = 6.5, height = 4.5, units = "in")
 
 ### Annotate p MA plot comparing ribosome-protected fragments between SCPN and CPN with names of proteins of interest
 ### Showing only transcripts with siginificant differences between subtypes
-ggplot(data = NanoRiboSeq_RPF, aes(x=log10(baseMean), y= log2FoldChange)) + geom_point(data = filter(NanoRiboSeq_RPF, !is.na(`RP_sig`)),
+NanoRiboSeq_RPF_annotated_plot <- ggplot(data = NanoRiboSeq_RPF, aes(x=log10(baseMean), y= log2FoldChange)) + geom_point(data = filter(NanoRiboSeq_RPF, !is.na(`RP_sig`)),
              aes(color = `RP_sig`),
              shape=16,
              alpha = 0.8, size = 2 )+ 
   scale_colour_manual(values=c("#ed6d52", "#4495d7", "#cccccc")) + 
   geom_text_repel(data = filter(NanoRiboSeq_RPF,
-                          grepl("Cmas|Prkce|Snx27|S100a10|Dnaja1|Cct2|Pdia3|Pten|Mon2|Rtraf", NanoRiboSeq_RPF$external_gene_name ) & `RP_sig` != "n.s."),
-  aes(label=external_gene_name), size = 4,
+                          grepl(SCPN_Proteins_to_check, NanoRiboSeq_RPF$external_gene_name ) & `RP_sig` != "n.s."),
+  aes(label=external_gene_name),    size = 4,
+    fontface = "bold",  # Make labels bold
     box.padding = unit(1, "lines"),
-    point.padding = unit(0, "lines"), max.overlaps = Inf, show.legend = FALSE) + theme_classic2(base_size = 14)
+    point.padding = unit(0, "lines"), 
+    max.overlaps = Inf, 
+    show.legend = FALSE) + 
+  labs(y="Log2(Fold Change)", 
+       x= "Log10(baseMean)") + 
+  theme_classic2() +
+  theme(
+    axis.title = element_text(size = 14),  # Larger, bold axis titles
+    axis.text = element_text(size = 12),  # Larger axis text
+    legend.title = element_text(size = 12),  # Larger, bold legend title
+    legend.text = element_text(size = 10)  # Larger legend text
+  )
+# Show the plot
+NanoRiboSeq_RPF_annotated_plot
+
+# Save the plot
+# ggsave("Plots/Fig4B_RPF_Annotated.pdf", plot = NanoRiboSeq_RPF_annotated_plot, width = 6, height = 4, units = "in")
+
 ```
 
 ### Plotting QC plots showing recovering of 28S and 18S rRNAs after Y10B rRNA pulldown (Related to Figure 1C-D, S1B)

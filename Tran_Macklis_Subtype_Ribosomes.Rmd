@@ -110,7 +110,7 @@ ARC_RAPs_hESC <- read_excel("External_dataset/ARC_RAPs_sheet1.xlsx",
         "skip")) %>% 
   mutate(Protein_name = sub("^(\\w)", "\\U\\1", tolower(Protein_name), perl=TRUE))
 
-### Putative RAPs from bulk forebrain at E12.5, using RAPIDASH (Susanto et al. Mol. Cell 2024)
+### Putative RAPs from bulk forebrain at E12.5, using RAPIDASH (Susanto et al. Mol Cell 2024)
 ## Full data frame
 RAPIDASH_forebrain <- read_excel("External_dataset/2024_Susanto_RAPDISH_TableS5_LFQ_EmbryonicForebrain.xlsx")
 ## Uniprot Accession
@@ -137,7 +137,6 @@ NanoRiboSeq_RPF <- subset(NanoRiboSeq_subtypeComparisons, `contrast` == "RPF") %
 ```
 
 ### Proteome Discoverer protein-level output from single-sample analysis (Related to Figure 1)
-
 ```{r Individual_analysis, echo=TRUE}
 ### Load data, filter out contaminant proteins
 SCPN_Ctrl_Rep1 <- read_excel("Individual_analysis_Protein_output/SCPN_Ctrl_Rep1.xlsx") %>% filter(., Contaminant == FALSE,) %>% select(Accession, contains("Abundance"))
@@ -178,7 +177,7 @@ Individual_analysis <- Individual_analysis %>%
   filter(!if_all(starts_with(c("SCPN_Ctrl", "SCPN_rRNA", "CPN_Ctrl", "CPN_rRNA")), is.na))
 
 #### Annotate what proteins are RPs, known RAPs, and putative RAPs in E12.5 forebrain.
-#### I addition to using Accession number for cross-referencing datasets to annotate proteins, I also use primary gene name. This is because of multiple reasons: 1) Some sources have old outdated Uniprot accession, so it's easier to use gene names; 2) one source lists RAPs from human ESC, so it's easier to use gene names for cross-species referencing. 3) Some gene names readily identify the protein function, e.g. eukaryotic translation initiation factors have EIF at the beginning of their gene names. 
+#### In addition to using Accession number for cross-referencing datasets to annotate proteins, I also use primary gene name. This is because of multiple reasons: 1) Some sources have old outdated Uniprot accession, so it's easier to use gene names; 2) one source lists RAPs from human, so it's easier to use gene names for cross-species referencing. 3) Some gene names readily identify the protein function, e.g. eukaryotic translation initiation factors have EIF at the beginning of their gene name. 
 
 ### First, I recovered the gene names of the detected proteins from the MS analysis:
 ## I created a list of Uniprot accession. 
@@ -227,6 +226,7 @@ Individual_analysis_w_genename_output <- Individual_analysis_w_genename [, c(1, 
 # write.csv(Individual_analysis_w_genename_output , file = "Tables/TableS2.csv",  row.names = FALSE)
 ```
 
+### 
 ```{r IndividualAnalysis_Barplot}
 ### Make a barplot showing per-sample number of identified proteins with quantified abundance (Figure 1E)
 Individual_analysis_for_barplot <- Individual_analysis_w_genename %>%
@@ -269,7 +269,7 @@ Individual_analysis_Barplot
 ### Gene Ontology analysis of proteins not classified as ribosomal proteins, translation factors, or RAPs (Figure 1F)
 ### First, identify proteins found in 3 or more of rRNA IP samples and not at all in any Control for each sample
 Individual_analysis_tally <- Individual_analysis_w_genename
-## I need to rename SCPN to Sub and CPN to Cal for easy, unambiguous operations with string.
+## I need to rename SCPN to Sub and CPN to Cal for easy, unambiguous operations with string. 
 colnames(Individual_analysis_tally) <- c("Accession", "Sub_Ctrl1", "Sub_Ctrl2","Sub_Ctrl3", "Sub_Ctrl4","Sub_Ctrl5", "Cal_Ctrl1", "Cal_Ctrl2","Cal_Ctrl4", "Sub_rRNA1", "Sub_rRNA2","Sub_rRNA3","Sub_rRNA4","Sub_rRNA5", "Cal_rRNA1", "Cal_rRNA2","Cal_rRNA3","Cal_rRNA4", "gene_name", "Group")
 ## Tally the number of samples per subtype wherein a protein has abundance value
 Individual_analysis_tally["SCPN_rRNA_Tally"] <- 5- rowSums(is.na(Individual_analysis_tally %>% select(contains ("Sub_rRNA"))))
@@ -369,7 +369,6 @@ CPN_OtherProteins_Class
 ```
 
 ### "Label-free quantification" mode- group analysis of rRNA IP samples (related to Figure 2)
-
 ```{r rRNA_IP_Group_Analysis_output}
 ### Peptide-level output, on which all analyses (using solely unique peptides) are based on.
 ### Retain only non-contaminant and unique peptides (that map to 1 protein group) 
@@ -417,7 +416,6 @@ Group_analysis_Accession_name <- Group_analysis_Proteins_output %>% select(Acces
 ```
 
 ## Protein summarization via geometric mean of unique peptides
-
 ```{r Protein Detection}
 ### Vector that lists proteins that the peptides identified in all analyzed rRNAs samples map to
 Proteins <- unique(GroupAnalysis_Peptides_ordered$Accession)
@@ -449,7 +447,7 @@ Geometricmean_output <- data.frame(Proteins, Sub1, Sub2, Sub3, Sub4, Sub5, Cal1,
 
 ## Comparative Protein Detection Analysis between SCPN and CPN samples (Related to Figure 2)
 
-```{r Protein_Detection_Pattern_rRNAs}
+```{r Protein_Detection_Pattern_rRNA_IP}
 ### Tally samples with detection and Visualize detection pattern with an upset plot
 Upset_plot_Detection_df <- Geometricmean_output 
 Upset_plot_Detection_df["SubTally"] <-  5- rowSums(is.na(Upset_plot_Detection_df %>% select(Sub1, Sub2, Sub3, Sub4, Sub5)))
@@ -505,7 +503,7 @@ Comparative_ProteinDetection_output <- left_join(Comparative_ProteinDetection_ou
                                                by = "Accession") %>% 
   mutate(Protein = case_when(
     Protein == TRUE ~ "Ribosomal Protein",
-    Protein == FALSE ~ "Other"
+    Protein == FALSE ~ "Non-RP"
   ))
 ## Change the order of columns, and change column names 
 Comparative_ProteinDetection_output_order <- Comparative_ProteinDetection_output %>% select("Proteins", "gene_name", "Protein", "SubTally", "CalTally", "Sub1", "Sub2", "Sub3", "Sub4", "Sub5", "Cal1", "Cal2", "Cal3", "Cal4")
@@ -520,7 +518,7 @@ Comparative_ProteinDetection_output_order  <- Comparative_ProteinDetection_outpu
 ```
 
 ### Differential analysis of proteins shared between SCPN and CPN (Figure 2D)
-
+### Primary normalization approach: "Median-of-ratios"
 ```{r Normalization_Imputation}
 ### "Median of ratios" normalization of protein abundances to address input and technical variations
 Geometricmean_output_numbers <- Geometricmean_output %>% column_to_rownames(var = "Proteins")
@@ -543,7 +541,6 @@ merged_norm_imputed_df <- merge(imputed_Cal_samples, imputed_Sub_samples, by = '
 ```
 
 ## Using limma implemented in DEP
-
 ```{r differential_test_in_DEP}
 ### Rename df columns to use DEP
 colnames(merged_norm_imputed_df) <- c("Accession",
@@ -563,7 +560,13 @@ data_unique <- make_unique(merged_norm_imputed_df, "Accession", "Accession")
 data_se <- make_se_parse(data_unique, grep("Sample.", colnames(data_unique)), mode = "delim", sep = ".Rep")
 
 ### Plot distribution of protein abundances (Figure)
-plot_normalization(data_se) 
+normalized_imputed_plot <- plot_normalization(data_se)
+
+# Show the plot
+normalized_imputed_plot
+
+# Save the plot
+# ggsave("Plots/Fig2_Supplement_normalized_imputed.pdf", plot = normalized_imputed_plot, width = 5.64, height = 3.73, units = "in")
 
 ### Test using limma: Note: DEP by default uses fdrtools to calculate adjusted p-values
 ### However, we will use the Benjamini-Hochberg method (implemented in base R) for our manuscript.
@@ -609,10 +612,136 @@ colnames(df_wide_BH_annotate_output) <- c("UniProt_Accession", "Gene", "SCPN_rRN
 # write.csv(df_wide_BH_annotate_output, file = "Tables/TableS5.csv", row.names = FALSE)
 ```
 
-### Validation of subtype-specific gene expression of proteins that are exclusively detected in SCPN RCs and that have known interactions with components of ribosomes
+## Second normalization approach: to Average intensitiy of core ribosomal proteins (related to Figure S2B and C)
+
+```{r RP_based_Normalization}
+### Annotate which proteins are core structural ribosomal proteins
+Geometricmean_output_RP <- Geometricmean_output %>% filter(Proteins %in% Ribosome_uniprot_ID_GeneNames$Entry)
+
+### Average RP intensity per sample, result is a named vector double with name of sample
+RP_Geometricmean_by_Sample <- apply(Geometricmean_output_RP[, c(2:10)], MARGIN = 2, FUN = mean, na.rm = TRUE)
+
+### Average intensity of all RPs across all samples
+AverageRP_allsamples <- mean(RP_Geometricmean_by_Sample)
+
+### Normalization step: for each sample, divide the value of each protein by the sample's mean RP intensity. I then multiply the resulting value by a constant (the average RP intensity across all samples) to rescale the values back to a meaningful range for comparison with median-of-ratios normalization.
+
+normalized_df_RP_based <- Geometricmean_output %>%
+  mutate(across(starts_with("Sub") | starts_with("Cal"),
+                ~ . / RP_Geometricmean_by_Sample[cur_column()] * AverageRP_allsamples))
+
+### Subsequent steps of imputation and differential analysis are identical
+
+### Filter proteins present in 3 to 5 samples of both subtypes for subsequent differential analysis
+normalized_df_RP_lite <- normalized_df_RP_based %>% column_to_rownames(var = "Proteins")
+normalized_df_RP_lite["SubTally"] <-  5- rowSums(is.na(normalized_df_RP_lite %>% select(contains("Sub")))) 
+normalized_df_RP_lite["CalTally"] <-  4- rowSums(is.na(normalized_df_RP_lite %>% select(contains("Cal")))) 
+normalized_df_RP_filtered <- normalized_df_RP_lite %>% filter(SubTally>=3 & CalTally>=3) %>% select(-contains("Tally"))
+
+### Within-group imputation with knn
+## Load MsCoreUtils package here in the script to avoid namespace conflicts with other packages, 
+library(MsCoreUtils) 
+RP_normalized_Sub_samples <- normalized_df_RP_filtered %>% select(contains("Sub"))
+RP_imputed_Sub_samples <- MsCoreUtils::impute_knn(data.matrix(RP_normalized_Sub_samples) ,k = 2) %>% as.data.frame()
+RP_normalized_Cal_samples <- normalized_df_RP_filtered %>% select(contains("Cal"))
+RP_imputed_Cal_samples <- MsCoreUtils::impute_knn(data.matrix(RP_normalized_Cal_samples ) ,k = 2) %>% as.data.frame()
+## Merge the two imputed dataframes and make sure the columns such CPN samples preceed SCPN samples
+merged_norm_imputed_RP_df <- merge(RP_imputed_Cal_samples, RP_imputed_Sub_samples, by = 'row.names', all = TRUE)
+
+### DEP
+### Rename df columns to use DEP
+colnames(merged_norm_imputed_RP_df) <- c("Accession",
+                           "Sample.Cal.Rep1",
+                           "Sample.Cal.Rep2",
+                           "Sample.Cal.Rep3",
+                           "Sample.Cal.Rep4",
+                           "Sample.Sub.Rep1",
+                           "Sample.Sub.Rep2",
+                           "Sample.Sub.Rep3",
+                           "Sample.Sub.Rep4",
+                           "Sample.Sub.Rep5")
+### Requisite step of giving proteins unique names for DEP. We are using Accession only,
+data_unique_RP <- make_unique(merged_norm_imputed_RP_df, "Accession", "Accession")
+### Functions to create the make-se object in DEP
+### Note that DEP automatically log2-transform abundances
+data_se_RP <- make_se_parse(data_unique_RP, grep("Sample.", colnames(data_unique_RP)), mode = "delim", sep = ".Rep")
+
+### Plot distribution of protein abundances (Figure)
+plot_normalization(data_se_RP)
+
+### Test using limma: Note: DEP by default uses fdrtools to calculate adjusted p-values
+### However, we will use the Benjamini-Hochberg method (implemented in base R) for our manuscript.
+data_diff_all_contrasts_RP <- test_diff(data_se_RP, type = "all")
+## Denote significant proteins (modify "alpha" ("fdrtools" calculated p.adj cut off) and "lfc" as needed)
+dep_RP <- add_rejections(data_diff_all_contrasts_RP, alpha = 0.1, lfc = log2(0))
+
+### Using base p.adjust BH method to calculate adjusted p-values
+df_wide_RP <- get_df_wide(dep_RP)
+
+## Histogram of p-values, showing that it's appropriate to calculate adjusted p value
+ggplot(df_wide_RP, aes(x=Cal_vs_Sub_p.val)) + geom_histogram(binwidth = 0.05)
+
+## Multiple testing correction, adjusting p-values with p.adjust method "BH"
+df_wide_BH_RP  <- df_wide_RP %>% mutate(Cal_vs_Sub_BH = p.adjust(Cal_vs_Sub_p.val, method = "BH")) 
+
+### Match Accession with gene name
+df_wide_BH_annotate_RP <- df_wide_BH_RP %>% 
+  mutate(Accession = name) %>% 
+  left_join(Group_analysis_Accession_name, by = "Accession") %>% 
+  mutate(name = gene_name)
+
+### Annotate proteins based on differential analysis result and whther they are ribosomal proteins
+df_wide_BH_annotate_RP <- df_wide_BH_annotate_RP %>% filter(!is.na(Cal_vs_Sub_p.val)) %>%
+  mutate(`Ribosomal_Protein` = name %in% Ribosome_uniprot_ID_GeneNames$`Gene Names` )%>% 
+  mutate("Group" = case_when(
+  Cal_vs_Sub_BH >= 0.1 & Ribosomal_Protein != TRUE  ~ "Non-RP (n.s.)",
+  Cal_vs_Sub_BH >= 0.1 & Ribosomal_Protein == TRUE ~ "RP (n.s.)",
+  Cal_vs_Sub_BH < 0.1 & Ribosomal_Protein == TRUE & Cal_vs_Sub_diff <0 ~ "RP enriched in SCPN", 
+  Cal_vs_Sub_BH < 0.1 & Ribosomal_Protein == TRUE & Cal_vs_Sub_diff >0 ~ "RP enriched in CPN", 
+  Cal_vs_Sub_BH < 0.1 & Ribosomal_Protein != TRUE & Cal_vs_Sub_diff <0 ~ "Non-RP enriched in SCPN",
+  Cal_vs_Sub_BH < 0.1 & Ribosomal_Protein != TRUE & Cal_vs_Sub_diff >0 ~ "Non-RP enriched in CPN"
+  )) 
+
+df_wide_BH_annotate_RP_pval <- df_wide_BH_annotate_RP %>% filter(!is.na(Cal_vs_Sub_p.val)) %>%
+  mutate(`Ribosomal_Protein` = name %in% Ribosome_uniprot_ID_GeneNames$`Gene Names` )%>% 
+  mutate("Group" = case_when(
+  Cal_vs_Sub_p.val >= 0.01 & Ribosomal_Protein != TRUE  ~ "Shared non-RP",
+  Cal_vs_Sub_p.val >= 0.01 & Ribosomal_Protein == TRUE ~ "Shared RP",
+  Cal_vs_Sub_p.val < 0.01 & Ribosomal_Protein == TRUE & Cal_vs_Sub_diff <0 ~ "RP enriched in SCPN", 
+  Cal_vs_Sub_p.val < 0.01 & Ribosomal_Protein == TRUE & Cal_vs_Sub_diff >0 ~ "RP enriched in CPN", 
+  Cal_vs_Sub_p.val < 0.01 & Ribosomal_Protein != TRUE & Cal_vs_Sub_diff <0 ~ "Non-RP enriched in SCPN",
+  Cal_vs_Sub_p.val < 0.01 & Ribosomal_Protein != TRUE & Cal_vs_Sub_diff >0 ~ "Non-RP enriched in CPN"
+  )) 
+
+### Volcano plot for visualization
+## Using adjusted pval: Annotation of proteins found with primary normalization approach
+ggplot(df_wide_BH_annotate_RP, mapping = aes(x= Cal_vs_Sub_diff, y= -log10(Cal_vs_Sub_BH), label = name)) + geom_point(aes(color = Group), alpha = 0.7) + geom_text_repel(data = filter(df_wide_BH_annotate_RP, grepl("Fau|Gucy1a1|Celf3",df_wide_BH_annotate_RP$name)), aes(label = toupper(name) ), size = 4,box.padding = unit(0.7, "lines"), point.padding = unit(0.1, "lines"), max.overlaps = 20, show.legend = FALSE) + labs(x="Log2(Fold Change)", y= "-Log10(Adjusted p-value)") + scale_colour_manual(values=c( "lightgray", "cornsilk4", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")) + scale_y_continuous(breaks = seq(0, 2, by = 0.5)) + theme_pubr(legend = "right")
+
+## Using pval: with nominal cut off of 0.01, with annotation
+ggplot(df_wide_BH_annotate_RP_pval, mapping = aes(x= Cal_vs_Sub_diff, y= -log10(Cal_vs_Sub_p.val), label = name)) + 
+  geom_point(aes(color = Cal_vs_Sub_p.val <= 0.01), alpha = 0.7) + 
+  geom_text_repel(data = subset(df_wide_BH_annotate_RP_pval, Cal_vs_Sub_p.val <= 0.01 & Cal_vs_Sub_diff > 0), 
+                  aes(label = toupper(name), 
+                      color = Cal_vs_Sub_p.val <= 0.01 & Cal_vs_Sub_diff > 0),
+                  size = 4,box.padding = unit(0.5, "lines"), point.padding = unit(0.23, "lines"), max.overlaps = 20, show.legend = FALSE) + labs(x="Log2(Fold Change)", y= "-Log10(p-value)") + 
+  scale_colour_manual(
+    values = c("lightgray", "black"),
+    labels = c("FALSE" = "p > 0.01", "TRUE" = "p \u2264 0.01"),
+    name = NULL
+  ) + 
+  scale_y_continuous(breaks = seq(0, 3, by = 1)) + theme_pubr(legend = "right")
+
+### Output differential analysis results
+df_wide_BH_annotate_output_RP <- df_wide_BH_annotate_RP %>% select(Accession, name, "Sub_1", "Sub_2", "Sub_3", "Sub_4", "Sub_5", "Cal_1", "Cal_2", "Cal_3", "Cal_4", Cal_vs_Sub_diff, Cal_vs_Sub_p.val, Cal_vs_Sub_BH, Group)
+colnames(df_wide_BH_annotate_output_RP) <- c("UniProt_Accession", "Gene", "SCPN_rRNA_Rep1", "SCPN_rRNA_Rep2", "SCPN_rRNA_Rep3", "SCPN_rRNA_Rep4", "SCPN_rRNA_Rep5", "CPN_rRNA_Rep1", "CPN_rRNA_Rep2", "CPN_rRNA_Rep3", "CPN_rRNA_Rep4", "Log2(CPN_rRNA/SCPN_rRNA)", "CPN_rRNA_vs_SCPN_rRNA_p.val", "CPN_rRNA_vs_SCPN_rRNA_p.adj", "Protein Group")
+
+## Write csv file
+# write.csv(df_wide_BH_annotate_output_RP, file = "Tables/TableS6.csv", row.names = FALSE)
+```
+
+### Related to Fig 4: Subtype-specific gene expression of proteins that are exclusively detected in SCPN RCs and that have known interactions with components of ribosomes
 
 ```{r Transcriptomic_&_Translational_dataset_integration}
-
 SCPN_Proteins_to_check <- "Cmas|Prkce|Snx27|S100a10|Dnaja1|Cct2|Pdia3|Pten|Mon2|Rtraf|Asns"
 ### Annotate MA plot of SCPN_vs_CPN transcriptomic analysis with names of proteins of interest
 ### Showing only transcripts with siginificant differences between subtypes
@@ -636,10 +765,10 @@ NanoRiboSeq_mRNA_annotated_plot <- ggplot(data = NanoRiboSeq_mRNA, aes(x=log10(b
        x= "Log10(baseMean)") + 
   theme_classic2() +
   theme(
-    axis.title = element_text(size = 14),  # Larger, bold axis titles
-    axis.text = element_text(size = 12),  # Larger axis text
-    legend.title = element_text(size = 12),  # Larger, bold legend title
-    legend.text = element_text(size = 10)  # Larger legend text
+    axis.title = element_text(size = 14),
+    axis.text = element_text(size = 12),
+    legend.title = element_text(size = 12),
+    legend.text = element_text(size = 10)
   )
 
 # Show the plot
@@ -677,7 +806,6 @@ NanoRiboSeq_RPF_annotated_plot
 
 # Save the plot
 # ggsave("Plots/Fig4B_RPF_Annotated.pdf", plot = NanoRiboSeq_RPF_annotated_plot, width = 6, height = 4, units = "in")
-
 ```
 
 ### Plotting QC plots showing recovering of 28S and 18S rRNAs after Y10B rRNA pulldown (Related to Figure 1C-D, S1B)

@@ -601,8 +601,14 @@ df_wide_BH_annotate <- df_wide_BH_annotate %>% filter(!is.na(Cal_vs_Sub_p.val)) 
   Cal_vs_Sub_BH < 0.1 & Ribosomal_Protein != TRUE & Cal_vs_Sub_diff >0 ~ "Non-RP enriched in CPN"
   )) 
 
-### Volcano plot for visualization
-ggplot(df_wide_BH_annotate, mapping = aes(x= Cal_vs_Sub_diff, y= -log10(Cal_vs_Sub_BH), label = name)) + geom_point(aes(color = Group), alpha = 0.7) + geom_text_repel(data = subset(df_wide_BH_annotate, Cal_vs_Sub_BH <= 0.1), aes(label = toupper(name), color = Group),size = 4,box.padding = unit(0.25, "lines"), point.padding = unit(0.23, "lines"), max.overlaps = 20, show.legend = FALSE) + labs(x="Log2(Fold Change)", y= "-Log10(Adjusted p-value)") + scale_colour_manual(values=c( "#E69F00", "#009E73", "lightgray", "cornsilk4", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")) + scale_y_continuous(breaks = seq(0, 1.5, by = 0.5)) + theme_pubr(legend = "right")
+### Volcano plot for visualization (Figure 2D)
+Primary_Norm_Diff_Analysis_Volcano <- ggplot(df_wide_BH_annotate, mapping = aes(x= Cal_vs_Sub_diff, y= -log10(Cal_vs_Sub_BH), label = name)) + geom_point(aes(color = Group), alpha = 0.7) + geom_text_repel(data = subset(df_wide_BH_annotate, Cal_vs_Sub_BH <= 0.1), aes(label = toupper(name), color = Group),size = 4,box.padding = unit(0.25, "lines"), point.padding = unit(0.23, "lines"), max.overlaps = 20, show.legend = FALSE) + labs(x="Log2(Fold Change)", y= "-Log10(Adjusted p-value)") + scale_colour_manual(values=c( "#E69F00", "#009E73", "lightgray", "cornsilk4", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")) + scale_y_continuous(breaks = seq(0, 1.5, by = 0.5)) + theme_pubr(legend = "right")
+
+# Show the plot
+Primary_Norm_Diff_Analysis_Volcano
+
+# Save the plot
+# ggsave("Plots/Fig2D_Primary_Norm_Analysis_Volcano.pdf", plot = Primary_Norm_Diff_Analysis_Volcano)
 
 ### Output differential analysis results
 df_wide_BH_annotate_output <- df_wide_BH_annotate %>% select(Accession, name, "Sub_1", "Sub_2", "Sub_3", "Sub_4", "Sub_5", "Cal_1", "Cal_2", "Cal_3", "Cal_4", Cal_vs_Sub_diff, Cal_vs_Sub_p.val, Cal_vs_Sub_BH, Group)
@@ -666,8 +672,13 @@ data_unique_RP <- make_unique(merged_norm_imputed_RP_df, "Accession", "Accession
 ### Note that DEP automatically log2-transform abundances
 data_se_RP <- make_se_parse(data_unique_RP, grep("Sample.", colnames(data_unique_RP)), mode = "delim", sep = ".Rep")
 
-### Plot distribution of protein abundances (Figure)
-plot_normalization(data_se_RP)
+### Plot distribution of protein abundances (Figure S2B)
+RP_normalized_imputed_dist <- plot_normalization(data_se_RP)
+
+## Show the plot
+RP_normalized_imputed_dist
+### Save the plot
+# ggsave("Plots/FigS2B_RP_Normalization.pdf", plot = RP_normalized_imputed_dist, width = 5.03, height = 3.56, units = "in")
 
 ### Test using limma: Note: DEP by default uses fdrtools to calculate adjusted p-values
 ### However, we will use the Benjamini-Hochberg method (implemented in base R) for our manuscript.
@@ -718,9 +729,9 @@ df_wide_BH_annotate_RP_pval <- df_wide_BH_annotate_RP %>% filter(!is.na(Cal_vs_S
 ggplot(df_wide_BH_annotate_RP, mapping = aes(x= Cal_vs_Sub_diff, y= -log10(Cal_vs_Sub_BH), label = name)) + geom_point(aes(color = Group), alpha = 0.7) + geom_text_repel(data = filter(df_wide_BH_annotate_RP, grepl("Fau|Gucy1a1|Celf3",df_wide_BH_annotate_RP$name)), aes(label = toupper(name) ), size = 4,box.padding = unit(0.7, "lines"), point.padding = unit(0.1, "lines"), max.overlaps = 20, show.legend = FALSE) + labs(x="Log2(Fold Change)", y= "-Log10(Adjusted p-value)") + scale_colour_manual(values=c( "lightgray", "cornsilk4", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")) + scale_y_continuous(breaks = seq(0, 2, by = 0.5)) + theme_pubr(legend = "right")
 
 ## Using pval: with nominal cut off of 0.01, with annotation
-ggplot(df_wide_BH_annotate_RP_pval, mapping = aes(x= Cal_vs_Sub_diff, y= -log10(Cal_vs_Sub_p.val), label = name)) + 
+RP_volcano <- ggplot(df_wide_BH_annotate_RP_pval, mapping = aes(x= Cal_vs_Sub_diff, y= -log10(Cal_vs_Sub_p.val), label = name)) + 
   geom_point(aes(color = Cal_vs_Sub_p.val <= 0.01), alpha = 0.7) + 
-  geom_text_repel(data = subset(df_wide_BH_annotate_RP_pval, Cal_vs_Sub_p.val <= 0.01 & Cal_vs_Sub_diff > 0), 
+  geom_text_repel(data = filter(df_wide_BH_annotate_RP, grepl("Fau|Gucy1a1|Celf3",df_wide_BH_annotate_RP$name)),
                   aes(label = toupper(name), 
                       color = Cal_vs_Sub_p.val <= 0.01 & Cal_vs_Sub_diff > 0),
                   size = 4,box.padding = unit(0.5, "lines"), point.padding = unit(0.23, "lines"), max.overlaps = 20, show.legend = FALSE) + labs(x="Log2(Fold Change)", y= "-Log10(p-value)") + 
@@ -731,9 +742,14 @@ ggplot(df_wide_BH_annotate_RP_pval, mapping = aes(x= Cal_vs_Sub_diff, y= -log10(
   ) + 
   scale_y_continuous(breaks = seq(0, 3, by = 1)) + theme_pubr(legend = "right")
 
+## Show the plot
+RP_volcano
+## Save pval plot
+# ggsave("Plots/FigS2C_Volcano_RP_Normalization.pdf", plot = RP_volcano, width = 4.63, height = 3.56, units = "in")
+
 ### Output differential analysis results
-df_wide_BH_annotate_output_RP <- df_wide_BH_annotate_RP %>% select(Accession, name, "Sub_1", "Sub_2", "Sub_3", "Sub_4", "Sub_5", "Cal_1", "Cal_2", "Cal_3", "Cal_4", Cal_vs_Sub_diff, Cal_vs_Sub_p.val, Cal_vs_Sub_BH, Group)
-colnames(df_wide_BH_annotate_output_RP) <- c("UniProt_Accession", "Gene", "SCPN_rRNA_Rep1", "SCPN_rRNA_Rep2", "SCPN_rRNA_Rep3", "SCPN_rRNA_Rep4", "SCPN_rRNA_Rep5", "CPN_rRNA_Rep1", "CPN_rRNA_Rep2", "CPN_rRNA_Rep3", "CPN_rRNA_Rep4", "Log2(CPN_rRNA/SCPN_rRNA)", "CPN_rRNA_vs_SCPN_rRNA_p.val", "CPN_rRNA_vs_SCPN_rRNA_p.adj", "Protein Group")
+df_wide_BH_annotate_output_RP <- df_wide_BH_annotate_RP %>% select(Accession, name, "Sub_1", "Sub_2", "Sub_3", "Sub_4", "Sub_5", "Cal_1", "Cal_2", "Cal_3", "Cal_4", Cal_vs_Sub_diff, Cal_vs_Sub_p.val, Cal_vs_Sub_BH)
+colnames(df_wide_BH_annotate_output_RP) <- c("UniProt_Accession", "Gene", "SCPN_rRNA_Rep1", "SCPN_rRNA_Rep2", "SCPN_rRNA_Rep3", "SCPN_rRNA_Rep4", "SCPN_rRNA_Rep5", "CPN_rRNA_Rep1", "CPN_rRNA_Rep2", "CPN_rRNA_Rep3", "CPN_rRNA_Rep4", "Log2(CPN_rRNA/SCPN_rRNA)", "CPN_rRNA_vs_SCPN_rRNA_p.val", "CPN_rRNA_vs_SCPN_rRNA_p.adj")
 
 ## Write csv file
 # write.csv(df_wide_BH_annotate_output_RP, file = "Tables/TableS6.csv", row.names = FALSE)

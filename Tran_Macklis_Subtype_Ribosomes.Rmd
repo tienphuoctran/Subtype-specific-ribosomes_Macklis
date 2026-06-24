@@ -895,3 +895,35 @@ ggbarplot(RiboTag_vs_rRNA, x = "Approach", y = "Mass_per_Somata", add = c("mean_
           position = position_dodge(0.8), add.params = list(color = "Sample"), palette = c("purple", "red", "#4d4d4d", "lightgray")
           ) + labs(y="28S and 18S rRNA yield (ng/10k CPN)")
 ```
+### Plotting PRKCE pulldown plots showing recovering of 28S and 18S rRNAs  (Figure 3C)
+```{r PRKCE}
+### Example Bioanalyzer electropherograms (Figure 3C)
+Ctrl_IP_forPRKCE <- read_csv("PRKCE_IP_data/Ctrl_IP_for_PRKCE_Rep3.csv")
+PRKCE_IP <- read_csv("PRKCE_IP_data/PRKCE_IP_Rep3.csv")
+
+ggplot(Ctrl_IP_forPRKCE , mapping=aes(x=Time, y= Value)) +
+  geom_line() +
+  labs(x="Time (s)", y= "[FU]") +
+  ylim(-2, 280) +
+  theme_pubr()
+
+ggplot(PRKCE_IP , mapping=aes(x=Time, y= Value)) +
+  geom_line() +
+  labs(x="Time (s)", y= "[FU]") +
+  ylim(-2, 280) +
+  theme_pubr()
+
+### Plot of rRNA yield from paired IP samples
+PRKCE_IP_rRNAs <- read_excel("PRKCE_IP_data/PRKCE_IP_rRNAs.xlsx")
+
+PRKCE_IP_plot <- ggplot(PRKCE_IP_rRNAs, aes(x = Sample,  y = `28S_and_18S`, group = Replicate)) +
+  geom_point()+
+  geom_line(color = "gray60", linewidth = 0.8) +
+  scale_x_discrete(limits = c("Ctrl IP", "PRKCE IP"),
+                   labels = c("Ctrl IP\nN = 3", "PRKCE IP\nN = 3")) +
+  scale_y_continuous(limits = c(0, 60), breaks = seq(0, 60, 10)) +
+  labs(y = "28S and 18S rRNA recovery (ng)", x = NULL) +
+  theme_pubr() 
+
+# ggsave("Plots/Fig3D_PRKCE_rRNAs.pdf", plot = PRKCE_IP_plot, width = 2.2, height = 3.45, units = "in")
+```
